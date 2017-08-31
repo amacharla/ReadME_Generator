@@ -1,71 +1,25 @@
 
-    0. Who I am?
+    0. Simple rectangle
       
-    1. Where are you?
+    1. Real definition of a rectangle
       
-    2. Right count
+    2. Area and Perimeter
       
-    3. Right count =
+    3. String representation
       
-    4. Right count =
+    4. Eval is magic
       
-    5. Right count =+
+    5. Detect instance deletion
       
-    6. Is equal
+    6. How many instances
       
-    7. Is the same
+    7. Change representation
       
-    8. Is really equal
+    8. Compare rectangles
       
-    9. Is really the same
+    9. A square is a rectangle
       
-    10. And with a list, is it equal
+    10. Class and instance attributes
       
-    11. And with a list, is it the same
-      
-    12. And with a list, is it really equal
-      
-    13. And with a list, is it really the same
-      
-    14. List append
-      
-    15. List add
-      
-    16. Integer incrementation
-      
-    17. List incrementation
-      
-    18. List assignation
-      
-    19. Copy a list object
-      
-    20. Tuple or not?
-      
-    21. Tuple or not?
-      
-    22. Tuple or not?
-      
-    23. Tuple or not?
-      
-    24. Richard Sim's special #0
-      
-    25. Richard Sim's special #1
-      
-    26. Richard Sim's special #2
-      
-    27. Richard Sim's special #3
-      
-    28. Richard Sim's special #4
-      
-    29. Python3: Mutable, Immutable... everything is object!
-      
-    30. #pythonic
-      
-    31. Low memory cost
-      
-    32. int 1/3
-      
-    33. int 2/3
-      
-    34. int 3/3
+    11. N queens
       

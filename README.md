@@ -4840,7 +4840,7 @@ except Exception as e:
 
 <h4 class="task">
     0. Simple rectangle
-      <span class="alert alert-warning mandatory-optional">-
+      <span class="alert alert-warning mandatory-optional">
         mandatory
       </span>
 </h4><p>Write an empty class <code>Rectangle</code> that defines a rectangle:</p><ul>
@@ -4861,7 +4861,7 @@ guillaume@ubuntu:~/0x08$
 
 <h4 class="task">
     1. Real definition of a rectangle
-      <span class="alert alert-warning mandatory-optional">-
+      <span class="alert alert-warning mandatory-optional">
         mandatory
       </span>
 </h4><p>Write a class <code>Rectangle</code> that defines a rectangle by: (based on <code>0-rectangle.py</code>)</p><ul>
@@ -4908,7 +4908,7 @@ guillaume@ubuntu:~/0x08$
 
 <h4 class="task">
     2. Area and Perimeter
-      <span class="alert alert-warning mandatory-optional">-
+      <span class="alert alert-warning mandatory-optional">
         mandatory
       </span>
 </h4><p>Write a class <code>Rectangle</code> that defines a rectangle by: (based on <code>1-rectangle.py</code>)</p><ul>
@@ -4964,7 +4964,7 @@ guillaume@ubuntu:~/0x08$
 
 <h4 class="task">
     3. String representation
-      <span class="alert alert-warning mandatory-optional">-
+      <span class="alert alert-warning mandatory-optional">
         mandatory
       </span>
 </h4><p>Write a class <code>Rectangle</code> that defines a rectangle by: (based on <code>2-rectangle.py</code>)</p><ul>
@@ -5037,7 +5037,7 @@ guillaume@ubuntu:~/0x08$
 
 <h4 class="task">
     4. Eval is magic
-      <span class="alert alert-warning mandatory-optional">-
+      <span class="alert alert-warning mandatory-optional">
         mandatory
       </span>
 </h4><p>Write a class <code>Rectangle</code> that defines a rectangle by: (based on <code>3-rectangle.py</code>)</p><ul>
@@ -5141,7 +5141,7 @@ guillaume@ubuntu:~/0x08$
 
 <h4 class="task">
     5. Detect instance deletion
-      <span class="alert alert-warning mandatory-optional">-
+      <span class="alert alert-warning mandatory-optional">
         mandatory
       </span>
 </h4><p>Write a class <code>Rectangle</code> that defines a rectangle by: (based on <code>4-rectangle.py</code>)</p><ul>
@@ -5205,7 +5205,7 @@ guillaume@ubuntu:~/0x08$
 
 <h4 class="task">
     6. How many instances
-      <span class="alert alert-warning mandatory-optional">-
+      <span class="alert alert-warning mandatory-optional">
         mandatory
       </span>
 </h4><p>Write a class <code>Rectangle</code> that defines a rectangle by: (based on <code>5-rectangle.py</code>)</p><ul>
@@ -5276,7 +5276,7 @@ guillaume@ubuntu:~/0x08$
 
 <h4 class="task">
     7. Change representation
-      <span class="alert alert-warning mandatory-optional">-
+      <span class="alert alert-warning mandatory-optional">
         mandatory
       </span>
 </h4><p>Write a class <code>Rectangle</code> that defines a rectangle by: (based on <code>6-rectangle.py</code>)</p><ul>
@@ -5390,7 +5390,7 @@ guillaume@ubuntu:~/0x08$
 
 <h4 class="task">
     8. Compare rectangles
-      <span class="alert alert-warning mandatory-optional">-
+      <span class="alert alert-warning mandatory-optional">
         mandatory
       </span>
 </h4><p>Write a class <code>Rectangle</code> that defines a rectangle by: (based on <code>7-rectangle.py</code>)</p><ul>
@@ -5482,7 +5482,7 @@ guillaume@ubuntu:~/0x08$
 
 <h4 class="task">
     9. A square is a rectangle
-      <span class="alert alert-warning mandatory-optional">-
+      <span class="alert alert-warning mandatory-optional">
         mandatory
       </span>
 </h4><p>Write a class <code>Rectangle</code> that defines a rectangle by: (based on <code>8-rectangle.py</code>)</p><ul>
@@ -5566,7 +5566,7 @@ guillaume@ubuntu:~/0x08$
 
 <h4 class="task">
     10. Class and instance attributes
-      <span class="alert alert-info mandatory-optional">-
+      <span class="alert alert-info mandatory-optional">
         #advanced
       </span>
 </h4><p>Write a blog post describing how object and class attributes work.</p><ul>
@@ -5593,7 +5593,7 @@ Publish your blog post on Medium or LinkedIn, and share it at least on Twitter a
 </ul>
 </div><h4 class="task">
     11. N queens
-      <span class="alert alert-info mandatory-optional">-
+      <span class="alert alert-info mandatory-optional">
         #advanced
       </span>
 </h4><p><img src="http://www.crestbook.com/files/Judit-photo1_602x433.jpg"/><br>

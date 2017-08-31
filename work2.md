@@ -1,8 +1,8 @@
 <h4 class="task">
     0. Simple rectangle
-      <span class="alert alert-warning mandatory-optional">
+      <u>
         mandatory
-      </span>
+      </u>
 </h4><p>Write an empty class <code>Rectangle</code> that defines a rectangle:</p><ul>
 <li>You are not allowed to import any module</li>
 </ul><pre><code>guillaume@ubuntu:~/0x08$ cat 0-main.py

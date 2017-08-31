@@ -27,8 +27,8 @@ for starting_point in soup.find_all(class_="task"): # set starting point
             readme += '\n\n'
             break
         readme += str(element)
-print(readme)
+#print(readme)
 
 # Writing to ReadMe File
-#file.write(readme)
+file.write(readme)
 file.close()

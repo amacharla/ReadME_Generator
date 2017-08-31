@@ -1,8 +1,13 @@
 #!/usr/bin/python3
 from bs4 import BeautifulSoup, Comment, NavigableString
+from sys import argv
+
+if len(argv) != 2 or argv[1] not in "README.md":
+    print("Need to pass in README.md with HTML SourceCode")
+    exit()
 
 # open html file and parse through source code
-soup = BeautifulSoup(open("htmlstuff.htm"), 'html.parser')
+soup = BeautifulSoup(open(argv[1]), 'html.parser')
 
 # Identify the end location
 def end_mark(element):
@@ -19,6 +24,6 @@ for starting_point in soup.find_all(class_="task"): # set starting point
         readme += str(element)
 
 # Writing to ReadMe File
-file = open("work2.md", "w")
+file = open("README1.md", "w")
 file.write(readme)
 file.close()

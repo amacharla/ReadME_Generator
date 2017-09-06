@@ -7,8 +7,8 @@ if len(argv) != 2:
     exit()
 
 # open html file and parse through source code
-file = open(argv[1], 'r')
-soup = BeautifulSoup(file, 'html.parser')
+fd = open(argv[1], 'r')
+soup = BeautifulSoup(fd, 'html.parser')
 
 # Identify the end location
 def end_mark(element):
@@ -21,15 +21,18 @@ def make_mine(header):
 readme = ""
 # Look for start comments
 for starting_point in soup.find_all(class_="task"): # set starting point
-    readme += repr(starting_point) # add Task Header
+    readme += str(starting_point) # add Task Header
+    print("=======HEADER=====")
+    print(starting_point)
     for element in starting_point.find_next_siblings(True): # get all requirments and code
         if end_mark(element): # stop before Repo info
             readme += '\n\n'
             break
-        readme += repr(element)
-print(readme)
+        print(element)
+        print("=========ELEMENT==================")
+        readme += str(element)
 
 # Writing to ReadMe File
-file = open("README.md", 'w')
-file.write(readme)
-file.close()
+#file = open("README.md", 'w')
+#file.write(readme)
+#file.close()

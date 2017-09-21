@@ -26,7 +26,7 @@ for starting_point in soup.find_all(class_="task"): # set starting point
         if end_mark(element): # stop before Repo info
             readme += '\n\n'
             break
-        readme += str(element.encode(encoding="ascii", errors="xmlcharrefreplace"))
+        readme += str(element)
 
 print(readme)
 # Writing to ReadMe File

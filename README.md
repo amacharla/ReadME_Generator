@@ -1,123 +1,14 @@
-<h4 class="task">
-    7. $ht['Betty'] = 'Holberton'
-      <span class="alert alert-info mandatory-optional">
-        #advanced
-      </span>
-</h4><div class="task_progress_score_bar" data-correction-id="12694" data-task-id="1253">
-<div class="task_progress_bar">
-<div class="task_score_bar">
-</div>
-</div>
-<div class="task_progress_score_text">
-        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
-      </div>
-</div><p>In <a href="http://php.net/manual/en/intro-whatis.php">PHP</a>, hash tables are <strong>ordered</strong>. Wait... WAT? How is this even possible?</p><p><img src="https://media.giphy.com/media/IUp9WRHyCwUEg/giphy.gif"/><br/>
-<br/></p><p><strong>Before you continue</strong>, please take a moment to think about it: how you would implement it if you were asked to during an interview or a job. What data structures would you use? How would it work?</p><p>For this task, please:</p><ul>
-<li>Read <a href="http://www.phpinternalsbook.com/hashtables/basic_structure.html">PHP Internals Book: HashTable</a></li>
-<li>Use the same hash function</li>
-<li>Use these data structures:</li>
-</ul><pre><code>/**
- * struct shash_node_s - Node of a sorted hash table
- *
- * @key: The key, string
- * The key is unique in the HashTable
- * @value: The value corresponding to a key
- * @next: A pointer to the next node of the List
- * @sprev: A pointer to the previous element of the sorted linked list
- * @snext: A pointer to the next element of the sorted linked list
- */
-typedef struct shash_node_s
-{
-     char *key;
-     char *value;
-     struct shash_node_s *next;
-     struct shash_node_s *sprev;
-     struct shash_node_s *snext;
-} shash_node_t;
+b'<h4 class="task">\n    0. &gt;&gt;&gt; ht = {}\n      <span class="alert alert-warning mandatory-optional">\n        mandatory\n      </span>\n</h4>'b'<div class="task_progress_score_bar" data-correction-id="12694" data-task-id="1233">\n<div class="task_progress_bar">\n<div class="task_score_bar">\n</div>\n</div>\n<div class="task_progress_score_text">\n        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)\n      </div>\n</div>'b'<p>Write a function that creates a hash table.</p>'b'<ul>\n<li>Prototype: <code>hash_table_t *hash_table_create(unsigned long int size);</code>\n<ul>\n<li>where <code>size</code> is the size of the array</li>\n</ul></li>\n<li>Returns a pointer to the newly created hash table</li>\n<li>If something went wrong, your function should return <code>NULL</code></li>\n</ul>'b'<pre><code>julien@ubuntu:~/0x19. Hash tables$ cat 0-main.c \n#include &lt;stdlib.h&gt;\n#include &lt;string.h&gt;\n#include &lt;stdio.h&gt;\n#include "hash_tables.h"\n\n/**\n * main - check the code for Holberton School students.\n *\n * Return: Always EXIT_SUCCESS.\n */\nint main(void)\n{\n    hash_table_t *ht;\n\n    ht = hash_table_create(1024);\n    printf("%p\\n", (void *)ht);\n    return (EXIT_SUCCESS);\n}\njulien@ubuntu:~/0x19. Hash tables$ gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-hash_table_create.c -o a\njulien@ubuntu:~/0x19. Hash tables$ ./a \n0x238a010\njulien@ubuntu:~/0x19. Hash tables$ valgrind ./a\n==7602== Memcheck, a memory error detector\n==7602== Copyright (C) 2002-2013, and GNU GPL\'d, by Julian Seward et al.\n==7602== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info\n==7602== Command: ./a\n==7602== \n0x51fc040\n==7602== \n==7602== HEAP SUMMARY:\n==7602==     in use at exit: 8,208 bytes in 2 blocks\n==7602==   total heap usage: 2 allocs, 0 frees, 8,208 bytes allocated\n==7602== \n==7602== LEAK SUMMARY:\n==7602==    definitely lost: 16 bytes in 1 blocks\n==7602==    indirectly lost: 8,192 bytes in 1 blocks\n==7602==      possibly lost: 0 bytes in 0 blocks\n==7602==    still reachable: 0 bytes in 0 blocks\n==7602==         suppressed: 0 bytes in 0 blocks\n==7602== Rerun with --leak-check=full to see details of leaked memory\n==7602== \n==7602== For counts of detected and suppressed errors, rerun with: -v\n==7602== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)\njulien@ubuntu:~/0x19. Hash tables$\n</code></pre>'
 
-/**
- * struct shash_table_s - Sorted hash table data structure
- *
- * @size: The size of the array
- * @array: An array of size @size
- * Each cell of this array is a pointer to the first node of a linked list,
- * because we want our HashTable to use a Chaining collision handling
- * @shead: A pointer to the first element of the sorted linked list
- * @stail: A pointer to the last element of the sorted linked list
- */
-typedef struct shash_table_s
-{
-     unsigned long int size;
-     shash_node_t **array;
-     shash_node_t *shead;
-     shash_node_t *stail;
-} shash_table_t;
-</code></pre><p>Rewrite the previous functions using those data structures:</p><ul>
-<li><code>shash_table_t *shash_table_create(unsigned long int size);</code></li>
-<li><code>int shash_table_set(shash_table_t *ht, const char *key, const char *value);</code>
-<ul>
-<li>The key/value pair should be inserted in the sorted list at the right place</li>
-<li>Note that here we do not want to do exactly like <code>PHP</code>: we want to create a sorted linked list, by key (sorted on ASCII value), that we can print by traversing it. See example.</li>
-</ul></li>
-<li><code>char *shash_table_get(const shash_table_t *ht, const char *key);</code></li>
-<li><code>void shash_table_print(const shash_table_t *ht);</code>
-<ul>
-<li>Should print the hash table using the sorted linked list</li>
-</ul></li>
-<li><code>void shash_table_print_rev(const shash_table_t *ht);</code>
-<ul>
-<li>Should print the hash tables key/value pairs in reverse order using the sorted linked list</li>
-</ul></li>
-<li><code>void shash_table_delete(shash_table_t *ht);</code></li>
-<li>You are allowed to have more than 5 functions in your file</li>
-</ul><pre><code>julien@ubuntu:~/0x19. Hash tables$ cat 100-main.c 
-#include &lt;stdlib.h&gt;
-#include &lt;string.h&gt;
-#include &lt;stdio.h&gt;
-#include "hash_tables.h"
+b'<h4 class="task">\n    1. djb2\n      <span class="alert alert-warning mandatory-optional">\n        mandatory\n      </span>\n</h4>'b'<div class="task_progress_score_bar" data-correction-id="12694" data-task-id="1234">\n<div class="task_progress_bar">\n<div class="task_score_bar">\n</div>\n</div>\n<div class="task_progress_score_text">\n        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)\n      </div>\n</div>'b'<p>Write a hash function implementing the djb2 algorithm.</p>'b'<ul>\n<li>Prototype: <code>unsigned long int hash_djb2(const unsigned char *str);</code></li>\n<li>You are allowed to copy and paste the function from <a href="http://www.cse.yorku.ca/%7Eoz/hash.html">this page</a></li>\n</ul>'b'<pre><code>julien@ubuntu:~/0x19. Hash tables$ cat 1-djb2.c \nunsigned long int hash_djb2(const unsigned char *str)\n{\n    unsigned long int hash;\n    int c;\n\n    hash = 5381;\n    while ((c = *str++))\n    {\n        hash = ((hash &lt;&lt; 5) + hash) + c; /* hash * 33 + c */\n    }\n    return (hash);\n}\njulien@ubuntu:~/0x19. Hash tables$ \njulien@ubuntu:~/0x19. Hash tables$ cat 1-main.c \n#include &lt;stdlib.h&gt;\n#include &lt;string.h&gt;\n#include &lt;stdio.h&gt;\n#include "hash_tables.h"\n\n/**\n * main - check the code for Holberton School students.\n *\n * Return: Always EXIT_SUCCESS.\n */\nint main(void)\n{\n    char *s;\n\n    s = "cisfun";\n    printf("%lu\\n", hash_djb2((unsigned char *)s));\n    s = "Don\'t forget to tweet today";\n    printf("%lu\\n", hash_djb2((unsigned char *)s));\n    s = "98";\n    printf("%lu\\n", hash_djb2((unsigned char *)s));\n    return (EXIT_SUCCESS);\n}\njulien@ubuntu:~/0x19. Hash tables$ gcc -Wall -pedantic -Werror -Wextra 1-main.c 1-djb2.c -o b\njulien@ubuntu:~/0x19. Hash tables$ ./b \n6953392314605\n3749890792216096085\n5861846\njulien@ubuntu:~/0x19. Hash tables$ \n</code></pre>'
 
-/**
- * main - check the code for Holberton School students.
- *
- * Return: Always EXIT_SUCCESS.
- */
-int main(void)
-{
-    shash_table_t *ht;
+b'<h4 class="task">\n    2. key -&gt; index\n      <span class="alert alert-warning mandatory-optional">\n        mandatory\n      </span>\n</h4>'b'<div class="task_progress_score_bar" data-correction-id="12694" data-task-id="1235">\n<div class="task_progress_bar">\n<div class="task_score_bar">\n</div>\n</div>\n<div class="task_progress_score_text">\n        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)\n      </div>\n</div>'b'<p>Write a function that gives you the index of a key.</p>'b'<ul>\n<li>Prototype: <code>unsigned long int key_index(const unsigned char *key, unsigned long int size);</code>\n<ul>\n<li>where <code>key</code> is the key</li>\n<li>and <code>size</code> is the size of the array of the hash table</li>\n</ul></li>\n<li>This function should use the <code>hash_djb2</code> function that you wrote earlier</li>\n<li>Returns the index at which the key/value pair should be stored in the array of the hash table</li>\n<li>You will have to use this hash function for all the next tasks</li>\n</ul>'b'<pre><code>julien@ubuntu:~/0x19. Hash tables$ cat 2-main.c \n#include &lt;stdlib.h&gt;\n#include &lt;string.h&gt;\n#include &lt;stdio.h&gt;\n#include "hash_tables.h"\n\n/**\n * main - check the code for Holberton School students.\n *\n * Return: Always EXIT_SUCCESS.\n */\nint main(void)\n{\n    char *s;\n    unsigned long int hash_table_array_size;\n\n    hash_table_array_size = 1024;\n    s = "cisfun";\n    printf("%lu\\n", hash_djb2((unsigned char *)s));\n    printf("%lu\\n", key_index((unsigned char *)s, hash_table_array_size));\n    s = "Don\'t forget to tweet today";\n    printf("%lu\\n", hash_djb2((unsigned char *)s));\n    printf("%lu\\n", key_index((unsigned char *)s, hash_table_array_size));\n    s = "98";\n    printf("%lu\\n", hash_djb2((unsigned char *)s));\n    printf("%lu\\n", key_index((unsigned char *)s, hash_table_array_size));  \n    return (EXIT_SUCCESS);\n}\njulien@ubuntu:~/0x19. Hash tables$ gcc -Wall -pedantic -Werror -Wextra 2-main.c 1-djb2.c 2-key_index.c -o c\njulien@ubuntu:~/0x19. Hash tables$ ./c \n6953392314605\n237\n3749890792216096085\n341\n5861846\n470\njulien@ubuntu:~/0x19. Hash tables$ \n</code></pre>'
 
-    ht = shash_table_create(1024);
-#   shash_table_set(ht, "y", "0");
-    shash_table_print(ht);
-    shash_table_set(ht, "j", "1");
-    shash_table_print(ht);
-    shash_table_set(ht, "c", "2");
-    shash_table_print(ht);
-    shash_table_set(ht, "b", "3");
-    shash_table_print(ht);
-    shash_table_set(ht, "z", "4");
-    shash_table_print(ht);
-    shash_table_set(ht, "n", "5");
-    shash_table_print(ht);
-    shash_table_set(ht, "a", "6");
-    shash_table_print(ht);
-    shash_table_set(ht, "m", "7");
-    shash_table_print(ht);
-    shash_table_print_rev(ht);
-        shash_table_delete(ht);
-    return (EXIT_SUCCESS);
-}
-julien@ubuntu:~/0x19. Hash tables$ gcc -Wall -pedantic -Werror -Wextra 100-main.c 100-sorted_hash_table.c 1-djb2.c 2-key_index.c -o sht 
-julien@ubuntu:~/0x19. Hash tables$ ./sht 
-{'y': '0'}
-{'j': '1', 'y': '0'}
-{'c': '2', 'j': '1', 'y': '0'}
-{'b': '3', 'c': '2', 'j': '1', 'y': '0'}
-{'b': '3', 'c': '2', 'j': '1', 'y': '0', 'z': '4'}
-{'b': '3', 'c': '2', 'j': '1', 'n': '5', 'y': '0', 'z': '4'}
-{'a': '6', 'b': '3', 'c': '2', 'j': '1', 'n': '5', 'y': '0', 'z': '4'}
-{'a': '6', 'b': '3', 'c': '2', 'j': '1', 'm': '7', 'n': '5', 'y': '0', 'z': '4'}
-{'z': '4', 'y': '0', 'n': '5', 'm': '7', 'j': '1', 'c': '2', 'b': '3', 'a': '6'}
-julien@ubuntu:~/0x19. Hash tables$ 
-</code></pre><p><br/>
-<img src="http://kraken-php.com/build/img/index/logo-php-adbac78231.png" width="50%"/></p>
+b'<h4 class="task">\n    3. &gt;&gt;&gt; ht[\'betty\'] = \'holberton\'\n      <span class="alert alert-warning mandatory-optional">\n        mandatory\n      </span>\n</h4>'b'<div class="task_progress_score_bar" data-correction-id="12694" data-task-id="1236">\n<div class="task_progress_bar">\n<div class="task_score_bar">\n</div>\n</div>\n<div class="task_progress_score_text">\n        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)\n      </div>\n</div>'b'<p>Write a function that adds an element to the hash table.</p>'b'<ul>\n<li>Prototype: <code>int hash_table_set(hash_table_t *ht, const char *key, const char *value);</code>\n<ul>\n<li>Where <code>ht</code> is the hash table you want to add or update the key/value to</li>\n<li><code>key</code> is the key. <code>key</code> can not be an empty string</li>\n<li>and <code>value</code> is the value associated with the key. <code>value</code> can be an empty string</li>\n</ul></li>\n<li>Returns: <code>1</code> if it succeeded, <code>0</code> otherwise</li>\n<li>In case of collision, add the new node at the beginning of the list</li>\n</ul>'b'<pre><code>julien@ubuntu:~/0x19. Hash tables$ cat 3-main.c \n#include &lt;stdlib.h&gt;\n#include &lt;string.h&gt;\n#include &lt;stdio.h&gt;\n#include "hash_tables.h"\n\n/**\n * main - check the code for Holberton School students.\n *\n * Return: Always EXIT_SUCCESS.\n */\nint main(void)\n{\n    hash_table_t *ht;\n\n    ht = hash_table_create(1024);\n    hash_table_set(ht, "betty", "holberton");\n    return (EXIT_SUCCESS);\n}\njulien@ubuntu:~/0x19. Hash tables$ \n</code></pre>'b'<p><em>Tip from <a href="https://twitter.com/JennieZChu">Jennie</a></em>: if you want to test for collisions, here are some strings that collide using the djb2 algorithm:</p>'b'<ul>\n<li>hetairas collides with mentioner</li>\n<li>heliotropes collides with neurospora</li>\n<li>depravement collides with serafins</li>\n<li>stylist collides with subgenera</li>\n<li>joyful collides with synaphea</li>\n<li>redescribed collides with urites</li>\n<li>dram collides with vivency</li>\n</ul>'
+
+b'<h4 class="task">\n    4. &gt;&gt;&gt; ht[\'betty\']\n      <span class="alert alert-warning mandatory-optional">\n        mandatory\n      </span>\n</h4>'b'<div class="task_progress_score_bar" data-correction-id="12694" data-task-id="1251">\n<div class="task_progress_bar">\n<div class="task_score_bar">\n</div>\n</div>\n<div class="task_progress_score_text">\n        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)\n      </div>\n</div>'b'<p>Write a function that retrieves a value associated with a key.</p>'b"<ul>\n<li>Prototype: <code>char *hash_table_get(const hash_table_t *ht, const char *key);</code>\n<ul>\n<li>where <code>ht</code> is the hash table you want to look into</li>\n<li>and <code>key</code> is the key you are looking for</li>\n</ul></li>\n<li>Returns the value associated with the element, or <code>NULL</code> if <code>key</code> couldn't be found</li>\n</ul>"b'<pre><code>julien@ubuntu:~/0x19. Hash tables$ cat 4-main.c \n#include &lt;stdlib.h&gt;\n#include &lt;string.h&gt;\n#include &lt;stdio.h&gt;\n#include "hash_tables.h"\n\n/**\n * main - check the code for Holberton School students.\n *\n * Return: Always EXIT_SUCCESS.\n */\nint main(void)\n{\n    hash_table_t *ht;\n    char *value;\n\n    ht = hash_table_create(1024);\n    hash_table_set(ht, "c", "fun");\n    hash_table_set(ht, "python", "awesome");\n    hash_table_set(ht, "Jennie", "and Jay love asm");\n    hash_table_set(ht, "N", "queens");\n    hash_table_set(ht, "Asterix", "Obelix");\n    hash_table_set(ht, "Betty", "Holberton");\n    hash_table_set(ht, "98", "Battery Street");\n    hash_table_set(ht, "c", "isfun");\n\n    value = hash_table_get(ht, "python");\n    printf("%s:%s\\n", "python", value);\n    value = hash_table_get(ht, "Jennie");\n    printf("%s:%s\\n", "Jennie", value);\n    value = hash_table_get(ht, "N");\n    printf("%s:%s\\n", "N", value);\n    value = hash_table_get(ht, "Asterix");\n    printf("%s:%s\\n", "Asterix", value);\n    value = hash_table_get(ht, "Betty");\n    printf("%s:%s\\n", "Betty", value);\n    value = hash_table_get(ht, "98");\n    printf("%s:%s\\n", "98", value);\n    value = hash_table_get(ht, "c");\n    printf("%s:%s\\n", "c", value);\n    value = hash_table_get(ht, "javascript");\n    printf("%s:%s\\n", "javascript", value);\n    return (EXIT_SUCCESS);\n}\njulien@ubuntu:~/0x19. Hash tables$ gcc -Wall -pedantic -Werror -Wextra 4-main.c 0-hash_table_create.c 1-djb2.c 2-key_index.c 3-hash_table_set.c 4-hash_table_get.c -o e\njulien@ubuntu:~/0x19. Hash tables$ ./e \npython:awesome\nJennie:and Jay love asm\nN:queens\nAsterix:Obelix\nBetty:Holberton\n98:Battery Street\nc:isfun\njavascript:(null)\njulien@ubuntu:~/0x19. Hash tables$ \n</code></pre>'
+
+b'<h4 class="task">\n    5. &gt;&gt;&gt; print(ht)\n      <span class="alert alert-warning mandatory-optional">\n        mandatory\n      </span>\n</h4>'b'<div class="task_progress_score_bar" data-correction-id="12694" data-task-id="1252">\n<div class="task_progress_bar">\n<div class="task_score_bar">\n</div>\n</div>\n<div class="task_progress_score_text">\n        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)\n      </div>\n</div>'b'<p>Write a function that prints a hash table.</p>'b"<ul>\n<li>Prototype: <code>void hash_table_print(const hash_table_t *ht);</code>\n<ul>\n<li>where <code>ht</code> is the hash table</li>\n</ul></li>\n<li>You should print the key/value in the order that they appear in the array of hash table\n\n<ul>\n<li>Order: array, list</li>\n</ul></li>\n<li>Format: see example</li>\n<li>If <code>ht</code> is NULL, don't print anything</li>\n</ul>"b'<pre><code>julien@ubuntu:~/0x19. Hash tables$ cat 5-main.c \n#include &lt;stdlib.h&gt;\n#include &lt;string.h&gt;\n#include &lt;stdio.h&gt;\n#include "hash_tables.h"\n\n/**\n * main - check the code for Holberton School students.\n *\n * Return: Always EXIT_SUCCESS.\n */\nint main(void)\n{\n    hash_table_t *ht;\n\n    ht = hash_table_create(1024);\n    hash_table_print(ht);\n    hash_table_set(ht, "c", "fun");\n    hash_table_set(ht, "python", "awesome");\n    hash_table_set(ht, "Jennie", "and Jay love asm");\n    hash_table_set(ht, "N", "queens");\n    hash_table_set(ht, "Asterix", "Obelix");\n    hash_table_set(ht, "Betty", "Holberton");\n    hash_table_set(ht, "98", "Battery Street");\n    hash_table_print(ht);\n    return (EXIT_SUCCESS);\n}\njulien@ubuntu:~/0x19. Hash tables$ gcc -Wall -pedantic -Werror -Wextra 5-main.c 0-hash_table_create.c 1-djb2.c 2-key_index.c 3-hash_table_set.c 4-hash_table_get.c 5-hash_table_print.c -o f\njulien@ubuntu:~/0x19. Hash tables$ ./f \n{}\n{\'Betty\': \'Holberton\', \'python\': \'awesome\', \'Jennie\': \'and Jay love asm\', \'98\': \'Battery Street\', \'N\': \'queens\', \'c\': \'fun\', \'Asterix\': \'Obelix\'}\njulien@ubuntu:~/0x19. Hash tables$ \n</code></pre>'
+
+b'<h4 class="task">\n    6. &gt;&gt;&gt; del ht\n      <span class="alert alert-warning mandatory-optional">\n        mandatory\n      </span>\n</h4>'b'<div class="task_progress_score_bar" data-correction-id="12694" data-task-id="1388">\n<div class="task_progress_bar">\n<div class="task_score_bar">\n</div>\n</div>\n<div class="task_progress_score_text">\n        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)\n      </div>\n</div>'b'<p>Write a function that deletes a hash table.</p>'b'<ul>\n<li>Prototype: <code>void hash_table_delete(hash_table_t *ht);</code>\n<ul>\n<li>where <code>ht</code> is the hash table</li>\n</ul></li>\n</ul>'b'<pre><code>julien@ubuntu:~/0x19. Hash tables$ cat 6-main.c \n#include &lt;stdlib.h&gt;\n#include &lt;string.h&gt;\n#include &lt;stdio.h&gt;\n#include "hash_tables.h"\n\n/**\n * main - check the code for Holberton School students.\n *\n * Return: Always EXIT_SUCCESS.\n */\nint main(void)\n{\n    hash_table_t *ht;\n    char *key;\n    char *value;\n\n    ht = hash_table_create(1024);\n    hash_table_set(ht, "c", "fun");\n    hash_table_set(ht, "python", "awesome");\n    hash_table_set(ht, "Jennie", "and Jay love asm");\n    hash_table_set(ht, "N", "queens");\n    hash_table_set(ht, "Asterix", "Obelix");\n    hash_table_set(ht, "Betty", "Holberton");\n    hash_table_set(ht, "98", "Battery Streetz");\n    key = strdup("Tim");\n    value = strdup("Britton");\n    hash_table_set(ht, key, value);\n    key[0] = \'\\0\';\n    value[0] = \'\\0\';\n    free(key);\n    free(value);\n    hash_table_set(ht, "98", "Battery Street"); \n    hash_table_set(ht, "hetairas", "Jennie");\n    hash_table_set(ht, "hetairas", "Jennie Z");\n    hash_table_set(ht, "mentioner", "Jennie");\n    hash_table_set(ht, "hetairas", "Jennie Z Chu");\n    hash_table_print(ht);\n    hash_table_delete(ht);\n    return (EXIT_SUCCESS);\n}\njulien@ubuntu:~/0x19. Hash tables$ gcc -Wall -pedantic -Werror -Wextra 6-main.c 0-hash_table_create.c 1-djb2.c 2-key_index.c 3-hash_table_set.c 4-hash_table_get.c 5-hash_table_print.c 6-hash_table_delete.c -o g\njulien@ubuntu:~/0x19. Hash tables$ valgrind ./g\n==6621== Memcheck, a memory error detector\n==6621== Copyright (C) 2002-2013, and GNU GPL\'d, by Julian Seward et al.\n==6621== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info\n==6621== Command: ./g\n==6621== \n{\'Betty\': \'Holberton\', \'mentioner\': \'Jennie\', \'hetairas\': \'Jennie Z Chu\', \'python\': \'awesome\', \'Jennie\': \'and Jay love asm\', \'98\': \'Battery Street\', \'N\': \'queens\', \'c\': \'fun\', \'Tim\': \'Britton\', \'Asterix\': \'Obelix\'}\n==6621== \n==6621== HEAP SUMMARY:\n==6621==     in use at exit: 0 bytes in 0 blocks\n==6621==   total heap usage: 37 allocs, 37 frees, 8,646 bytes allocated\n==6621== \n==6621== All heap blocks were freed -- no leaks are possible\n==6621== \n==6621== For counts of detected and suppressed errors, rerun with: -v\n==6621== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)\njulien@ubuntu:~/0x19. Hash tables$ \n</code></pre>'
 

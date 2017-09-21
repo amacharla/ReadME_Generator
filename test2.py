@@ -21,18 +21,15 @@ def make_mine(header):
 readme = ""
 # Look for start comments
 for starting_point in soup.find_all(class_="task"): # set starting point
-    readme += str(starting_point) # add Task Header
-    print("=======HEADER=====")
-    print(starting_point)
+    readme += str(starting_point.encode(encoding="ascii", errors="xmlcharrefreplace")) # add Task Header
     for element in starting_point.find_next_siblings(True): # get all requirments and code
         if end_mark(element): # stop before Repo info
             readme += '\n\n'
             break
-        print(element)
-        print("=========ELEMENT==================")
-        readme += str(element)
+        readme += str(element.encode(encoding="ascii", errors="xmlcharrefreplace"))
 
+print(readme)
 # Writing to ReadMe File
-#file = open("README.md", 'w')
-#file.write(readme)
-#file.close()
+file = open("README.md", 'w')
+file.write(readme)
+file.close()

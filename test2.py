@@ -26,10 +26,15 @@ for starting_point in soup.find_all(class_="task"): # set starting point
         if end_mark(element): # stop before Repo info
             readme += '\n\n'
             break
-        readme += str(element.encode('utf-8', 'ignore')) #FIX THIS
+        if element.name == "pre":
+            print(element.prettify(formatter="xml"))
+            #readme += str(element.encode(formatter=None))
+        #else:
+        #    readme += str(element) #FIX THIS
+        # Conclusion. the &quot is not retained and there are no attributes in native Beauitful soup to modify this behavior. However something called @damit that can help or try a find and replace function.
 
-print(readme)
+#print(readme)
 # Writing to ReadMe File
-file = open("README.md", 'w')
-file.write(readme)
-file.close()
+#file = open("README.md", 'w')
+#file.write(readme)
+#file.close()

@@ -1,49 +1,263 @@
 <h4 class="task">
-    0. &gt;&gt;&gt; ht = {}
+    0. Create a SSH RSA key pair
       <span class="alert alert-warning mandatory-optional">
         mandatory
       </span>
-</h4>b'<div class="task_progress_score_bar" data-correction-id="12694" data-task-id="1233">\n<div class="task_progress_bar">\n<div class="task_score_bar">\n</div>\n</div>\n<div class="task_progress_score_text">\n        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)\n      </div>\n</div>'b'<p>Write a function that creates a hash table.</p>'b'<ul>\n<li>Prototype: <code>hash_table_t *hash_table_create(unsigned long int size);</code>\n<ul>\n<li>where <code>size</code> is the size of the array</li>\n</ul></li>\n<li>Returns a pointer to the newly created hash table</li>\n<li>If something went wrong, your function should return <code>NULL</code></li>\n</ul>'b'<pre><code>julien@ubuntu:~/0x19. Hash tables$ cat 0-main.c \n#include &lt;stdlib.h&gt;\n#include &lt;string.h&gt;\n#include &lt;stdio.h&gt;\n#include "hash_tables.h"\n\n/**\n * main - check the code for Holberton School students.\n *\n * Return: Always EXIT_SUCCESS.\n */\nint main(void)\n{\n    hash_table_t *ht;\n\n    ht = hash_table_create(1024);\n    printf("%p\\n", (void *)ht);\n    return (EXIT_SUCCESS);\n}\njulien@ubuntu:~/0x19. Hash tables$ gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-hash_table_create.c -o a\njulien@ubuntu:~/0x19. Hash tables$ ./a \n0x238a010\njulien@ubuntu:~/0x19. Hash tables$ valgrind ./a\n==7602== Memcheck, a memory error detector\n==7602== Copyright (C) 2002-2013, and GNU GPL\'d, by Julian Seward et al.\n==7602== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info\n==7602== Command: ./a\n==7602== \n0x51fc040\n==7602== \n==7602== HEAP SUMMARY:\n==7602==     in use at exit: 8,208 bytes in 2 blocks\n==7602==   total heap usage: 2 allocs, 0 frees, 8,208 bytes allocated\n==7602== \n==7602== LEAK SUMMARY:\n==7602==    definitely lost: 16 bytes in 1 blocks\n==7602==    indirectly lost: 8,192 bytes in 1 blocks\n==7602==      possibly lost: 0 bytes in 0 blocks\n==7602==    still reachable: 0 bytes in 0 blocks\n==7602==         suppressed: 0 bytes in 0 blocks\n==7602== Rerun with --leak-check=full to see details of leaked memory\n==7602== \n==7602== For counts of detected and suppressed errors, rerun with: -v\n==7602== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)\njulien@ubuntu:~/0x19. Hash tables$\n</code></pre>'
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1223">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Read for this task:</p><ul>
+<li><a href="http://askubuntu.com/questions/61557/how-do-i-set-up-ssh-authentication-keys">Linux and Mac OS users</a></li>
+<li><a href="https://support.rackspace.com/how-to/generating-rsa-keys-with-ssh-puttygen/">Windows users</a></li>
+</ul><p>man: <code>ssh-keygen</code></p><p>You will soon have to manage your own <a href="https://intranet.hbtn.io/concepts/17">servers</a> hosted on remote <a href="https://youtu.be/iuqXFC_qIvA?t=46">data centers</a>. We need to set them up with your RSA public key so that you can access them via SSH.</p><p>Create a RSA key pair.</p><p>Requirements:</p><ul>
+<li>Share your <strong>public key</strong> in your answer file <code>0-RSA_public_key.pub</code></li>
+<li>Fill the <em>SSH public key</em> field of your <a href="https://intranet.hbtn.io/users/my_profile">intranet profile</a> with your public key</li>
+<li><strong>Keep the private key to yourself in a secure location</strong>, you will use it later to connect to your servers using SSH. Some storing ideas are Dropbox, Google Drive, password manager, USB key. Failing to do so will prevent you to access your servers, which will prevent you from doing your projects</li>
+<li>If you decide to add a passphrase to your key, make sure to save this passphrase in a secure location, you will not be able to use your keys without the passphrase</li>
+</ul><p>SSH and RSA keys will be covered in depth in a later project.</p><p class="sm-gap"><strong>Repo:</strong></p><ul>
+<li>GitHub repository: <code>holberton-system_engineering-devops</code></li>
+<li>Directory: <code>0x04-loops_conditions_and_parsing</code></li>
+<li>File: <code>0-RSA_public_key.pub</code></li>
+</ul><div class="student_correction_requests">
+<!-- Button test code -->
+<button class="task_correction_modal btn btn-default " data-target="#task-test-correction-1223-correction-modal" data-task-id="1223" data-toggle="modal">
+        Check your code?
+      </button>
+<div class="modal fade task_correction_modal" id="task-test-correction-1223-correction-modal">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+<h4 class="modal-title">Correction of "Create a SSH RSA key pair"</h4>
+</div>
+<div class="modal-body">
+<div class="actions">
+<center>
+<input class="btn btn-primary correction_request_test_admin" data-task-id="1223" name="commit" type="submit" value="Start a new test"/>
+<div class="spinner">
+<div class="bounce1"></div>
+<div class="bounce2"></div>
+<div class="bounce3"></div>
+</div>
+<div class="error"></div>
+<div class="info"></div>
+</center>
+</div>
+<div class="result"></div>
+</div>
+</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div>
+<!-- Button containers -->
+</div><h4 class="task">
+    1. For Holberton School loop
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1224">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays <code>Holberton School</code> 10 times.</p><p>Requirement:</p><ul>
+<li>You must use the <code>for</code> loop (<code>while</code> and <code>until</code> are forbidden)</li>
+</ul>
 
 <h4 class="task">
-    1. djb2
+    2. While Holberton School loop
       <span class="alert alert-warning mandatory-optional">
         mandatory
       </span>
-</h4>b'<div class="task_progress_score_bar" data-correction-id="12694" data-task-id="1234">\n<div class="task_progress_bar">\n<div class="task_score_bar">\n</div>\n</div>\n<div class="task_progress_score_text">\n        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)\n      </div>\n</div>'b'<p>Write a hash function implementing the djb2 algorithm.</p>'b'<ul>\n<li>Prototype: <code>unsigned long int hash_djb2(const unsigned char *str);</code></li>\n<li>You are allowed to copy and paste the function from <a href="http://www.cse.yorku.ca/%7Eoz/hash.html">this page</a></li>\n</ul>'b'<pre><code>julien@ubuntu:~/0x19. Hash tables$ cat 1-djb2.c \nunsigned long int hash_djb2(const unsigned char *str)\n{\n    unsigned long int hash;\n    int c;\n\n    hash = 5381;\n    while ((c = *str++))\n    {\n        hash = ((hash &lt;&lt; 5) + hash) + c; /* hash * 33 + c */\n    }\n    return (hash);\n}\njulien@ubuntu:~/0x19. Hash tables$ \njulien@ubuntu:~/0x19. Hash tables$ cat 1-main.c \n#include &lt;stdlib.h&gt;\n#include &lt;string.h&gt;\n#include &lt;stdio.h&gt;\n#include "hash_tables.h"\n\n/**\n * main - check the code for Holberton School students.\n *\n * Return: Always EXIT_SUCCESS.\n */\nint main(void)\n{\n    char *s;\n\n    s = "cisfun";\n    printf("%lu\\n", hash_djb2((unsigned char *)s));\n    s = "Don\'t forget to tweet today";\n    printf("%lu\\n", hash_djb2((unsigned char *)s));\n    s = "98";\n    printf("%lu\\n", hash_djb2((unsigned char *)s));\n    return (EXIT_SUCCESS);\n}\njulien@ubuntu:~/0x19. Hash tables$ gcc -Wall -pedantic -Werror -Wextra 1-main.c 1-djb2.c -o b\njulien@ubuntu:~/0x19. Hash tables$ ./b \n6953392314605\n3749890792216096085\n5861846\njulien@ubuntu:~/0x19. Hash tables$ \n</code></pre>'
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1225">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays <code>Holberton School</code> 10 times.</p><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+</ul>
 
 <h4 class="task">
-    2. key -&gt; index
+    3. Until Holberton School loop
       <span class="alert alert-warning mandatory-optional">
         mandatory
       </span>
-</h4>b'<div class="task_progress_score_bar" data-correction-id="12694" data-task-id="1235">\n<div class="task_progress_bar">\n<div class="task_score_bar">\n</div>\n</div>\n<div class="task_progress_score_text">\n        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)\n      </div>\n</div>'b'<p>Write a function that gives you the index of a key.</p>'b'<ul>\n<li>Prototype: <code>unsigned long int key_index(const unsigned char *key, unsigned long int size);</code>\n<ul>\n<li>where <code>key</code> is the key</li>\n<li>and <code>size</code> is the size of the array of the hash table</li>\n</ul></li>\n<li>This function should use the <code>hash_djb2</code> function that you wrote earlier</li>\n<li>Returns the index at which the key/value pair should be stored in the array of the hash table</li>\n<li>You will have to use this hash function for all the next tasks</li>\n</ul>'b'<pre><code>julien@ubuntu:~/0x19. Hash tables$ cat 2-main.c \n#include &lt;stdlib.h&gt;\n#include &lt;string.h&gt;\n#include &lt;stdio.h&gt;\n#include "hash_tables.h"\n\n/**\n * main - check the code for Holberton School students.\n *\n * Return: Always EXIT_SUCCESS.\n */\nint main(void)\n{\n    char *s;\n    unsigned long int hash_table_array_size;\n\n    hash_table_array_size = 1024;\n    s = "cisfun";\n    printf("%lu\\n", hash_djb2((unsigned char *)s));\n    printf("%lu\\n", key_index((unsigned char *)s, hash_table_array_size));\n    s = "Don\'t forget to tweet today";\n    printf("%lu\\n", hash_djb2((unsigned char *)s));\n    printf("%lu\\n", key_index((unsigned char *)s, hash_table_array_size));\n    s = "98";\n    printf("%lu\\n", hash_djb2((unsigned char *)s));\n    printf("%lu\\n", key_index((unsigned char *)s, hash_table_array_size));  \n    return (EXIT_SUCCESS);\n}\njulien@ubuntu:~/0x19. Hash tables$ gcc -Wall -pedantic -Werror -Wextra 2-main.c 1-djb2.c 2-key_index.c -o c\njulien@ubuntu:~/0x19. Hash tables$ ./c \n6953392314605\n237\n3749890792216096085\n341\n5861846\n470\njulien@ubuntu:~/0x19. Hash tables$ \n</code></pre>'
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1226">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays <code>Holberton School</code> 10 times.</p><p>Requirements:</p><ul>
+<li>You must use the <code>until</code> loop (<code>for</code> and <code>while</code> are forbidden)</li>
+</ul>
 
 <h4 class="task">
-    3. &gt;&gt;&gt; ht['betty'] = 'holberton'
+    4. If 9, say Hi!
       <span class="alert alert-warning mandatory-optional">
         mandatory
       </span>
-</h4>b'<div class="task_progress_score_bar" data-correction-id="12694" data-task-id="1236">\n<div class="task_progress_bar">\n<div class="task_score_bar">\n</div>\n</div>\n<div class="task_progress_score_text">\n        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)\n      </div>\n</div>'b'<p>Write a function that adds an element to the hash table.</p>'b'<ul>\n<li>Prototype: <code>int hash_table_set(hash_table_t *ht, const char *key, const char *value);</code>\n<ul>\n<li>Where <code>ht</code> is the hash table you want to add or update the key/value to</li>\n<li><code>key</code> is the key. <code>key</code> can not be an empty string</li>\n<li>and <code>value</code> is the value associated with the key. <code>value</code> can be an empty string</li>\n</ul></li>\n<li>Returns: <code>1</code> if it succeeded, <code>0</code> otherwise</li>\n<li>In case of collision, add the new node at the beginning of the list</li>\n</ul>'b'<pre><code>julien@ubuntu:~/0x19. Hash tables$ cat 3-main.c \n#include &lt;stdlib.h&gt;\n#include &lt;string.h&gt;\n#include &lt;stdio.h&gt;\n#include "hash_tables.h"\n\n/**\n * main - check the code for Holberton School students.\n *\n * Return: Always EXIT_SUCCESS.\n */\nint main(void)\n{\n    hash_table_t *ht;\n\n    ht = hash_table_create(1024);\n    hash_table_set(ht, "betty", "holberton");\n    return (EXIT_SUCCESS);\n}\njulien@ubuntu:~/0x19. Hash tables$ \n</code></pre>'b'<p><em>Tip from <a href="https://twitter.com/JennieZChu">Jennie</a></em>: if you want to test for collisions, here are some strings that collide using the djb2 algorithm:</p>'b'<ul>\n<li>hetairas collides with mentioner</li>\n<li>heliotropes collides with neurospora</li>\n<li>depravement collides with serafins</li>\n<li>stylist collides with subgenera</li>\n<li>joyful collides with synaphea</li>\n<li>redescribed collides with urites</li>\n<li>dram collides with vivency</li>\n</ul>'
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1227">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays <code>Holberton School</code> 10 times, but for the 9th iteration, displays <code>Holberton School</code> <em>and then</em> <code>Hi</code> on a new line.</p><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>if</code> statement</li>
+</ul>
 
 <h4 class="task">
-    4. &gt;&gt;&gt; ht['betty']
+    5. 4 bad luck, 8 is your chance
       <span class="alert alert-warning mandatory-optional">
         mandatory
       </span>
-</h4>b'<div class="task_progress_score_bar" data-correction-id="12694" data-task-id="1251">\n<div class="task_progress_bar">\n<div class="task_score_bar">\n</div>\n</div>\n<div class="task_progress_score_text">\n        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)\n      </div>\n</div>'b'<p>Write a function that retrieves a value associated with a key.</p>'b"<ul>\n<li>Prototype: <code>char *hash_table_get(const hash_table_t *ht, const char *key);</code>\n<ul>\n<li>where <code>ht</code> is the hash table you want to look into</li>\n<li>and <code>key</code> is the key you are looking for</li>\n</ul></li>\n<li>Returns the value associated with the element, or <code>NULL</code> if <code>key</code> couldn't be found</li>\n</ul>"b'<pre><code>julien@ubuntu:~/0x19. Hash tables$ cat 4-main.c \n#include &lt;stdlib.h&gt;\n#include &lt;string.h&gt;\n#include &lt;stdio.h&gt;\n#include "hash_tables.h"\n\n/**\n * main - check the code for Holberton School students.\n *\n * Return: Always EXIT_SUCCESS.\n */\nint main(void)\n{\n    hash_table_t *ht;\n    char *value;\n\n    ht = hash_table_create(1024);\n    hash_table_set(ht, "c", "fun");\n    hash_table_set(ht, "python", "awesome");\n    hash_table_set(ht, "Jennie", "and Jay love asm");\n    hash_table_set(ht, "N", "queens");\n    hash_table_set(ht, "Asterix", "Obelix");\n    hash_table_set(ht, "Betty", "Holberton");\n    hash_table_set(ht, "98", "Battery Street");\n    hash_table_set(ht, "c", "isfun");\n\n    value = hash_table_get(ht, "python");\n    printf("%s:%s\\n", "python", value);\n    value = hash_table_get(ht, "Jennie");\n    printf("%s:%s\\n", "Jennie", value);\n    value = hash_table_get(ht, "N");\n    printf("%s:%s\\n", "N", value);\n    value = hash_table_get(ht, "Asterix");\n    printf("%s:%s\\n", "Asterix", value);\n    value = hash_table_get(ht, "Betty");\n    printf("%s:%s\\n", "Betty", value);\n    value = hash_table_get(ht, "98");\n    printf("%s:%s\\n", "98", value);\n    value = hash_table_get(ht, "c");\n    printf("%s:%s\\n", "c", value);\n    value = hash_table_get(ht, "javascript");\n    printf("%s:%s\\n", "javascript", value);\n    return (EXIT_SUCCESS);\n}\njulien@ubuntu:~/0x19. Hash tables$ gcc -Wall -pedantic -Werror -Wextra 4-main.c 0-hash_table_create.c 1-djb2.c 2-key_index.c 3-hash_table_set.c 4-hash_table_get.c -o e\njulien@ubuntu:~/0x19. Hash tables$ ./e \npython:awesome\nJennie:and Jay love asm\nN:queens\nAsterix:Obelix\nBetty:Holberton\n98:Battery Street\nc:isfun\njavascript:(null)\njulien@ubuntu:~/0x19. Hash tables$ \n</code></pre>'
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1228">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that loops from 1 to 10 and:</p><ul>
+<li>displays <code>bad luck</code> for the 4th loop iteration</li>
+<li>displays <code>good luck</code> for the 8th loop iteration</li>
+<li>displays <code>Holberton School</code> for the other iterations</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>if</code>, <code>elif</code> and <code>else</code> statements</li>
+</ul>
 
 <h4 class="task">
-    5. &gt;&gt;&gt; print(ht)
+    6. Superstitious numbers
       <span class="alert alert-warning mandatory-optional">
         mandatory
       </span>
-</h4>b'<div class="task_progress_score_bar" data-correction-id="12694" data-task-id="1252">\n<div class="task_progress_bar">\n<div class="task_score_bar">\n</div>\n</div>\n<div class="task_progress_score_text">\n        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)\n      </div>\n</div>'b'<p>Write a function that prints a hash table.</p>'b"<ul>\n<li>Prototype: <code>void hash_table_print(const hash_table_t *ht);</code>\n<ul>\n<li>where <code>ht</code> is the hash table</li>\n</ul></li>\n<li>You should print the key/value in the order that they appear in the array of hash table\n\n<ul>\n<li>Order: array, list</li>\n</ul></li>\n<li>Format: see example</li>\n<li>If <code>ht</code> is NULL, don't print anything</li>\n</ul>"b'<pre><code>julien@ubuntu:~/0x19. Hash tables$ cat 5-main.c \n#include &lt;stdlib.h&gt;\n#include &lt;string.h&gt;\n#include &lt;stdio.h&gt;\n#include "hash_tables.h"\n\n/**\n * main - check the code for Holberton School students.\n *\n * Return: Always EXIT_SUCCESS.\n */\nint main(void)\n{\n    hash_table_t *ht;\n\n    ht = hash_table_create(1024);\n    hash_table_print(ht);\n    hash_table_set(ht, "c", "fun");\n    hash_table_set(ht, "python", "awesome");\n    hash_table_set(ht, "Jennie", "and Jay love asm");\n    hash_table_set(ht, "N", "queens");\n    hash_table_set(ht, "Asterix", "Obelix");\n    hash_table_set(ht, "Betty", "Holberton");\n    hash_table_set(ht, "98", "Battery Street");\n    hash_table_print(ht);\n    return (EXIT_SUCCESS);\n}\njulien@ubuntu:~/0x19. Hash tables$ gcc -Wall -pedantic -Werror -Wextra 5-main.c 0-hash_table_create.c 1-djb2.c 2-key_index.c 3-hash_table_set.c 4-hash_table_get.c 5-hash_table_print.c -o f\njulien@ubuntu:~/0x19. Hash tables$ ./f \n{}\n{\'Betty\': \'Holberton\', \'python\': \'awesome\', \'Jennie\': \'and Jay love asm\', \'98\': \'Battery Street\', \'N\': \'queens\', \'c\': \'fun\', \'Asterix\': \'Obelix\'}\njulien@ubuntu:~/0x19. Hash tables$ \n</code></pre>'
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1229">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays numbers from 1 to 20 and:</p><ul>
+<li>displays <code>bad luck from China</code> for the 4th loop iteration</li>
+<li>displays <code>bad luck from Japan</code> for the 9th loop iteration</li>
+<li>displays <code>bad luck from Italy</code> for the 17th loop iteration</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>case</code> statement</li>
+</ul>
 
 <h4 class="task">
-    6. &gt;&gt;&gt; del ht
+    7. Clock
       <span class="alert alert-warning mandatory-optional">
         mandatory
       </span>
-</h4>b'<div class="task_progress_score_bar" data-correction-id="12694" data-task-id="1388">\n<div class="task_progress_bar">\n<div class="task_score_bar">\n</div>\n</div>\n<div class="task_progress_score_text">\n        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)\n      </div>\n</div>'b'<p>Write a function that deletes a hash table.</p>'b'<ul>\n<li>Prototype: <code>void hash_table_delete(hash_table_t *ht);</code>\n<ul>\n<li>where <code>ht</code> is the hash table</li>\n</ul></li>\n</ul>'b'<pre><code>julien@ubuntu:~/0x19. Hash tables$ cat 6-main.c \n#include &lt;stdlib.h&gt;\n#include &lt;string.h&gt;\n#include &lt;stdio.h&gt;\n#include "hash_tables.h"\n\n/**\n * main - check the code for Holberton School students.\n *\n * Return: Always EXIT_SUCCESS.\n */\nint main(void)\n{\n    hash_table_t *ht;\n    char *key;\n    char *value;\n\n    ht = hash_table_create(1024);\n    hash_table_set(ht, "c", "fun");\n    hash_table_set(ht, "python", "awesome");\n    hash_table_set(ht, "Jennie", "and Jay love asm");\n    hash_table_set(ht, "N", "queens");\n    hash_table_set(ht, "Asterix", "Obelix");\n    hash_table_set(ht, "Betty", "Holberton");\n    hash_table_set(ht, "98", "Battery Streetz");\n    key = strdup("Tim");\n    value = strdup("Britton");\n    hash_table_set(ht, key, value);\n    key[0] = \'\\0\';\n    value[0] = \'\\0\';\n    free(key);\n    free(value);\n    hash_table_set(ht, "98", "Battery Street"); \n    hash_table_set(ht, "hetairas", "Jennie");\n    hash_table_set(ht, "hetairas", "Jennie Z");\n    hash_table_set(ht, "mentioner", "Jennie");\n    hash_table_set(ht, "hetairas", "Jennie Z Chu");\n    hash_table_print(ht);\n    hash_table_delete(ht);\n    return (EXIT_SUCCESS);\n}\njulien@ubuntu:~/0x19. Hash tables$ gcc -Wall -pedantic -Werror -Wextra 6-main.c 0-hash_table_create.c 1-djb2.c 2-key_index.c 3-hash_table_set.c 4-hash_table_get.c 5-hash_table_print.c 6-hash_table_delete.c -o g\njulien@ubuntu:~/0x19. Hash tables$ valgrind ./g\n==6621== Memcheck, a memory error detector\n==6621== Copyright (C) 2002-2013, and GNU GPL\'d, by Julian Seward et al.\n==6621== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info\n==6621== Command: ./g\n==6621== \n{\'Betty\': \'Holberton\', \'mentioner\': \'Jennie\', \'hetairas\': \'Jennie Z Chu\', \'python\': \'awesome\', \'Jennie\': \'and Jay love asm\', \'98\': \'Battery Street\', \'N\': \'queens\', \'c\': \'fun\', \'Tim\': \'Britton\', \'Asterix\': \'Obelix\'}\n==6621== \n==6621== HEAP SUMMARY:\n==6621==     in use at exit: 0 bytes in 0 blocks\n==6621==   total heap usage: 37 allocs, 37 frees, 8,646 bytes allocated\n==6621== \n==6621== All heap blocks were freed -- no leaks are possible\n==6621== \n==6621== For counts of detected and suppressed errors, rerun with: -v\n==6621== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)\njulien@ubuntu:~/0x19. Hash tables$ \n</code></pre>'
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1230">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays the time for 12 hours and 59 minutes:</p><ul>
+<li>display hours from 0 to 12</li>
+<li>display minutes from 1 to 59</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+</ul><p>Note that in this example, we only display the first 70 lines using the <code>head</code> command.</p>
+
+<h4 class="task">
+    8. For ls
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1231">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays:</p><ul>
+<li>The content of the current directory</li>
+<li>In a list format</li>
+<li>Where only the part of the name after the first dash is displayed (refer to the example)</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>for</code> loop (<code>while</code> and <code>until</code> are forbidden)</li>
+<li>Do not display hidden files</li>
+</ul>
+
+<h4 class="task">
+    9. To file, or not to file
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1266">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that gives you information about the <code>holbertonschool</code> file.</p><p>Requirements:</p><ul>
+<li>You must use <code>if</code> and, <code>else</code> (<code>case</code> is forbidden)</li>
+<li>Your Bash script should check if the file exists and print:
+
+<ul>
+<li>if the file exists: <code>holbertonschool file exists</code></li>
+<li>if the file does not exist: <code>holbertonschool file does not exist</code></li>
+</ul></li>
+<li>If the file exists, print:
+
+<ul>
+<li>if the file is empty: <code>holbertonschool file is empty</code></li>
+<li>if the file is no empty: <code>holbertonschool file is not empty</code></li>
+<li>if the file is a regular file: <code>holbertonschool is a regular file</code></li>
+<li>if the file is not a regular file: (nothing)</li>
+</ul></li>
+</ul>
+
+<h4 class="task">
+    10. FizzBuzz
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1279">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays numbers from 1 to 100.</p><p>Requirements:</p><ul>
+<li>Displays <code>FizzBuzz</code> when the number is a multiple of 3 and 5</li>
+<li>Displays <code>Fizz</code> when the number is multiple of 3</li>
+<li>Displays <code>Buzz</code> when the number is a multiple of 5</li>
+<li>Otherwise, displays the number</li>
+<li>In a list format</li>
+</ul>
 

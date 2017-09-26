@@ -1,6 +1,7 @@
 # ReadMEGenerator V1
 Release Date: 08-25-17
 Created by, [Anoop Macharla](https://www.linkedin.com/in/amacharla/)
+
 [Email](mailto:149@holbertonschool.com): 149@holbertonschool.com
 
 ## Installation

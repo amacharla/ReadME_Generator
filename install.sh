@@ -3,8 +3,8 @@
 # Created by Anoop Macharla (149@holbertonschool.com) 08/25/17
 
 if [ "$(id -u)" != "0" ]; then
-	echo "Sorry, your not root"
-	echo "Rerun with sudo"
+	echo "Sorry, your not root!"
+	echo "Rerun with: sudo ./install.sh"
 	exit 1
 fi
 
@@ -23,5 +23,6 @@ cp "${README_GENERATOR}.py" "${APP_PATH}/${README_GENERATOR}"
 chmod +x "${APP_PATH}/${README_GENERATOR}"
 ln -s "${APP_PATH}/${README_GENERATOR}" "${BIN_PATH}/${README_GENERATOR}"
 
+echo -e "--------------------------"
 echo -e "Enjoy -Anoop M."
 echo -e "Use: readme4me [README.MD]"

@@ -1,7 +1,6 @@
 <h1 class="gap">0x04. Loops, conditions and parsing</h1>
 
 
-
 <h4 class="task">
     0. Create a SSH RSA key pair
       <span class="alert alert-warning mandatory-optional">
@@ -18,7 +17,6 @@
 </ul><p>SSH and RSA keys will be covered in depth in a later project.</p>
 
 
-
 <h4 class="task">
     1. For Holberton School loop
       <span class="alert alert-warning mandatory-optional">
@@ -27,7 +25,6 @@
 </h4><p>Write a Bash script that displays <code>Holberton School</code> 10 times.</p><p>Requirement:</p><ul>
 <li>You must use the <code>for</code> loop (<code>while</code> and <code>until</code> are forbidden)</li>
 </ul>
-
 
 
 <h4 class="task">
@@ -40,7 +37,6 @@
 </ul>
 
 
-
 <h4 class="task">
     3. Until Holberton School loop
       <span class="alert alert-warning mandatory-optional">
@@ -49,7 +45,6 @@
 </h4><p>Write a Bash script that displays <code>Holberton School</code> 10 times.</p><p>Requirements:</p><ul>
 <li>You must use the <code>until</code> loop (<code>for</code> and <code>while</code> are forbidden)</li>
 </ul>
-
 
 
 <h4 class="task">
@@ -61,7 +56,6 @@
 <li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
 <li>You must use the <code>if</code> statement</li>
 </ul>
-
 
 
 <h4 class="task">
@@ -79,7 +73,6 @@
 </ul>
 
 
-
 <h4 class="task">
     6. Superstitious numbers
       <span class="alert alert-warning mandatory-optional">
@@ -95,7 +88,6 @@
 </ul>
 
 
-
 <h4 class="task">
     7. Clock
       <span class="alert alert-warning mandatory-optional">
@@ -107,7 +99,6 @@
 </ul><p>Requirements:</p><ul>
 <li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
 </ul><p>Note that in this example, we only display the first 70 lines using the <code>head</code> command.</p>
-
 
 
 <h4 class="task">
@@ -123,7 +114,6 @@
 <li>You must use the <code>for</code> loop (<code>while</code> and <code>until</code> are forbidden)</li>
 <li>Do not display hidden files</li>
 </ul>
-
 
 
 <h4 class="task">
@@ -148,7 +138,6 @@
 <li>if the file is not a regular file: (nothing)</li>
 </ul></li>
 </ul>
-
 
 
 <h4 class="task">

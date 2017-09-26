@@ -1,10 +1,6 @@
 # ReadMEGenerator V1
 Release Date: 08-25-17
 
-Created by, [Anoop Macharla](https://www.linkedin.com/in/amacharla/)
-
-Email: 149@holbertonschool.com
-
 ## Installation
 ### Clone
 Clone with SSH:
@@ -28,3 +24,8 @@ Run the `readme4me` command with the **HTML Source file** of the assignment as t
 ```Usage
 readme4me README.md
 ```
+## Author
+Created by, [Anoop Macharla](https://www.linkedin.com/in/amacharla/)
+
+Email: 149@holbertonschool.com
+

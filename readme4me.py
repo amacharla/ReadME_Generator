@@ -18,6 +18,10 @@ soup = BeautifulSoup(fd, 'html.parser')
 def end_mark(element):
         return element.name == "pre" or element.string == "Repo:"
 
+# Contents to skip through
+def skip(element):
+    return element(class_="task_progress_score_text") or element.find("iframe")
+
 #Start conversion process
 readme = ""
 problems = 0
@@ -29,10 +33,7 @@ for starting_point in soup.find_all(class_="task"): # Task found
     readme += '\n' + str(starting_point) # add Task Header
     problems += 1
     for element in starting_point.find_next_siblings(True): # get all requirments
-        if element(class_="task_progress_score_text"): # dont include Score Bar
-            continue
-        if element.name == "iframe":
-            readme += str(element.get('src'))
+        if skip(element): # skip media and progress bar
             continue
         if end_mark(element): # stop at precode or repo info
             readme += '\n\n'

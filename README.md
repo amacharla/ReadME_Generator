@@ -6,8 +6,7 @@
       <span class="alert alert-warning mandatory-optional">
         mandatory
       </span>
-</h4><p><iframe allowfullscreen frameborder="0" height="315" src="https://www.youtube.com/embed/lyZQPjUT5B4" width="560"></iframe><br/>
-<br/></p><p>Write a function that sorts an array of integers in ascending order using the <a href="https://en.wikipedia.org/wiki/Bubble_sort">Bubble sort</a> algorithm</p><ul>
+</h4><p>Write a function that sorts an array of integers in ascending order using the <a href="https://en.wikipedia.org/wiki/Bubble_sort">Bubble sort</a> algorithm</p><ul>
 <li>Prototype: <code>void bubble_sort(int *array, size_t size);</code></li>
 <li>You're expected to print the <code>array</code> after each time you swap two elements (See example below)</li>
 </ul><p>Write in the file <code>0-O</code>, the big O notations of the time complexity of the Bubble sort algorithm, with 1 notation per line:</p><ul>
@@ -22,8 +21,7 @@
       <span class="alert alert-warning mandatory-optional">
         mandatory
       </span>
-</h4><p><iframe allowfullscreen frameborder="0" height="315" src="https://www.youtube.com/embed/ROalU379l3U" width="560"></iframe><br/>
-<br/></p><p>Write a function that sorts a doubly linked list of integers in ascending order using the <a href="https://en.wikipedia.org/wiki/Insertion_sort">Insertion sort</a> algorithm</p><ul>
+</h4><p>Write a function that sorts a doubly linked list of integers in ascending order using the <a href="https://en.wikipedia.org/wiki/Insertion_sort">Insertion sort</a> algorithm</p><ul>
 <li>Prototype: <code>void insertion_sort_list(listint_t **list);</code></li>
 <li>You are not allowed to modify the integer <code>n</code> of a node. You have to swap the nodes themselves.</li>
 <li>You're expected to print the <code>list</code> after each time you swap two elements (See example below)</li>
@@ -39,8 +37,7 @@
       <span class="alert alert-warning mandatory-optional">
         mandatory
       </span>
-</h4><p><iframe allowfullscreen frameborder="0" height="315" src="https://www.youtube.com/embed/Ns4TPTC8whw" width="560"></iframe><br/>
-<br/></p><p>Write a function that sorts an array of integers in ascending order using the <a href="https://en.wikipedia.org/wiki/Selection_sort">Selection sort</a> algorithm</p><ul>
+</h4><p>Write a function that sorts an array of integers in ascending order using the <a href="https://en.wikipedia.org/wiki/Selection_sort">Selection sort</a> algorithm</p><ul>
 <li>Prototype: <code>void selection_sort(int *array, size_t size);</code></li>
 <li>You're expected to print the <code>array</code> after each time you swap two elements (See example below)</li>
 </ul><p>Write in the file <code>2-O</code>, the big O notations of the time complexity of the Selection sort algorithm, with 1 notation per line:</p><ul>
@@ -401,8 +398,7 @@
       <span class="alert alert-info mandatory-optional">
         #advanced
       </span>
-</h4><p><iframe allowfullscreen frameborder="0" height="315" src="https://www.youtube.com/embed/_HJlGWXzlLA" width="560"></iframe><br/>
-<br/></p><p>Write a function that sorts a deck of card.</p><ul>
+</h4><p>Write a function that sorts a deck of card.</p><ul>
 <li>Prototype: <code>void sort_deck(deck_node_t **deck);</code></li>
 <li>You are allowed to use the C standard library function <code>qsort</code></li>
 <li>Please use the following data structures:</li>

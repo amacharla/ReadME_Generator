@@ -1,4 +1,4 @@
-<h4 class="task">
+<h1 class="gap">0x04. Loops, conditions and parsing</h1><h4 class="task">
     0. Create a SSH RSA key pair
       <span class="alert alert-warning mandatory-optional">
         mandatory

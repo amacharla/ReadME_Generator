@@ -2,7 +2,7 @@
 from bs4 import BeautifulSoup, Comment, NavigableString
 from sys import argv
 
-if len(argv) != 2:
+if len(argv) != 2 and argv[1] != "README.md":
     print("Need to pass in README.md with HTML SourceCode")
     exit()
 

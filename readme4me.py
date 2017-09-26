@@ -31,6 +31,9 @@ for starting_point in soup.find_all(class_="task"): # Task found
     for element in starting_point.find_next_siblings(True): # get all requirments
         if element(class_="task_progress_score_text"): # dont include Score Bar
             continue
+        if element.name == "iframe":
+            readme += str(element.get('src'))
+            continue
         if end_mark(element): # stop at precode or repo info
             readme += '\n\n'
             break

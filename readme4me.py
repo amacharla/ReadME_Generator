@@ -25,11 +25,10 @@ readme += str(title) + '\n\n' # add Assignment Title
 # Look for start comments
 print("----- Parsing through {:s} -----".format(str(title.contents)))
 for starting_point in soup.find_all(class_="task"): # set starting point
-    readme += '\n' + str(starting_point) # add Task Header
+    readme += '\n\n' + str(starting_point) # add Task Header
     problems += 1
     for element in starting_point.find_next_siblings(True): # get all requirments
-        if element(class_="task_progress_score_text"):
-            print(element)
+        if element(class_="task_progress_score_text"): # get rid of Score Bar
             continue
         if end_mark(element): # stop at precode
             readme += '\n\n'

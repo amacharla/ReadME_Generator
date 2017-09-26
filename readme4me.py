@@ -11,9 +11,9 @@ print("===== Reading Source Code =====")
 fd = open(argv[1], 'r')
 soup = BeautifulSoup(fd, 'html.parser')
 
-# Identify the end location, stop at <pre>
+# Identify the end location, stop at <pre> or before Repository info
 def end_mark(element):
-    return element.name == "pre"
+        return element.name == "pre" or element.string == "Repo:"
 
 #Start conversion process
 print("===== Started Conversion Process =====")
@@ -30,7 +30,7 @@ for starting_point in soup.find_all(class_="task"): # set starting point
     for element in starting_point.find_next_siblings(True): # get all requirments
         if element(class_="task_progress_score_text"): # get rid of Score Bar
             continue
-        if end_mark(element): # stop at precode
+        if end_mark(element): # stop at precode or repo info
             readme += '\n\n'
             break
         readme += str(element)

@@ -15,42 +15,9 @@
 <li>Fill the <em>SSH public key</em> field of your <a href="https://intranet.hbtn.io/users/my_profile">intranet profile</a> with your public key</li>
 <li><strong>Keep the private key to yourself in a secure location</strong>, you will use it later to connect to your servers using SSH. Some storing ideas are Dropbox, Google Drive, password manager, USB key. Failing to do so will prevent you to access your servers, which will prevent you from doing your projects</li>
 <li>If you decide to add a passphrase to your key, make sure to save this passphrase in a secure location, you will not be able to use your keys without the passphrase</li>
-</ul><p>SSH and RSA keys will be covered in depth in a later project.</p><p class="sm-gap"><strong>Repo:</strong></p><ul>
-<li>GitHub repository: <code>holberton-system_engineering-devops</code></li>
-<li>Directory: <code>0x04-loops_conditions_and_parsing</code></li>
-<li>File: <code>0-RSA_public_key.pub</code></li>
-</ul><div class="student_correction_requests">
-<!-- Button test code -->
-<button class="task_correction_modal btn btn-default " data-target="#task-test-correction-1223-correction-modal" data-task-id="1223" data-toggle="modal">
-        Check your code?
-      </button>
-<div class="modal fade task_correction_modal" id="task-test-correction-1223-correction-modal">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
-<h4 class="modal-title">Correction of "Create a SSH RSA key pair"</h4>
-</div>
-<div class="modal-body">
-<div class="actions">
-<center>
-<input class="btn btn-primary correction_request_test_admin" data-task-id="1223" name="commit" type="submit" value="Start a new test"/>
-<div class="spinner">
-<div class="bounce1"></div>
-<div class="bounce2"></div>
-<div class="bounce3"></div>
-</div>
-<div class="error"></div>
-<div class="info"></div>
-</center>
-</div>
-<div class="result"></div>
-</div>
-</div><!-- /.modal-content -->
-</div><!-- /.modal-dialog -->
-</div>
-<!-- Button containers -->
-</div>
+</ul><p>SSH and RSA keys will be covered in depth in a later project.</p>
+
+
 
 <h4 class="task">
     1. For Holberton School loop

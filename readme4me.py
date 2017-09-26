@@ -28,6 +28,9 @@ for starting_point in soup.find_all(class_="task"): # set starting point
     readme += '\n' + str(starting_point) # add Task Header
     problems += 1
     for element in starting_point.find_next_siblings(True): # get all requirments
+        if element(class_="task_progress_score_text"):
+            print(element)
+            continue
         if end_mark(element): # stop at precode
             readme += '\n\n'
             break

@@ -20,7 +20,7 @@
 	<script src="/assets/application-dd9af697c8e02b44ac08fa0b1c07a12ecd9b7f3beabd8b5fbd4fa2d50b4544c6.js"></script>
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.ico" />
 	<meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="Ubd8a44LPCKP5qb5XaoOzCTmUibHngtU3YnUgj0VTKZ2qbAJCtka8c/jjNBUCpQ6A6iQqcvEiL2bFVHhwqEWOA==" />
+<meta name="csrf-token" content="jEdWYbAFInUwDCVay7SWP3Ap2uqG7AP5L/MV9XOPGufwj/H1fPUtAfbDgo1iPLzCfPX+6rr+1nEqZ3zSxHmCfQ==" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -212,21 +212,23 @@
       <article class="">
 
         
-<h1 class="gap">0x19. C - Hash tables</h1>
+<h1 class="gap">0x04. Loops, conditions and parsing</h1>
 
-<div id="project_id" style="display: none" data-project-id="253"></div>
+<div id="project_id" style="display: none" data-project-id="251"></div>
 
 <p class="sm-gap">
   <small>
     <i class="fa fa-folder-open"></i>
-    Low-level programming &amp; Algorithm ― Data structures and Algorithms
+    System engineering &amp; DevOps ― Bash
+      &nbsp;
+      <a id="block-modal-link" data-toggle="modal" data-target="#block-modal" href="#"><i class="fa fa-question-circle"></i></a>
   </small>
 </p>
 
   <p>
     <em>
       <small>
-        <i class="fa fa-user"></i> by Julien Barbier, co-founder at Holberton School
+        <i class="fa fa-user"></i> by Sylvain Kalache
       </small>
     </em>
   </p>
@@ -244,8 +246,8 @@
   <p>
     <small>
       <i class="fa fa-calendar"></i>
-        Ongoing second chance project - started 08-31-2017, must end by 09-09-2017 (in 2 days)
-        - <span id="student_task_done_percentage">you're 71</span>% done.
+        Ongoing second chance project - started 09-22-2017, must end by 09-27-2017 (in 1 day)
+        - <span id="student_task_done_percentage">you're 100</span>% done.
     </small>
   </p>
 
@@ -257,85 +259,80 @@
   </p>
 
 
+  <div class="gap formatted-content">
+    <p style="margin-bottom: 0"><em>For this project, students are expected to look at this concept:</em></p>
+    <ul style="margin-top: 5px">
+        <li>
+          <em><a href="/concepts/9">Shell</a></em>
+        </li>
+    </ul>
+  </div>
 
 
 <article id="description" class="gap formatted-content">
   <h2>Readme</h2>
 
-<p>Watch <a href="https://www.youtube.com/watch?v=MfhjkfocRR0">What is a HashTable Data Structure - Introduction to Hash Tables , Part 0</a> and read <a href="https://en.wikipedia.org/wiki/Hash_function">Hash function</a>, <a href="https://en.wikipedia.org/wiki/Hash_table">Hash table</a> and <a href="http://www.cse.yorku.ca/%7Eoz/hash.html">Hash Functions</a>.</p>
+<p><a href="https://www.youtube.com/watch?v=2HzqTBBKqp0"><img src="http://i.imgur.com/ZVjF71n.png" alt="Getting started with SRE track"></a></p>
+
+<p>Read:</p>
+
+<ul>
+<li><a href="http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_09_01.html">The <code>for</code> loop</a></li>
+<li><a href="http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_09_02.html">The <code>while</code> loop</a></li>
+<li><a href="http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_09_03.html">The <code>until</code> loop</a></li>
+<li><a href="http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-7.html#ss7.1">Loops sample</a></li>
+<li><a href="http://tldp.org/LDP/abs/html/ops.html">Variable assignment and arithmetic</a></li>
+<li><a href="http://tldp.org/LDP/abs/html/comparison-ops.html">Comparison operators</a></li>
+<li><a href="http://tldp.org/LDP/abs/html/fto.html">File test operators</a></li>
+<li><a href="https://www.cyberciti.biz/tips/finding-bash-perl-python-portably-using-env.html">Make your scripts portable</a></li>
+<li>man: <code>env</code>, <code>cut</code></li>
+<li>help: <code>for</code>, <code>while</code>, <code>until</code>, <code>if</code></li>
+</ul>
 
 <h2>What you should learn from this project</h2>
 
-<p>At the end of this project you are expected to be able to explain to anyone, without the help of Google:</p>
+<p>At the end of this project you are expected to be able to explain, <strong>without the help of Google</strong>:</p>
 
 <ul>
-<li>What is a hash function</li>
-<li>What makes a good hash function</li>
-<li>What is a hash table, how do they work and how to use them</li>
-<li>What is a collision and what are the main ways of dealing with collisions in the context of a hash table</li>
-<li>What are the advantages and drawbacks of using hash tables</li>
-<li>What are the most common use cases of hash tables</li>
+<li>How to create SSH keys</li>
+<li>What is the advantage of using  <code>#!/usr/bin/env bash</code> over <code>#!/bin/bash</code></li>
+<li>How to use <code>while</code>, <code>until</code> and <code>for</code> loops</li>
+<li>How to use <code>if</code>, <code>else</code>, <code>elif</code> and <code>case</code> condition statements</li>
+<li>How to use the <code>cut</code> command</li>
+<li>What are files and other comparison operators, and how to use them</li>
 </ul>
 
 <h2>Requirements</h2>
 
 <ul>
 <li>Allowed editors: <code>vi</code>, <code>vim</code>, <code>emacs</code></li>
-<li>All your files will be compiled on Ubuntu 14.04 LTS</li>
-<li>Your programs and functions will be compiled with <code>gcc 4.8.4</code> using the flags <code>-Wall</code> <code>-Werror</code> <code>-Wextra</code> <code>and -pedantic</code></li>
+<li>All your files will be interpreted on Ubuntu 14.04 LTS</li>
 <li>All your files should end with a new line</li>
-<li>A <code>README.md</code> file, at the root of the folder of the project is mandatory</li>
-<li>Your code should use the <code>Betty</code> style. It will be checked using <a href="https://github.com/holbertonschool/Betty/blob/master/betty-style.pl">betty-style.pl</a> and <a href="https://github.com/holbertonschool/Betty/blob/master/betty-doc.pl">betty-doc.pl</a></li>
-<li>You are not allowed to use global variables</li>
-<li>No more than 5 functions per file</li>
-<li>You are allowed to use the C standard library</li>
-<li>The prototypes of all your functions should be included in your header file called <code>hash_tables.h</code></li>
-<li>Don&#39;t forget to push your header file</li>
-<li>All your header files should be include guarded</li>
-<li>Please use those data structures for this project:</li>
+<li>A <code>README.md</code> file, at the root of the folder of the project, is mandatory</li>
+<li>All your Bash script files must be executable</li>
+<li>You are not allowed to use <code>awk</code></li>
+<li>Your Bash script must pass <code>Shellcheck</code> (version <code>0.3.3-1~ubuntu14.04.1</code> via <code>apt-get</code>) without any error</li>
+<li>The first line of all your Bash scripts should be exactly <code>#!/usr/bin/env bash</code></li>
+<li>The second line of all your Bash scripts should be a comment explaining what is the script doing</li>
 </ul>
 
-<pre><code>/**
- * struct hash_node_s - Node of a hash table
- *
- * @key: The key, string
- * The key is unique in the HashTable
- * @value: The value corresponding to a key
- * @next: A pointer to the next node of the List
- */
-typedef struct hash_node_s
-{
-     char *key;
-     char *value;
-     struct hash_node_s *next;
-} hash_node_t;
+<h2>Shellcheck</h2>
 
-/**
- * struct hash_table_s - Hash table data structure
- *
- * @size: The size of the array
- * @array: An array of size @size
- * Each cell of this array is a pointer to the first node of a linked list,
- * because we want our HashTable to use a Chaining collision handling
- */
-typedef struct hash_table_s
-{
-     unsigned long int size;
-     hash_node_t **array;
-} hash_table_t;
-</code></pre>
+<p><a href="https://github.com/koalaman/shellcheck">Shellcheck</a> is a tool that will help you write proper Bash scripts. It will make recommendations on your syntax, semantic and provide advice on edge cases that you might not have thought about. <code>Shellcheck</code> is your friend! <strong>All your Bash scripts must pass <code>Shellcheck</code> without any error or you will not get any point on the task</strong>.</p>
 
-<h2>Tests</h2>
+<p><code>Shellcheck</code> is available on school&#39;s computers, if you want to use it on your own computer, here is how to <a href="https://github.com/koalaman/shellcheck#installing">install it</a>.</p>
 
-<ul>
-<li>We strongly encourage you to work all together on a set of tests</li>
-</ul>
+<p>Examples:</p>
 
-<h2>Python dictionaries</h2>
+<p>Not passing <code>Shellcheck</code>:<br />
+<br />
+<img src="http://i.imgur.com/Vxotqyj.png" alt="screenshot of terminal showing Shellcheck suggesting improvement for the Bash script"></p>
 
-<p>Python dictionaries are implemented using hash tables. When you will be done with this project, you will be able to better understand the power and simplicity of Python dictionaries. So much is actually happening when you type <code>d = {&#39;a&#39;: 1, &#39;b&#39;: 2}</code>, but everything looks so simple for the user. Python doesn&#39;t use the exact same implementation than the one you will work on today though. If you are curious on how it works under the hood, here is a good blog post about <a href="http://www.laurentluce.com/posts/python-dictionary-implementation/">how dictionaries are implemented in Python 2.7</a> (not mandatory).</p>
+<p>Passing <code>Shellcheck</code>:<br />
+<br />
+<img src="http://i.imgur.com/ubHWxDU.png" alt="screenshot of terminal showing  a Bash script successfully passing Shellcheck"></p>
 
-<p>Note that all dictionaries are not implemented using hash tables and there is a difference between a dictionary and a hash table. <a href="http://stackoverflow.com/questions/2061222/what-is-the-true-difference-between-a-dictionary-and-a-hash-table">Read more here</a> (not mandatory).</p>
+<p>For every feedback, Shellcheck will provide a code that you can use to get more information about the issue, for example for code <code>SC2034</code>, you can browse <a href="https://github.com/koalaman/shellcheck/wiki/SC2034">https://github.com/koalaman/shellcheck/wiki/<strong>SC2034</strong></a>.</p>
 
 </article>
 
@@ -344,14 +341,14 @@ typedef struct hash_table_s
     <hr class="gap">
     <h2 class="gap">Tasks</h2>
     <section class="formatted-content">
-          <div data-role="task1233" data-position="1">
-              <div class=" clearfix gap" id="task-1233">
+          <div data-role="task1223" data-position="1">
+              <div class=" clearfix gap" id="task-1223">
 <span id="user_id" data-id="149"></span>
 
     <div class="student_task_controls">
 
       <!-- button Done -->
-        <button class="student_task_done btn btn-default no" data-task-id="1233">
+        <button class="student_task_done btn btn-default yes" data-task-id="1223">
           <span class="no"><i class="fa fa-square-o"></i></span>
           <span class="yes"><i class="fa fa-check-square-o"></i></span>
           <span class="pending"><i class="fa fa-spinner fa-pulse"></i></span>
@@ -360,15 +357,15 @@ typedef struct hash_table_s
         <br>
 
       <!-- button Help! -->
-      <button class="users_done_for_task btn btn-default btn-default" data-task-id="1233" data-project-id="253" data-toggle="modal" data-target="#task-1233-users-done-modal">
+      <button class="users_done_for_task btn btn-default btn-default" data-task-id="1223" data-project-id="251" data-toggle="modal" data-target="#task-1223-users-done-modal">
         Help
       </button>
-      <div class="modal fade users-done-modal" id="task-1233-users-done-modal" data-task-id="1233" data-project-id="253">
+      <div class="modal fade users-done-modal" id="task-1223-users-done-modal" data-task-id="1223" data-project-id="251">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title">Students who are done with "&gt;&gt;&gt; ht = {}"</h4>
+              <h4 class="modal-title">Students who are done with "Create a SSH RSA key pair"</h4>
             </div>
             <div class="modal-body">
               <div class="list-group">
@@ -387,7 +384,7 @@ typedef struct hash_table_s
     </div>
 
   <h4 class="task">
-    0. &gt;&gt;&gt; ht = {}
+    0. Create a SSH RSA key pair
       <span class="alert alert-warning mandatory-optional">
         mandatory
       </span>
@@ -395,7 +392,7 @@ typedef struct hash_table_s
 
 
   <!-- Progress vs Score -->
-    <div class="task_progress_score_bar" data-task-id="1233" data-correction-id="12694">
+    <div class="task_progress_score_bar" data-task-id="1223" data-correction-id="13547">
       <div class="task_progress_bar">
         <div class="task_score_bar">
         </div>
@@ -406,64 +403,29 @@ typedef struct hash_table_s
     </div>
 
 <!-- Task Body -->
-  <p>Write a function that creates a hash table.</p>
+  <p>Read for this task:</p>
 
 <ul>
-<li>Prototype: <code>hash_table_t *hash_table_create(unsigned long int size);</code>
-
-<ul>
-<li>where <code>size</code> is the size of the array</li>
-</ul></li>
-<li>Returns a pointer to the newly created hash table</li>
-<li>If something went wrong, your function should return <code>NULL</code></li>
+<li><a href="http://askubuntu.com/questions/61557/how-do-i-set-up-ssh-authentication-keys">Linux and Mac OS users</a></li>
+<li><a href="https://support.rackspace.com/how-to/generating-rsa-keys-with-ssh-puttygen/">Windows users</a></li>
 </ul>
 
-<pre><code>julien@ubuntu:~/0x19. Hash tables$ cat 0-main.c 
-#include &lt;stdlib.h&gt;
-#include &lt;string.h&gt;
-#include &lt;stdio.h&gt;
-#include &quot;hash_tables.h&quot;
+<p>man: <code>ssh-keygen</code></p>
 
-/**
- * main - check the code for Holberton School students.
- *
- * Return: Always EXIT_SUCCESS.
- */
-int main(void)
-{
-    hash_table_t *ht;
+<p>You will soon have to manage your own <a href="https://intranet.hbtn.io/concepts/17">servers</a> hosted on remote <a href="https://youtu.be/iuqXFC_qIvA?t=46">data centers</a>. We need to set them up with your RSA public key so that you can access them via SSH.</p>
 
-    ht = hash_table_create(1024);
-    printf(&quot;%p\n&quot;, (void *)ht);
-    return (EXIT_SUCCESS);
-}
-julien@ubuntu:~/0x19. Hash tables$ gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-hash_table_create.c -o a
-julien@ubuntu:~/0x19. Hash tables$ ./a 
-0x238a010
-julien@ubuntu:~/0x19. Hash tables$ valgrind ./a
-==7602== Memcheck, a memory error detector
-==7602== Copyright (C) 2002-2013, and GNU GPL&#39;d, by Julian Seward et al.
-==7602== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
-==7602== Command: ./a
-==7602== 
-0x51fc040
-==7602== 
-==7602== HEAP SUMMARY:
-==7602==     in use at exit: 8,208 bytes in 2 blocks
-==7602==   total heap usage: 2 allocs, 0 frees, 8,208 bytes allocated
-==7602== 
-==7602== LEAK SUMMARY:
-==7602==    definitely lost: 16 bytes in 1 blocks
-==7602==    indirectly lost: 8,192 bytes in 1 blocks
-==7602==      possibly lost: 0 bytes in 0 blocks
-==7602==    still reachable: 0 bytes in 0 blocks
-==7602==         suppressed: 0 bytes in 0 blocks
-==7602== Rerun with --leak-check=full to see details of leaked memory
-==7602== 
-==7602== For counts of detected and suppressed errors, rerun with: -v
-==7602== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-julien@ubuntu:~/0x19. Hash tables$
-</code></pre>
+<p>Create a RSA key pair.</p>
+
+<p>Requirements:</p>
+
+<ul>
+<li>Share your <strong>public key</strong> in your answer file <code>0-RSA_public_key.pub</code></li>
+<li>Fill the <em>SSH public key</em> field of your <a href="https://intranet.hbtn.io/users/my_profile">intranet profile</a> with your public key</li>
+<li><strong>Keep the private key to yourself in a secure location</strong>, you will use it later to connect to your servers using SSH. Some storing ideas are Dropbox, Google Drive, password manager, USB key. Failing to do so will prevent you to access your servers, which will prevent you from doing your projects</li>
+<li>If you decide to add a passphrase to your key, make sure to save this passphrase in a secure location, you will not be able to use your keys without the passphrase</li>
+</ul>
+
+<p>SSH and RSA keys will be covered in depth in a later project.</p>
 
 
   <!-- Task URLs -->
@@ -471,9 +433,9 @@ julien@ubuntu:~/0x19. Hash tables$
   <!-- Github information -->
     <p class="sm-gap"><strong>Repo:</strong></p>
     <ul>
-      <li>GitHub repository: <code>holbertonschool-low_level_programming</code></li>
-        <li>Directory: <code>0x19-hash_tables</code></li>
-        <li>File: <code>0-hash_table_create.c</code></li>
+      <li>GitHub repository: <code>holberton-system_engineering-devops</code></li>
+        <li>Directory: <code>0x04-loops_conditions_and_parsing</code></li>
+        <li>File: <code>0-RSA_public_key.pub</code></li>
     </ul>
 
 
@@ -481,20 +443,20 @@ julien@ubuntu:~/0x19. Hash tables$
   <div class="student_correction_requests">
 
     <!-- Button test code -->
-      <button class="task_correction_modal btn btn-default " data-task-id="1233" data-toggle="modal" data-target="#task-test-correction-1233-correction-modal">
+      <button class="task_correction_modal btn btn-default " data-task-id="1223" data-toggle="modal" data-target="#task-test-correction-1223-correction-modal">
         Check your code?
       </button>
-      <div class="modal fade task_correction_modal" id="task-test-correction-1233-correction-modal">
+      <div class="modal fade task_correction_modal" id="task-test-correction-1223-correction-modal">
       <div class="modal-dialog">
           <div class="modal-content">
           <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title">Correction of "&gt;&gt;&gt; ht = {}"</h4>
+              <h4 class="modal-title">Correction of "Create a SSH RSA key pair"</h4>
           </div>
           <div class="modal-body">
             <div class="actions">
                 <center>
-                    <input type="submit" name="commit" value="Start a new test" class="btn btn-primary correction_request_test_admin" data-task-id="1233" />
+                    <input type="submit" name="commit" value="Start a new test" class="btn btn-primary correction_request_test_admin" data-task-id="1223" />
                     <div class="spinner" >
                         <div class="bounce1"></div>
                         <div class="bounce2"></div>
@@ -519,14 +481,14 @@ julien@ubuntu:~/0x19. Hash tables$
 </div>
 
           </div>
-          <div data-role="task1234" data-position="2">
-              <div class=" clearfix gap" id="task-1234">
+          <div data-role="task1224" data-position="2">
+              <div class=" clearfix gap" id="task-1224">
 <span id="user_id" data-id="149"></span>
 
     <div class="student_task_controls">
 
       <!-- button Done -->
-        <button class="student_task_done btn btn-default yes" data-task-id="1234">
+        <button class="student_task_done btn btn-default yes" data-task-id="1224">
           <span class="no"><i class="fa fa-square-o"></i></span>
           <span class="yes"><i class="fa fa-check-square-o"></i></span>
           <span class="pending"><i class="fa fa-spinner fa-pulse"></i></span>
@@ -535,15 +497,15 @@ julien@ubuntu:~/0x19. Hash tables$
         <br>
 
       <!-- button Help! -->
-      <button class="users_done_for_task btn btn-default btn-default" data-task-id="1234" data-project-id="253" data-toggle="modal" data-target="#task-1234-users-done-modal">
+      <button class="users_done_for_task btn btn-default btn-default" data-task-id="1224" data-project-id="251" data-toggle="modal" data-target="#task-1224-users-done-modal">
         Help
       </button>
-      <div class="modal fade users-done-modal" id="task-1234-users-done-modal" data-task-id="1234" data-project-id="253">
+      <div class="modal fade users-done-modal" id="task-1224-users-done-modal" data-task-id="1224" data-project-id="251">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title">Students who are done with "djb2"</h4>
+              <h4 class="modal-title">Students who are done with "For Holberton School loop"</h4>
             </div>
             <div class="modal-body">
               <div class="list-group">
@@ -562,7 +524,7 @@ julien@ubuntu:~/0x19. Hash tables$
     </div>
 
   <h4 class="task">
-    1. djb2
+    1. For Holberton School loop
       <span class="alert alert-warning mandatory-optional">
         mandatory
       </span>
@@ -570,7 +532,7 @@ julien@ubuntu:~/0x19. Hash tables$
 
 
   <!-- Progress vs Score -->
-    <div class="task_progress_score_bar" data-task-id="1234" data-correction-id="12694">
+    <div class="task_progress_score_bar" data-task-id="1224" data-correction-id="13547">
       <div class="task_progress_bar">
         <div class="task_score_bar">
         </div>
@@ -581,57 +543,37 @@ julien@ubuntu:~/0x19. Hash tables$
     </div>
 
 <!-- Task Body -->
-  <p>Write a hash function implementing the djb2 algorithm.</p>
+  <p>Write a Bash script that displays <code>Holberton School</code> 10 times.</p>
+
+<p>Requirement:</p>
 
 <ul>
-<li>Prototype: <code>unsigned long int hash_djb2(const unsigned char *str);</code></li>
-<li>You are allowed to copy and paste the function from <a href="http://www.cse.yorku.ca/%7Eoz/hash.html">this page</a></li>
+<li>You must use the <code>for</code> loop (<code>while</code> and <code>until</code> are forbidden)</li>
 </ul>
 
-<pre><code>julien@ubuntu:~/0x19. Hash tables$ cat 1-djb2.c 
-unsigned long int hash_djb2(const unsigned char *str)
-{
-    unsigned long int hash;
-    int c;
-
-    hash = 5381;
-    while ((c = *str++))
-    {
-        hash = ((hash &lt;&lt; 5) + hash) + c; /* hash * 33 + c */
-    }
-    return (hash);
-}
-julien@ubuntu:~/0x19. Hash tables$ 
-julien@ubuntu:~/0x19. Hash tables$ cat 1-main.c 
-#include &lt;stdlib.h&gt;
-#include &lt;string.h&gt;
-#include &lt;stdio.h&gt;
-#include &quot;hash_tables.h&quot;
-
-/**
- * main - check the code for Holberton School students.
- *
- * Return: Always EXIT_SUCCESS.
- */
-int main(void)
-{
-    char *s;
-
-    s = &quot;cisfun&quot;;
-    printf(&quot;%lu\n&quot;, hash_djb2((unsigned char *)s));
-    s = &quot;Don&#39;t forget to tweet today&quot;;
-    printf(&quot;%lu\n&quot;, hash_djb2((unsigned char *)s));
-    s = &quot;98&quot;;
-    printf(&quot;%lu\n&quot;, hash_djb2((unsigned char *)s));
-    return (EXIT_SUCCESS);
-}
-julien@ubuntu:~/0x19. Hash tables$ gcc -Wall -pedantic -Werror -Wextra 1-main.c 1-djb2.c -o b
-julien@ubuntu:~/0x19. Hash tables$ ./b 
-6953392314605
-3749890792216096085
-5861846
-julien@ubuntu:~/0x19. Hash tables$ 
+<pre><code>sylvain@ubuntu$ head -n 2 1-for_holberton_school 
+#!/usr/bin/env bash
+# This script is displaying &quot;Holberton School&quot; 10 times
+sylvain@ubuntu$ ./1-for_holberton_school 
+Holberton School
+Holberton School
+Holberton School
+Holberton School
+Holberton School
+Holberton School
+Holberton School
+Holberton School
+Holberton School
+Holberton School
+sylvain@ubuntu$ 
 </code></pre>
+
+<p>Note that: </p>
+
+<ul>
+<li>The first line of my Bash script starts with <code>#!/usr/bin/env bash</code></li>
+<li>The second line of my Bash scripts is a comment explaining what it is doing</li>
+</ul>
 
 
   <!-- Task URLs -->
@@ -639,9 +581,9 @@ julien@ubuntu:~/0x19. Hash tables$
   <!-- Github information -->
     <p class="sm-gap"><strong>Repo:</strong></p>
     <ul>
-      <li>GitHub repository: <code>holbertonschool-low_level_programming</code></li>
-        <li>Directory: <code>0x19-hash_tables</code></li>
-        <li>File: <code>1-djb2.c</code></li>
+      <li>GitHub repository: <code>holberton-system_engineering-devops</code></li>
+        <li>Directory: <code>0x04-loops_conditions_and_parsing</code></li>
+        <li>File: <code>1-for_holberton_school</code></li>
     </ul>
 
 
@@ -649,20 +591,20 @@ julien@ubuntu:~/0x19. Hash tables$
   <div class="student_correction_requests">
 
     <!-- Button test code -->
-      <button class="task_correction_modal btn btn-default " data-task-id="1234" data-toggle="modal" data-target="#task-test-correction-1234-correction-modal">
+      <button class="task_correction_modal btn btn-default " data-task-id="1224" data-toggle="modal" data-target="#task-test-correction-1224-correction-modal">
         Check your code?
       </button>
-      <div class="modal fade task_correction_modal" id="task-test-correction-1234-correction-modal">
+      <div class="modal fade task_correction_modal" id="task-test-correction-1224-correction-modal">
       <div class="modal-dialog">
           <div class="modal-content">
           <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title">Correction of "djb2"</h4>
+              <h4 class="modal-title">Correction of "For Holberton School loop"</h4>
           </div>
           <div class="modal-body">
             <div class="actions">
                 <center>
-                    <input type="submit" name="commit" value="Start a new test" class="btn btn-primary correction_request_test_admin" data-task-id="1234" />
+                    <input type="submit" name="commit" value="Start a new test" class="btn btn-primary correction_request_test_admin" data-task-id="1224" />
                     <div class="spinner" >
                         <div class="bounce1"></div>
                         <div class="bounce2"></div>
@@ -687,14 +629,14 @@ julien@ubuntu:~/0x19. Hash tables$
 </div>
 
           </div>
-          <div data-role="task1235" data-position="3">
-              <div class=" clearfix gap" id="task-1235">
+          <div data-role="task1225" data-position="3">
+              <div class=" clearfix gap" id="task-1225">
 <span id="user_id" data-id="149"></span>
 
     <div class="student_task_controls">
 
       <!-- button Done -->
-        <button class="student_task_done btn btn-default yes" data-task-id="1235">
+        <button class="student_task_done btn btn-default yes" data-task-id="1225">
           <span class="no"><i class="fa fa-square-o"></i></span>
           <span class="yes"><i class="fa fa-check-square-o"></i></span>
           <span class="pending"><i class="fa fa-spinner fa-pulse"></i></span>
@@ -703,15 +645,15 @@ julien@ubuntu:~/0x19. Hash tables$
         <br>
 
       <!-- button Help! -->
-      <button class="users_done_for_task btn btn-default btn-default" data-task-id="1235" data-project-id="253" data-toggle="modal" data-target="#task-1235-users-done-modal">
+      <button class="users_done_for_task btn btn-default btn-default" data-task-id="1225" data-project-id="251" data-toggle="modal" data-target="#task-1225-users-done-modal">
         Help
       </button>
-      <div class="modal fade users-done-modal" id="task-1235-users-done-modal" data-task-id="1235" data-project-id="253">
+      <div class="modal fade users-done-modal" id="task-1225-users-done-modal" data-task-id="1225" data-project-id="251">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title">Students who are done with "key -&gt; index"</h4>
+              <h4 class="modal-title">Students who are done with "While Holberton School loop"</h4>
             </div>
             <div class="modal-body">
               <div class="list-group">
@@ -730,7 +672,7 @@ julien@ubuntu:~/0x19. Hash tables$
     </div>
 
   <h4 class="task">
-    2. key -&gt; index
+    2. While Holberton School loop
       <span class="alert alert-warning mandatory-optional">
         mandatory
       </span>
@@ -738,7 +680,7 @@ julien@ubuntu:~/0x19. Hash tables$
 
 
   <!-- Progress vs Score -->
-    <div class="task_progress_score_bar" data-task-id="1235" data-correction-id="12694">
+    <div class="task_progress_score_bar" data-task-id="1225" data-correction-id="13547">
       <div class="task_progress_bar">
         <div class="task_score_bar">
         </div>
@@ -749,57 +691,26 @@ julien@ubuntu:~/0x19. Hash tables$
     </div>
 
 <!-- Task Body -->
-  <p>Write a function that gives you the index of a key.</p>
+  <p>Write a Bash script that displays <code>Holberton School</code> 10 times.</p>
+
+<p>Requirements:</p>
 
 <ul>
-<li>Prototype: <code>unsigned long int key_index(const unsigned char *key, unsigned long int size);</code>
-
-<ul>
-<li>where <code>key</code> is the key</li>
-<li>and <code>size</code> is the size of the array of the hash table</li>
-</ul></li>
-<li>This function should use the <code>hash_djb2</code> function that you wrote earlier</li>
-<li>Returns the index at which the key/value pair should be stored in the array of the hash table</li>
-<li>You will have to use this hash function for all the next tasks</li>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
 </ul>
 
-<pre><code>julien@ubuntu:~/0x19. Hash tables$ cat 2-main.c 
-#include &lt;stdlib.h&gt;
-#include &lt;string.h&gt;
-#include &lt;stdio.h&gt;
-#include &quot;hash_tables.h&quot;
-
-/**
- * main - check the code for Holberton School students.
- *
- * Return: Always EXIT_SUCCESS.
- */
-int main(void)
-{
-    char *s;
-    unsigned long int hash_table_array_size;
-
-    hash_table_array_size = 1024;
-    s = &quot;cisfun&quot;;
-    printf(&quot;%lu\n&quot;, hash_djb2((unsigned char *)s));
-    printf(&quot;%lu\n&quot;, key_index((unsigned char *)s, hash_table_array_size));
-    s = &quot;Don&#39;t forget to tweet today&quot;;
-    printf(&quot;%lu\n&quot;, hash_djb2((unsigned char *)s));
-    printf(&quot;%lu\n&quot;, key_index((unsigned char *)s, hash_table_array_size));
-    s = &quot;98&quot;;
-    printf(&quot;%lu\n&quot;, hash_djb2((unsigned char *)s));
-    printf(&quot;%lu\n&quot;, key_index((unsigned char *)s, hash_table_array_size));  
-    return (EXIT_SUCCESS);
-}
-julien@ubuntu:~/0x19. Hash tables$ gcc -Wall -pedantic -Werror -Wextra 2-main.c 1-djb2.c 2-key_index.c -o c
-julien@ubuntu:~/0x19. Hash tables$ ./c 
-6953392314605
-237
-3749890792216096085
-341
-5861846
-470
-julien@ubuntu:~/0x19. Hash tables$ 
+<pre><code>sylvain@ubuntu$ ./2-while_holberton_school
+Holberton School
+Holberton School
+Holberton School
+Holberton School
+Holberton School
+Holberton School
+Holberton School
+Holberton School
+Holberton School
+Holberton School
+sylvain@ubuntu$ 
 </code></pre>
 
 
@@ -808,9 +719,9 @@ julien@ubuntu:~/0x19. Hash tables$
   <!-- Github information -->
     <p class="sm-gap"><strong>Repo:</strong></p>
     <ul>
-      <li>GitHub repository: <code>holbertonschool-low_level_programming</code></li>
-        <li>Directory: <code>0x19-hash_tables</code></li>
-        <li>File: <code>2-key_index.c</code></li>
+      <li>GitHub repository: <code>holberton-system_engineering-devops</code></li>
+        <li>Directory: <code>0x04-loops_conditions_and_parsing</code></li>
+        <li>File: <code>2-while_holberton_school</code></li>
     </ul>
 
 
@@ -818,20 +729,20 @@ julien@ubuntu:~/0x19. Hash tables$
   <div class="student_correction_requests">
 
     <!-- Button test code -->
-      <button class="task_correction_modal btn btn-default " data-task-id="1235" data-toggle="modal" data-target="#task-test-correction-1235-correction-modal">
+      <button class="task_correction_modal btn btn-default " data-task-id="1225" data-toggle="modal" data-target="#task-test-correction-1225-correction-modal">
         Check your code?
       </button>
-      <div class="modal fade task_correction_modal" id="task-test-correction-1235-correction-modal">
+      <div class="modal fade task_correction_modal" id="task-test-correction-1225-correction-modal">
       <div class="modal-dialog">
           <div class="modal-content">
           <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title">Correction of "key -&gt; index"</h4>
+              <h4 class="modal-title">Correction of "While Holberton School loop"</h4>
           </div>
           <div class="modal-body">
             <div class="actions">
                 <center>
-                    <input type="submit" name="commit" value="Start a new test" class="btn btn-primary correction_request_test_admin" data-task-id="1235" />
+                    <input type="submit" name="commit" value="Start a new test" class="btn btn-primary correction_request_test_admin" data-task-id="1225" />
                     <div class="spinner" >
                         <div class="bounce1"></div>
                         <div class="bounce2"></div>
@@ -856,14 +767,14 @@ julien@ubuntu:~/0x19. Hash tables$
 </div>
 
           </div>
-          <div data-role="task1236" data-position="4">
-              <div class=" clearfix gap" id="task-1236">
+          <div data-role="task1226" data-position="4">
+              <div class=" clearfix gap" id="task-1226">
 <span id="user_id" data-id="149"></span>
 
     <div class="student_task_controls">
 
       <!-- button Done -->
-        <button class="student_task_done btn btn-default no" data-task-id="1236">
+        <button class="student_task_done btn btn-default yes" data-task-id="1226">
           <span class="no"><i class="fa fa-square-o"></i></span>
           <span class="yes"><i class="fa fa-check-square-o"></i></span>
           <span class="pending"><i class="fa fa-spinner fa-pulse"></i></span>
@@ -872,15 +783,15 @@ julien@ubuntu:~/0x19. Hash tables$
         <br>
 
       <!-- button Help! -->
-      <button class="users_done_for_task btn btn-default btn-default" data-task-id="1236" data-project-id="253" data-toggle="modal" data-target="#task-1236-users-done-modal">
+      <button class="users_done_for_task btn btn-default btn-default" data-task-id="1226" data-project-id="251" data-toggle="modal" data-target="#task-1226-users-done-modal">
         Help
       </button>
-      <div class="modal fade users-done-modal" id="task-1236-users-done-modal" data-task-id="1236" data-project-id="253">
+      <div class="modal fade users-done-modal" id="task-1226-users-done-modal" data-task-id="1226" data-project-id="251">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title">Students who are done with "&gt;&gt;&gt; ht[&#39;betty&#39;] = &#39;holberton&#39;"</h4>
+              <h4 class="modal-title">Students who are done with "Until Holberton School loop"</h4>
             </div>
             <div class="modal-body">
               <div class="list-group">
@@ -899,7 +810,7 @@ julien@ubuntu:~/0x19. Hash tables$
     </div>
 
   <h4 class="task">
-    3. &gt;&gt;&gt; ht[&#39;betty&#39;] = &#39;holberton&#39;
+    3. Until Holberton School loop
       <span class="alert alert-warning mandatory-optional">
         mandatory
       </span>
@@ -907,7 +818,7 @@ julien@ubuntu:~/0x19. Hash tables$
 
 
   <!-- Progress vs Score -->
-    <div class="task_progress_score_bar" data-task-id="1236" data-correction-id="12694">
+    <div class="task_progress_score_bar" data-task-id="1226" data-correction-id="13547">
       <div class="task_progress_bar">
         <div class="task_score_bar">
         </div>
@@ -918,53 +829,27 @@ julien@ubuntu:~/0x19. Hash tables$
     </div>
 
 <!-- Task Body -->
-  <p>Write a function that adds an element to the hash table.</p>
+  <p>Write a Bash script that displays <code>Holberton School</code> 10 times.</p>
+
+<p>Requirements:</p>
 
 <ul>
-<li>Prototype: <code>int hash_table_set(hash_table_t *ht, const char *key, const char *value);</code>
-
-<ul>
-<li>Where <code>ht</code> is the hash table you want to add or update the key/value to</li>
-<li><code>key</code> is the key. <code>key</code> can not be an empty string</li>
-<li>and <code>value</code> is the value associated with the key. <code>value</code> can be an empty string</li>
-</ul></li>
-<li>Returns: <code>1</code> if it succeeded, <code>0</code> otherwise</li>
-<li>In case of collision, add the new node at the beginning of the list</li>
+<li>You must use the <code>until</code> loop (<code>for</code> and <code>while</code> are forbidden)</li>
 </ul>
 
-<pre><code>julien@ubuntu:~/0x19. Hash tables$ cat 3-main.c 
-#include &lt;stdlib.h&gt;
-#include &lt;string.h&gt;
-#include &lt;stdio.h&gt;
-#include &quot;hash_tables.h&quot;
-
-/**
- * main - check the code for Holberton School students.
- *
- * Return: Always EXIT_SUCCESS.
- */
-int main(void)
-{
-    hash_table_t *ht;
-
-    ht = hash_table_create(1024);
-    hash_table_set(ht, &quot;betty&quot;, &quot;holberton&quot;);
-    return (EXIT_SUCCESS);
-}
-julien@ubuntu:~/0x19. Hash tables$ 
+<pre><code>sylvain@ubuntu$ ./3-until_holberton_school
+Holberton School
+Holberton School
+Holberton School
+Holberton School
+Holberton School
+Holberton School
+Holberton School
+Holberton School
+Holberton School
+Holberton School
+sylvain@ubuntu$ 
 </code></pre>
-
-<p><em>Tip from <a href="https://twitter.com/JennieZChu">Jennie</a></em>: if you want to test for collisions, here are some strings that collide using the djb2 algorithm:</p>
-
-<ul>
-<li>hetairas collides with mentioner</li>
-<li>heliotropes collides with neurospora</li>
-<li>depravement collides with serafins</li>
-<li>stylist collides with subgenera</li>
-<li>joyful collides with synaphea</li>
-<li>redescribed collides with urites</li>
-<li>dram collides with vivency</li>
-</ul>
 
 
   <!-- Task URLs -->
@@ -972,9 +857,9 @@ julien@ubuntu:~/0x19. Hash tables$
   <!-- Github information -->
     <p class="sm-gap"><strong>Repo:</strong></p>
     <ul>
-      <li>GitHub repository: <code>holbertonschool-low_level_programming</code></li>
-        <li>Directory: <code>0x19-hash_tables</code></li>
-        <li>File: <code>3-hash_table_set.c</code></li>
+      <li>GitHub repository: <code>holberton-system_engineering-devops</code></li>
+        <li>Directory: <code>0x04-loops_conditions_and_parsing</code></li>
+        <li>File: <code>3-until_holberton_school</code></li>
     </ul>
 
 
@@ -982,20 +867,20 @@ julien@ubuntu:~/0x19. Hash tables$
   <div class="student_correction_requests">
 
     <!-- Button test code -->
-      <button class="task_correction_modal btn btn-default " data-task-id="1236" data-toggle="modal" data-target="#task-test-correction-1236-correction-modal">
+      <button class="task_correction_modal btn btn-default " data-task-id="1226" data-toggle="modal" data-target="#task-test-correction-1226-correction-modal">
         Check your code?
       </button>
-      <div class="modal fade task_correction_modal" id="task-test-correction-1236-correction-modal">
+      <div class="modal fade task_correction_modal" id="task-test-correction-1226-correction-modal">
       <div class="modal-dialog">
           <div class="modal-content">
           <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title">Correction of "&gt;&gt;&gt; ht[&#39;betty&#39;] = &#39;holberton&#39;"</h4>
+              <h4 class="modal-title">Correction of "Until Holberton School loop"</h4>
           </div>
           <div class="modal-body">
             <div class="actions">
                 <center>
-                    <input type="submit" name="commit" value="Start a new test" class="btn btn-primary correction_request_test_admin" data-task-id="1236" />
+                    <input type="submit" name="commit" value="Start a new test" class="btn btn-primary correction_request_test_admin" data-task-id="1226" />
                     <div class="spinner" >
                         <div class="bounce1"></div>
                         <div class="bounce2"></div>
@@ -1020,14 +905,14 @@ julien@ubuntu:~/0x19. Hash tables$
 </div>
 
           </div>
-          <div data-role="task1251" data-position="4">
-              <div class=" clearfix gap" id="task-1251">
+          <div data-role="task1227" data-position="4">
+              <div class=" clearfix gap" id="task-1227">
 <span id="user_id" data-id="149"></span>
 
     <div class="student_task_controls">
 
       <!-- button Done -->
-        <button class="student_task_done btn btn-default yes" data-task-id="1251">
+        <button class="student_task_done btn btn-default yes" data-task-id="1227">
           <span class="no"><i class="fa fa-square-o"></i></span>
           <span class="yes"><i class="fa fa-check-square-o"></i></span>
           <span class="pending"><i class="fa fa-spinner fa-pulse"></i></span>
@@ -1036,15 +921,15 @@ julien@ubuntu:~/0x19. Hash tables$
         <br>
 
       <!-- button Help! -->
-      <button class="users_done_for_task btn btn-default btn-default" data-task-id="1251" data-project-id="253" data-toggle="modal" data-target="#task-1251-users-done-modal">
+      <button class="users_done_for_task btn btn-default btn-default" data-task-id="1227" data-project-id="251" data-toggle="modal" data-target="#task-1227-users-done-modal">
         Help
       </button>
-      <div class="modal fade users-done-modal" id="task-1251-users-done-modal" data-task-id="1251" data-project-id="253">
+      <div class="modal fade users-done-modal" id="task-1227-users-done-modal" data-task-id="1227" data-project-id="251">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title">Students who are done with "&gt;&gt;&gt; ht[&#39;betty&#39;]"</h4>
+              <h4 class="modal-title">Students who are done with "If 9, say Hi!"</h4>
             </div>
             <div class="modal-body">
               <div class="list-group">
@@ -1063,7 +948,7 @@ julien@ubuntu:~/0x19. Hash tables$
     </div>
 
   <h4 class="task">
-    4. &gt;&gt;&gt; ht[&#39;betty&#39;]
+    4. If 9, say Hi!
       <span class="alert alert-warning mandatory-optional">
         mandatory
       </span>
@@ -1071,7 +956,7 @@ julien@ubuntu:~/0x19. Hash tables$
 
 
   <!-- Progress vs Score -->
-    <div class="task_progress_score_bar" data-task-id="1251" data-correction-id="12694">
+    <div class="task_progress_score_bar" data-task-id="1227" data-correction-id="13547">
       <div class="task_progress_bar">
         <div class="task_score_bar">
         </div>
@@ -1082,73 +967,28 @@ julien@ubuntu:~/0x19. Hash tables$
     </div>
 
 <!-- Task Body -->
-  <p>Write a function that retrieves a value associated with a key.</p>
+  <p>Write a Bash script that displays <code>Holberton School</code> 10 times, but for the 9th iteration, displays <code>Holberton School</code> <em>and then</em> <code>Hi</code> on a new line.</p>
+
+<p>Requirements:</p>
 
 <ul>
-<li>Prototype: <code>char *hash_table_get(const hash_table_t *ht, const char *key);</code>
-
-<ul>
-<li>where <code>ht</code> is the hash table you want to look into</li>
-<li>and <code>key</code> is the key you are looking for</li>
-</ul></li>
-<li>Returns the value associated with the element, or <code>NULL</code> if <code>key</code> couldn&#39;t be found</li>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>if</code> statement</li>
 </ul>
 
-<pre><code>julien@ubuntu:~/0x19. Hash tables$ cat 4-main.c 
-#include &lt;stdlib.h&gt;
-#include &lt;string.h&gt;
-#include &lt;stdio.h&gt;
-#include &quot;hash_tables.h&quot;
-
-/**
- * main - check the code for Holberton School students.
- *
- * Return: Always EXIT_SUCCESS.
- */
-int main(void)
-{
-    hash_table_t *ht;
-    char *value;
-
-    ht = hash_table_create(1024);
-    hash_table_set(ht, &quot;c&quot;, &quot;fun&quot;);
-    hash_table_set(ht, &quot;python&quot;, &quot;awesome&quot;);
-    hash_table_set(ht, &quot;Jennie&quot;, &quot;and Jay love asm&quot;);
-    hash_table_set(ht, &quot;N&quot;, &quot;queens&quot;);
-    hash_table_set(ht, &quot;Asterix&quot;, &quot;Obelix&quot;);
-    hash_table_set(ht, &quot;Betty&quot;, &quot;Holberton&quot;);
-    hash_table_set(ht, &quot;98&quot;, &quot;Battery Street&quot;);
-    hash_table_set(ht, &quot;c&quot;, &quot;isfun&quot;);
-
-    value = hash_table_get(ht, &quot;python&quot;);
-    printf(&quot;%s:%s\n&quot;, &quot;python&quot;, value);
-    value = hash_table_get(ht, &quot;Jennie&quot;);
-    printf(&quot;%s:%s\n&quot;, &quot;Jennie&quot;, value);
-    value = hash_table_get(ht, &quot;N&quot;);
-    printf(&quot;%s:%s\n&quot;, &quot;N&quot;, value);
-    value = hash_table_get(ht, &quot;Asterix&quot;);
-    printf(&quot;%s:%s\n&quot;, &quot;Asterix&quot;, value);
-    value = hash_table_get(ht, &quot;Betty&quot;);
-    printf(&quot;%s:%s\n&quot;, &quot;Betty&quot;, value);
-    value = hash_table_get(ht, &quot;98&quot;);
-    printf(&quot;%s:%s\n&quot;, &quot;98&quot;, value);
-    value = hash_table_get(ht, &quot;c&quot;);
-    printf(&quot;%s:%s\n&quot;, &quot;c&quot;, value);
-    value = hash_table_get(ht, &quot;javascript&quot;);
-    printf(&quot;%s:%s\n&quot;, &quot;javascript&quot;, value);
-    return (EXIT_SUCCESS);
-}
-julien@ubuntu:~/0x19. Hash tables$ gcc -Wall -pedantic -Werror -Wextra 4-main.c 0-hash_table_create.c 1-djb2.c 2-key_index.c 3-hash_table_set.c 4-hash_table_get.c -o e
-julien@ubuntu:~/0x19. Hash tables$ ./e 
-python:awesome
-Jennie:and Jay love asm
-N:queens
-Asterix:Obelix
-Betty:Holberton
-98:Battery Street
-c:isfun
-javascript:(null)
-julien@ubuntu:~/0x19. Hash tables$ 
+<pre><code>sylvain@ubuntu$ ./4-if_9_say_hi
+Holberton School
+Holberton School
+Holberton School
+Holberton School
+Holberton School
+Holberton School
+Holberton School
+Holberton School
+Holberton School
+Hi
+Holberton School
+sylvain@ubuntu$ 
 </code></pre>
 
 
@@ -1157,9 +997,9 @@ julien@ubuntu:~/0x19. Hash tables$
   <!-- Github information -->
     <p class="sm-gap"><strong>Repo:</strong></p>
     <ul>
-      <li>GitHub repository: <code>holbertonschool-low_level_programming</code></li>
-        <li>Directory: <code>0x19-hash_tables</code></li>
-        <li>File: <code>4-hash_table_get.c</code></li>
+      <li>GitHub repository: <code>holberton-system_engineering-devops</code></li>
+        <li>Directory: <code>0x04-loops_conditions_and_parsing</code></li>
+        <li>File: <code>4-if_9_say_hi</code></li>
     </ul>
 
 
@@ -1167,20 +1007,20 @@ julien@ubuntu:~/0x19. Hash tables$
   <div class="student_correction_requests">
 
     <!-- Button test code -->
-      <button class="task_correction_modal btn btn-default " data-task-id="1251" data-toggle="modal" data-target="#task-test-correction-1251-correction-modal">
+      <button class="task_correction_modal btn btn-default " data-task-id="1227" data-toggle="modal" data-target="#task-test-correction-1227-correction-modal">
         Check your code?
       </button>
-      <div class="modal fade task_correction_modal" id="task-test-correction-1251-correction-modal">
+      <div class="modal fade task_correction_modal" id="task-test-correction-1227-correction-modal">
       <div class="modal-dialog">
           <div class="modal-content">
           <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title">Correction of "&gt;&gt;&gt; ht[&#39;betty&#39;]"</h4>
+              <h4 class="modal-title">Correction of "If 9, say Hi!"</h4>
           </div>
           <div class="modal-body">
             <div class="actions">
                 <center>
-                    <input type="submit" name="commit" value="Start a new test" class="btn btn-primary correction_request_test_admin" data-task-id="1251" />
+                    <input type="submit" name="commit" value="Start a new test" class="btn btn-primary correction_request_test_admin" data-task-id="1227" />
                     <div class="spinner" >
                         <div class="bounce1"></div>
                         <div class="bounce2"></div>
@@ -1205,14 +1045,14 @@ julien@ubuntu:~/0x19. Hash tables$
 </div>
 
           </div>
-          <div data-role="task1252" data-position="5">
-              <div class=" clearfix gap" id="task-1252">
+          <div data-role="task1228" data-position="5">
+              <div class=" clearfix gap" id="task-1228">
 <span id="user_id" data-id="149"></span>
 
     <div class="student_task_controls">
 
       <!-- button Done -->
-        <button class="student_task_done btn btn-default yes" data-task-id="1252">
+        <button class="student_task_done btn btn-default yes" data-task-id="1228">
           <span class="no"><i class="fa fa-square-o"></i></span>
           <span class="yes"><i class="fa fa-check-square-o"></i></span>
           <span class="pending"><i class="fa fa-spinner fa-pulse"></i></span>
@@ -1221,15 +1061,15 @@ julien@ubuntu:~/0x19. Hash tables$
         <br>
 
       <!-- button Help! -->
-      <button class="users_done_for_task btn btn-default btn-default" data-task-id="1252" data-project-id="253" data-toggle="modal" data-target="#task-1252-users-done-modal">
+      <button class="users_done_for_task btn btn-default btn-default" data-task-id="1228" data-project-id="251" data-toggle="modal" data-target="#task-1228-users-done-modal">
         Help
       </button>
-      <div class="modal fade users-done-modal" id="task-1252-users-done-modal" data-task-id="1252" data-project-id="253">
+      <div class="modal fade users-done-modal" id="task-1228-users-done-modal" data-task-id="1228" data-project-id="251">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title">Students who are done with "&gt;&gt;&gt; print(ht)"</h4>
+              <h4 class="modal-title">Students who are done with "4 bad luck, 8 is your chance"</h4>
             </div>
             <div class="modal-body">
               <div class="list-group">
@@ -1248,7 +1088,7 @@ julien@ubuntu:~/0x19. Hash tables$
     </div>
 
   <h4 class="task">
-    5. &gt;&gt;&gt; print(ht)
+    5. 4 bad luck, 8 is your chance
       <span class="alert alert-warning mandatory-optional">
         mandatory
       </span>
@@ -1256,7 +1096,7 @@ julien@ubuntu:~/0x19. Hash tables$
 
 
   <!-- Progress vs Score -->
-    <div class="task_progress_score_bar" data-task-id="1252" data-correction-id="12694">
+    <div class="task_progress_score_bar" data-task-id="1228" data-correction-id="13547">
       <div class="task_progress_bar">
         <div class="task_score_bar">
         </div>
@@ -1267,56 +1107,41 @@ julien@ubuntu:~/0x19. Hash tables$
     </div>
 
 <!-- Task Body -->
-  <p>Write a function that prints a hash table.</p>
+  <p>Write a Bash script that loops from 1 to 10 and:</p>
 
 <ul>
-<li>Prototype: <code>void hash_table_print(const hash_table_t *ht);</code>
-
-<ul>
-<li>where <code>ht</code> is the hash table</li>
-</ul></li>
-<li>You should print the key/value in the order that they appear in the array of hash table
-
-<ul>
-<li>Order: array, list</li>
-</ul></li>
-<li>Format: see example</li>
-<li>If <code>ht</code> is NULL, don&#39;t print anything</li>
+<li>displays <code>bad luck</code> for the 4th loop iteration</li>
+<li>displays <code>good luck</code> for the 8th loop iteration</li>
+<li>displays <code>Holberton School</code> for the other iterations</li>
 </ul>
 
-<pre><code>julien@ubuntu:~/0x19. Hash tables$ cat 5-main.c 
-#include &lt;stdlib.h&gt;
-#include &lt;string.h&gt;
-#include &lt;stdio.h&gt;
-#include &quot;hash_tables.h&quot;
+<p>Requirements:</p>
 
-/**
- * main - check the code for Holberton School students.
- *
- * Return: Always EXIT_SUCCESS.
- */
-int main(void)
-{
-    hash_table_t *ht;
+<ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>if</code>, <code>elif</code> and <code>else</code> statements</li>
+</ul>
 
-    ht = hash_table_create(1024);
-    hash_table_print(ht);
-    hash_table_set(ht, &quot;c&quot;, &quot;fun&quot;);
-    hash_table_set(ht, &quot;python&quot;, &quot;awesome&quot;);
-    hash_table_set(ht, &quot;Jennie&quot;, &quot;and Jay love asm&quot;);
-    hash_table_set(ht, &quot;N&quot;, &quot;queens&quot;);
-    hash_table_set(ht, &quot;Asterix&quot;, &quot;Obelix&quot;);
-    hash_table_set(ht, &quot;Betty&quot;, &quot;Holberton&quot;);
-    hash_table_set(ht, &quot;98&quot;, &quot;Battery Street&quot;);
-    hash_table_print(ht);
-    return (EXIT_SUCCESS);
-}
-julien@ubuntu:~/0x19. Hash tables$ gcc -Wall -pedantic -Werror -Wextra 5-main.c 0-hash_table_create.c 1-djb2.c 2-key_index.c 3-hash_table_set.c 4-hash_table_get.c 5-hash_table_print.c -o f
-julien@ubuntu:~/0x19. Hash tables$ ./f 
-{}
-{&#39;Betty&#39;: &#39;Holberton&#39;, &#39;python&#39;: &#39;awesome&#39;, &#39;Jennie&#39;: &#39;and Jay love asm&#39;, &#39;98&#39;: &#39;Battery Street&#39;, &#39;N&#39;: &#39;queens&#39;, &#39;c&#39;: &#39;fun&#39;, &#39;Asterix&#39;: &#39;Obelix&#39;}
-julien@ubuntu:~/0x19. Hash tables$ 
+<pre><code>sylvain@ubuntu$ ./5-4_bad_luck_8_is_your_chance
+Holberton School
+Holberton School
+Holberton School
+bad luck
+Holberton School
+Holberton School
+Holberton School
+good luck
+Holberton School
+Holberton School
+sylvain@ubuntu$ 
 </code></pre>
+
+<p>For the most curious:</p>
+
+<ul>
+<li><a href="http://freakonomics.com/2006/07/05/lucky-8s-in-china/">8 in the Chinese culture</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Numbers_in_Chinese_culture#Four">4 in the Chinese culture</a></li>
+</ul>
 
 
   <!-- Task URLs -->
@@ -1324,9 +1149,9 @@ julien@ubuntu:~/0x19. Hash tables$
   <!-- Github information -->
     <p class="sm-gap"><strong>Repo:</strong></p>
     <ul>
-      <li>GitHub repository: <code>holbertonschool-low_level_programming</code></li>
-        <li>Directory: <code>0x19-hash_tables</code></li>
-        <li>File: <code>5-hash_table_print.c</code></li>
+      <li>GitHub repository: <code>holberton-system_engineering-devops</code></li>
+        <li>Directory: <code>0x04-loops_conditions_and_parsing</code></li>
+        <li>File: <code>5-4_bad_luck_8_is_your_chance</code></li>
     </ul>
 
 
@@ -1334,20 +1159,20 @@ julien@ubuntu:~/0x19. Hash tables$
   <div class="student_correction_requests">
 
     <!-- Button test code -->
-      <button class="task_correction_modal btn btn-default " data-task-id="1252" data-toggle="modal" data-target="#task-test-correction-1252-correction-modal">
+      <button class="task_correction_modal btn btn-default " data-task-id="1228" data-toggle="modal" data-target="#task-test-correction-1228-correction-modal">
         Check your code?
       </button>
-      <div class="modal fade task_correction_modal" id="task-test-correction-1252-correction-modal">
+      <div class="modal fade task_correction_modal" id="task-test-correction-1228-correction-modal">
       <div class="modal-dialog">
           <div class="modal-content">
           <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title">Correction of "&gt;&gt;&gt; print(ht)"</h4>
+              <h4 class="modal-title">Correction of "4 bad luck, 8 is your chance"</h4>
           </div>
           <div class="modal-body">
             <div class="actions">
                 <center>
-                    <input type="submit" name="commit" value="Start a new test" class="btn btn-primary correction_request_test_admin" data-task-id="1252" />
+                    <input type="submit" name="commit" value="Start a new test" class="btn btn-primary correction_request_test_admin" data-task-id="1228" />
                     <div class="spinner" >
                         <div class="bounce1"></div>
                         <div class="bounce2"></div>
@@ -1372,14 +1197,14 @@ julien@ubuntu:~/0x19. Hash tables$
 </div>
 
           </div>
-          <div data-role="task1388" data-position="7">
-              <div class=" clearfix gap" id="task-1388">
+          <div data-role="task1229" data-position="6">
+              <div class=" clearfix gap" id="task-1229">
 <span id="user_id" data-id="149"></span>
 
     <div class="student_task_controls">
 
       <!-- button Done -->
-        <button class="student_task_done btn btn-default yes" data-task-id="1388">
+        <button class="student_task_done btn btn-default yes" data-task-id="1229">
           <span class="no"><i class="fa fa-square-o"></i></span>
           <span class="yes"><i class="fa fa-check-square-o"></i></span>
           <span class="pending"><i class="fa fa-spinner fa-pulse"></i></span>
@@ -1388,15 +1213,15 @@ julien@ubuntu:~/0x19. Hash tables$
         <br>
 
       <!-- button Help! -->
-      <button class="users_done_for_task btn btn-default btn-default" data-task-id="1388" data-project-id="253" data-toggle="modal" data-target="#task-1388-users-done-modal">
+      <button class="users_done_for_task btn btn-default btn-default" data-task-id="1229" data-project-id="251" data-toggle="modal" data-target="#task-1229-users-done-modal">
         Help
       </button>
-      <div class="modal fade users-done-modal" id="task-1388-users-done-modal" data-task-id="1388" data-project-id="253">
+      <div class="modal fade users-done-modal" id="task-1229-users-done-modal" data-task-id="1229" data-project-id="251">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title">Students who are done with "&gt;&gt;&gt; del ht"</h4>
+              <h4 class="modal-title">Students who are done with "Superstitious numbers"</h4>
             </div>
             <div class="modal-body">
               <div class="list-group">
@@ -1415,7 +1240,7 @@ julien@ubuntu:~/0x19. Hash tables$
     </div>
 
   <h4 class="task">
-    6. &gt;&gt;&gt; del ht
+    6. Superstitious numbers
       <span class="alert alert-warning mandatory-optional">
         mandatory
       </span>
@@ -1423,7 +1248,7 @@ julien@ubuntu:~/0x19. Hash tables$
 
 
   <!-- Progress vs Score -->
-    <div class="task_progress_score_bar" data-task-id="1388" data-correction-id="12694">
+    <div class="task_progress_score_bar" data-task-id="1229" data-correction-id="13547">
       <div class="task_progress_bar">
         <div class="task_score_bar">
         </div>
@@ -1434,75 +1259,46 @@ julien@ubuntu:~/0x19. Hash tables$
     </div>
 
 <!-- Task Body -->
-  <p>Write a function that deletes a hash table.</p>
+  <p>Write a Bash script that displays numbers from 1 to 20 and:</p>
 
 <ul>
-<li>Prototype: <code>void hash_table_delete(hash_table_t *ht);</code>
-
-<ul>
-<li>where <code>ht</code> is the hash table</li>
-</ul></li>
+<li>displays <code>bad luck from China</code> for the 4th loop iteration</li>
+<li>displays <code>bad luck from Japan</code> for the 9th loop iteration</li>
+<li>displays <code>bad luck from Italy</code> for the 17th loop iteration</li>
 </ul>
 
-<pre><code>julien@ubuntu:~/0x19. Hash tables$ cat 6-main.c 
-#include &lt;stdlib.h&gt;
-#include &lt;string.h&gt;
-#include &lt;stdio.h&gt;
-#include &quot;hash_tables.h&quot;
+<p>Requirements:</p>
 
-/**
- * main - check the code for Holberton School students.
- *
- * Return: Always EXIT_SUCCESS.
- */
-int main(void)
-{
-    hash_table_t *ht;
-    char *key;
-    char *value;
+<ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>case</code> statement</li>
+</ul>
 
-    ht = hash_table_create(1024);
-    hash_table_set(ht, &quot;c&quot;, &quot;fun&quot;);
-    hash_table_set(ht, &quot;python&quot;, &quot;awesome&quot;);
-    hash_table_set(ht, &quot;Jennie&quot;, &quot;and Jay love asm&quot;);
-    hash_table_set(ht, &quot;N&quot;, &quot;queens&quot;);
-    hash_table_set(ht, &quot;Asterix&quot;, &quot;Obelix&quot;);
-    hash_table_set(ht, &quot;Betty&quot;, &quot;Holberton&quot;);
-    hash_table_set(ht, &quot;98&quot;, &quot;Battery Streetz&quot;);
-    key = strdup(&quot;Tim&quot;);
-    value = strdup(&quot;Britton&quot;);
-    hash_table_set(ht, key, value);
-    key[0] = &#39;\0&#39;;
-    value[0] = &#39;\0&#39;;
-    free(key);
-    free(value);
-    hash_table_set(ht, &quot;98&quot;, &quot;Battery Street&quot;); 
-    hash_table_set(ht, &quot;hetairas&quot;, &quot;Jennie&quot;);
-    hash_table_set(ht, &quot;hetairas&quot;, &quot;Jennie Z&quot;);
-    hash_table_set(ht, &quot;mentioner&quot;, &quot;Jennie&quot;);
-    hash_table_set(ht, &quot;hetairas&quot;, &quot;Jennie Z Chu&quot;);
-    hash_table_print(ht);
-    hash_table_delete(ht);
-    return (EXIT_SUCCESS);
-}
-julien@ubuntu:~/0x19. Hash tables$ gcc -Wall -pedantic -Werror -Wextra 6-main.c 0-hash_table_create.c 1-djb2.c 2-key_index.c 3-hash_table_set.c 4-hash_table_get.c 5-hash_table_print.c 6-hash_table_delete.c -o g
-julien@ubuntu:~/0x19. Hash tables$ valgrind ./g
-==6621== Memcheck, a memory error detector
-==6621== Copyright (C) 2002-2013, and GNU GPL&#39;d, by Julian Seward et al.
-==6621== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
-==6621== Command: ./g
-==6621== 
-{&#39;Betty&#39;: &#39;Holberton&#39;, &#39;mentioner&#39;: &#39;Jennie&#39;, &#39;hetairas&#39;: &#39;Jennie Z Chu&#39;, &#39;python&#39;: &#39;awesome&#39;, &#39;Jennie&#39;: &#39;and Jay love asm&#39;, &#39;98&#39;: &#39;Battery Street&#39;, &#39;N&#39;: &#39;queens&#39;, &#39;c&#39;: &#39;fun&#39;, &#39;Tim&#39;: &#39;Britton&#39;, &#39;Asterix&#39;: &#39;Obelix&#39;}
-==6621== 
-==6621== HEAP SUMMARY:
-==6621==     in use at exit: 0 bytes in 0 blocks
-==6621==   total heap usage: 37 allocs, 37 frees, 8,646 bytes allocated
-==6621== 
-==6621== All heap blocks were freed -- no leaks are possible
-==6621== 
-==6621== For counts of detected and suppressed errors, rerun with: -v
-==6621== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-julien@ubuntu:~/0x19. Hash tables$ 
+<pre><code>sylvain@ubuntu$ ./6-superstitious_numbers
+1
+2
+3
+4
+bad luck from China
+5
+6
+7
+8
+9
+bad luck from Japan
+10
+11
+12
+13
+14
+15
+16
+17
+bad luck from Italy
+18
+19
+20
+sylvain@ubuntu$ 
 </code></pre>
 
 
@@ -1511,9 +1307,9 @@ julien@ubuntu:~/0x19. Hash tables$
   <!-- Github information -->
     <p class="sm-gap"><strong>Repo:</strong></p>
     <ul>
-      <li>GitHub repository: <code>holbertonschool-low_level_programming</code></li>
-        <li>Directory: <code>0x19-hash_tables</code></li>
-        <li>File: <code>6-hash_table_delete.c</code></li>
+      <li>GitHub repository: <code>holberton-system_engineering-devops</code></li>
+        <li>Directory: <code>0x04-loops_conditions_and_parsing</code></li>
+        <li>File: <code>6-superstitious_numbers</code></li>
     </ul>
 
 
@@ -1521,20 +1317,20 @@ julien@ubuntu:~/0x19. Hash tables$
   <div class="student_correction_requests">
 
     <!-- Button test code -->
-      <button class="task_correction_modal btn btn-default " data-task-id="1388" data-toggle="modal" data-target="#task-test-correction-1388-correction-modal">
+      <button class="task_correction_modal btn btn-default " data-task-id="1229" data-toggle="modal" data-target="#task-test-correction-1229-correction-modal">
         Check your code?
       </button>
-      <div class="modal fade task_correction_modal" id="task-test-correction-1388-correction-modal">
+      <div class="modal fade task_correction_modal" id="task-test-correction-1229-correction-modal">
       <div class="modal-dialog">
           <div class="modal-content">
           <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title">Correction of "&gt;&gt;&gt; del ht"</h4>
+              <h4 class="modal-title">Correction of "Superstitious numbers"</h4>
           </div>
           <div class="modal-body">
             <div class="actions">
                 <center>
-                    <input type="submit" name="commit" value="Start a new test" class="btn btn-primary correction_request_test_admin" data-task-id="1388" />
+                    <input type="submit" name="commit" value="Start a new test" class="btn btn-primary correction_request_test_admin" data-task-id="1229" />
                     <div class="spinner" >
                         <div class="bounce1"></div>
                         <div class="bounce2"></div>
@@ -1559,14 +1355,14 @@ julien@ubuntu:~/0x19. Hash tables$
 </div>
 
           </div>
-          <div data-role="task1253" data-position="106">
-              <div class=" clearfix gap" id="task-1253">
+          <div data-role="task1230" data-position="7">
+              <div class=" clearfix gap" id="task-1230">
 <span id="user_id" data-id="149"></span>
 
     <div class="student_task_controls">
 
       <!-- button Done -->
-        <button class="student_task_done btn btn-default no" data-task-id="1253">
+        <button class="student_task_done btn btn-default yes" data-task-id="1230">
           <span class="no"><i class="fa fa-square-o"></i></span>
           <span class="yes"><i class="fa fa-check-square-o"></i></span>
           <span class="pending"><i class="fa fa-spinner fa-pulse"></i></span>
@@ -1575,15 +1371,15 @@ julien@ubuntu:~/0x19. Hash tables$
         <br>
 
       <!-- button Help! -->
-      <button class="users_done_for_task btn btn-default btn-default" data-task-id="1253" data-project-id="253" data-toggle="modal" data-target="#task-1253-users-done-modal">
+      <button class="users_done_for_task btn btn-default btn-default" data-task-id="1230" data-project-id="251" data-toggle="modal" data-target="#task-1230-users-done-modal">
         Help
       </button>
-      <div class="modal fade users-done-modal" id="task-1253-users-done-modal" data-task-id="1253" data-project-id="253">
+      <div class="modal fade users-done-modal" id="task-1230-users-done-modal" data-task-id="1230" data-project-id="251">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title">Students who are done with "$ht[&#39;Betty&#39;] = &#39;Holberton&#39;"</h4>
+              <h4 class="modal-title">Students who are done with "Clock"</h4>
             </div>
             <div class="modal-body">
               <div class="list-group">
@@ -1601,26 +1397,602 @@ julien@ubuntu:~/0x19. Hash tables$
 
     </div>
 
+  <h4 class="task">
+    7. Clock
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+  </h4>
+
+
+  <!-- Progress vs Score -->
+    <div class="task_progress_score_bar" data-task-id="1230" data-correction-id="13547">
+      <div class="task_progress_bar">
+        <div class="task_score_bar">
+        </div>
+      </div>
+      <div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+    </div>
+
+<!-- Task Body -->
+  <p>Write a Bash script that displays the time for 12 hours and 59 minutes:</p>
+
+<ul>
+<li>display hours from 0 to 12</li>
+<li>display minutes from 1 to 59</li>
+</ul>
+
+<p>Requirements:</p>
+
+<ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+</ul>
+
+<p>Note that in this example, we only display the first 70 lines using the <code>head</code> command.</p>
+
+<pre><code>sylvain@ubuntu$ ./7-clock | head -n 70
+Hour: 0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+Hour: 1
+1
+2
+3
+4
+5
+6
+7
+8
+9
+sylvain@ubuntu$ 
+</code></pre>
+
+
+  <!-- Task URLs -->
+
+  <!-- Github information -->
+    <p class="sm-gap"><strong>Repo:</strong></p>
+    <ul>
+      <li>GitHub repository: <code>holberton-system_engineering-devops</code></li>
+        <li>Directory: <code>0x04-loops_conditions_and_parsing</code></li>
+        <li>File: <code>7-clock</code></li>
+    </ul>
 
 
 
   <div class="student_correction_requests">
 
     <!-- Button test code -->
-      <button class="task_correction_modal btn btn-default " data-task-id="1253" data-toggle="modal" data-target="#task-test-correction-1253-correction-modal">
+      <button class="task_correction_modal btn btn-default " data-task-id="1230" data-toggle="modal" data-target="#task-test-correction-1230-correction-modal">
         Check your code?
       </button>
-      <div class="modal fade task_correction_modal" id="task-test-correction-1253-correction-modal">
+      <div class="modal fade task_correction_modal" id="task-test-correction-1230-correction-modal">
       <div class="modal-dialog">
           <div class="modal-content">
           <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title">Correction of "$ht[&#39;Betty&#39;] = &#39;Holberton&#39;"</h4>
+              <h4 class="modal-title">Correction of "Clock"</h4>
           </div>
           <div class="modal-body">
             <div class="actions">
                 <center>
-                    <input type="submit" name="commit" value="Start a new test" class="btn btn-primary correction_request_test_admin" data-task-id="1253" />
+                    <input type="submit" name="commit" value="Start a new test" class="btn btn-primary correction_request_test_admin" data-task-id="1230" />
+                    <div class="spinner" >
+                        <div class="bounce1"></div>
+                        <div class="bounce2"></div>
+                        <div class="bounce3"></div>
+                    </div>
+                    <div class="error"></div>
+                    <div class="info"></div>
+                </center>
+            </div>
+            <div class="result"></div>
+          </div>
+          </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+      </div>
+
+
+    <!-- Button containers -->
+
+  </div>
+
+
+</div>
+
+          </div>
+          <div data-role="task1231" data-position="7">
+              <div class=" clearfix gap" id="task-1231">
+<span id="user_id" data-id="149"></span>
+
+    <div class="student_task_controls">
+
+      <!-- button Done -->
+        <button class="student_task_done btn btn-default yes" data-task-id="1231">
+          <span class="no"><i class="fa fa-square-o"></i></span>
+          <span class="yes"><i class="fa fa-check-square-o"></i></span>
+          <span class="pending"><i class="fa fa-spinner fa-pulse"></i></span>
+          Done<span class="no pending">?</span><span class="yes">!</span>
+        </button>
+        <br>
+
+      <!-- button Help! -->
+      <button class="users_done_for_task btn btn-default btn-default" data-task-id="1231" data-project-id="251" data-toggle="modal" data-target="#task-1231-users-done-modal">
+        Help
+      </button>
+      <div class="modal fade users-done-modal" id="task-1231-users-done-modal" data-task-id="1231" data-project-id="251">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Students who are done with "For ls"</h4>
+            </div>
+            <div class="modal-body">
+              <div class="list-group">
+              </div>
+              <div class="spinner" >
+                  <div class="bounce1"></div>
+                  <div class="bounce2"></div>
+                  <div class="bounce3"></div>
+              </div>
+              <div class="error"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  <h4 class="task">
+    8. For ls
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+  </h4>
+
+
+  <!-- Progress vs Score -->
+    <div class="task_progress_score_bar" data-task-id="1231" data-correction-id="13547">
+      <div class="task_progress_bar">
+        <div class="task_score_bar">
+        </div>
+      </div>
+      <div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+    </div>
+
+<!-- Task Body -->
+  <p>Write a Bash script that displays:</p>
+
+<ul>
+<li>The content of the current directory</li>
+<li>In a list format</li>
+<li>Where only the part of the name after the first dash is displayed (refer to the example)</li>
+</ul>
+
+<p>Requirements:</p>
+
+<ul>
+<li>You must use the <code>for</code> loop (<code>while</code> and <code>until</code> are forbidden)</li>
+<li>Do not display hidden files</li>
+</ul>
+
+<pre><code>sylvain@ubuntu$ ls
+1-for_holberton_school  2-while_holberton_school  3-until_holberton_school  4-if_9_say_hi  5-4_bad_luck_8_is_your_chance  6-superstitious_numbers  7-clock  8-for_ls
+sylvain@ubuntu$ ./8-for_ls 
+for_holberton_school
+while_holberton_school
+until_holberton_school
+if_9_say_hi
+4_bad_luck_8_is_your_chance
+superstitious_numbers
+clock
+for_ls
+sylvain@ubuntu$ 
+</code></pre>
+
+
+  <!-- Task URLs -->
+
+  <!-- Github information -->
+    <p class="sm-gap"><strong>Repo:</strong></p>
+    <ul>
+      <li>GitHub repository: <code>holberton-system_engineering-devops</code></li>
+        <li>Directory: <code>0x04-loops_conditions_and_parsing</code></li>
+        <li>File: <code>8-for_ls</code></li>
+    </ul>
+
+
+
+  <div class="student_correction_requests">
+
+    <!-- Button test code -->
+      <button class="task_correction_modal btn btn-default " data-task-id="1231" data-toggle="modal" data-target="#task-test-correction-1231-correction-modal">
+        Check your code?
+      </button>
+      <div class="modal fade task_correction_modal" id="task-test-correction-1231-correction-modal">
+      <div class="modal-dialog">
+          <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Correction of "For ls"</h4>
+          </div>
+          <div class="modal-body">
+            <div class="actions">
+                <center>
+                    <input type="submit" name="commit" value="Start a new test" class="btn btn-primary correction_request_test_admin" data-task-id="1231" />
+                    <div class="spinner" >
+                        <div class="bounce1"></div>
+                        <div class="bounce2"></div>
+                        <div class="bounce3"></div>
+                    </div>
+                    <div class="error"></div>
+                    <div class="info"></div>
+                </center>
+            </div>
+            <div class="result"></div>
+          </div>
+          </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+      </div>
+
+
+    <!-- Button containers -->
+
+  </div>
+
+
+</div>
+
+          </div>
+          <div data-role="task1266" data-position="7">
+              <div class=" clearfix gap" id="task-1266">
+<span id="user_id" data-id="149"></span>
+
+    <div class="student_task_controls">
+
+      <!-- button Done -->
+        <button class="student_task_done btn btn-default yes" data-task-id="1266">
+          <span class="no"><i class="fa fa-square-o"></i></span>
+          <span class="yes"><i class="fa fa-check-square-o"></i></span>
+          <span class="pending"><i class="fa fa-spinner fa-pulse"></i></span>
+          Done<span class="no pending">?</span><span class="yes">!</span>
+        </button>
+        <br>
+
+      <!-- button Help! -->
+      <button class="users_done_for_task btn btn-default btn-default" data-task-id="1266" data-project-id="251" data-toggle="modal" data-target="#task-1266-users-done-modal">
+        Help
+      </button>
+      <div class="modal fade users-done-modal" id="task-1266-users-done-modal" data-task-id="1266" data-project-id="251">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Students who are done with "To file, or not to file"</h4>
+            </div>
+            <div class="modal-body">
+              <div class="list-group">
+              </div>
+              <div class="spinner" >
+                  <div class="bounce1"></div>
+                  <div class="bounce2"></div>
+                  <div class="bounce3"></div>
+              </div>
+              <div class="error"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  <h4 class="task">
+    9. To file, or not to file
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+  </h4>
+
+
+  <!-- Progress vs Score -->
+    <div class="task_progress_score_bar" data-task-id="1266" data-correction-id="13547">
+      <div class="task_progress_bar">
+        <div class="task_score_bar">
+        </div>
+      </div>
+      <div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+    </div>
+
+<!-- Task Body -->
+  <p>Write a Bash script that gives you information about the <code>holbertonschool</code> file.</p>
+
+<p>Requirements:</p>
+
+<ul>
+<li>You must use <code>if</code> and, <code>else</code> (<code>case</code> is forbidden)</li>
+<li>Your Bash script should check if the file exists and print:
+
+<ul>
+<li>if the file exists: <code>holbertonschool file exists</code></li>
+<li>if the file does not exist: <code>holbertonschool file does not exist</code></li>
+</ul></li>
+<li>If the file exists, print:
+
+<ul>
+<li>if the file is empty: <code>holbertonschool file is empty</code></li>
+<li>if the file is no empty: <code>holbertonschool file is not empty</code></li>
+<li>if the file is a regular file: <code>holbertonschool is a regular file</code></li>
+<li>if the file is not a regular file: (nothing)</li>
+</ul></li>
+</ul>
+
+<pre><code>sylvain@ubuntu$ file holbertonschool
+holbertonschool: cannot open `holbertonschool&#39; (No such file or directory)
+sylvain@ubuntu$ ./9-to_file_or_not_to_file 
+holbertonschool file does not exist
+sylvain@ubuntu$ touch holbertonschool
+sylvain@ubuntu$ ./9-to_file_or_not_to_file 
+holbertonschool file exists
+holbertonschool file is empty
+holbertonschool is a regular file
+sylvain@ubuntu$ echo &#39;betty&#39; &gt; holbertonschool 
+sylvain@ubuntu$ ./9-to_file_or_not_to_file 
+holbertonschool file exists
+holbertonschool file is not empty
+holbertonschool is a regular file
+sylvain@ubuntu$ rm holbertonschool 
+sylvain@ubuntu$ mkdir holbertonschool
+sylvain@ubuntu$ ./9-to_file_or_not_to_file 
+holbertonschool file exists
+holbertonschool file is not empty
+sylvain@ubuntu$ 
+</code></pre>
+
+
+  <!-- Task URLs -->
+
+  <!-- Github information -->
+    <p class="sm-gap"><strong>Repo:</strong></p>
+    <ul>
+      <li>GitHub repository: <code>holberton-system_engineering-devops</code></li>
+        <li>Directory: <code>0x04-loops_conditions_and_parsing</code></li>
+        <li>File: <code>9-to_file_or_not_to_file</code></li>
+    </ul>
+
+
+
+  <div class="student_correction_requests">
+
+    <!-- Button test code -->
+      <button class="task_correction_modal btn btn-default " data-task-id="1266" data-toggle="modal" data-target="#task-test-correction-1266-correction-modal">
+        Check your code?
+      </button>
+      <div class="modal fade task_correction_modal" id="task-test-correction-1266-correction-modal">
+      <div class="modal-dialog">
+          <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Correction of "To file, or not to file"</h4>
+          </div>
+          <div class="modal-body">
+            <div class="actions">
+                <center>
+                    <input type="submit" name="commit" value="Start a new test" class="btn btn-primary correction_request_test_admin" data-task-id="1266" />
+                    <div class="spinner" >
+                        <div class="bounce1"></div>
+                        <div class="bounce2"></div>
+                        <div class="bounce3"></div>
+                    </div>
+                    <div class="error"></div>
+                    <div class="info"></div>
+                </center>
+            </div>
+            <div class="result"></div>
+          </div>
+          </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+      </div>
+
+
+    <!-- Button containers -->
+
+  </div>
+
+
+</div>
+
+          </div>
+          <div data-role="task1279" data-position="8">
+              <div class=" clearfix gap" id="task-1279">
+<span id="user_id" data-id="149"></span>
+
+    <div class="student_task_controls">
+
+      <!-- button Done -->
+        <button class="student_task_done btn btn-default yes" data-task-id="1279">
+          <span class="no"><i class="fa fa-square-o"></i></span>
+          <span class="yes"><i class="fa fa-check-square-o"></i></span>
+          <span class="pending"><i class="fa fa-spinner fa-pulse"></i></span>
+          Done<span class="no pending">?</span><span class="yes">!</span>
+        </button>
+        <br>
+
+      <!-- button Help! -->
+      <button class="users_done_for_task btn btn-default btn-default" data-task-id="1279" data-project-id="251" data-toggle="modal" data-target="#task-1279-users-done-modal">
+        Help
+      </button>
+      <div class="modal fade users-done-modal" id="task-1279-users-done-modal" data-task-id="1279" data-project-id="251">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Students who are done with "FizzBuzz"</h4>
+            </div>
+            <div class="modal-body">
+              <div class="list-group">
+              </div>
+              <div class="spinner" >
+                  <div class="bounce1"></div>
+                  <div class="bounce2"></div>
+                  <div class="bounce3"></div>
+              </div>
+              <div class="error"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  <h4 class="task">
+    10. FizzBuzz
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+  </h4>
+
+
+  <!-- Progress vs Score -->
+    <div class="task_progress_score_bar" data-task-id="1279" data-correction-id="13547">
+      <div class="task_progress_bar">
+        <div class="task_score_bar">
+        </div>
+      </div>
+      <div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+    </div>
+
+<!-- Task Body -->
+  <p>Write a Bash script that displays numbers from 1 to 100.</p>
+
+<p>Requirements:</p>
+
+<ul>
+<li>Displays <code>FizzBuzz</code> when the number is a multiple of 3 and 5</li>
+<li>Displays <code>Fizz</code> when the number is multiple of 3</li>
+<li>Displays <code>Buzz</code> when the number is a multiple of 5</li>
+<li>Otherwise, displays the number</li>
+<li>In a list format</li>
+</ul>
+
+<pre><code>sylvain@ubuntu$ ./10-fizzbuzz | head -20
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
+16
+17
+Fizz
+19
+Buzz
+sylvain@ubuntu$ 
+</code></pre>
+
+
+  <!-- Task URLs -->
+
+  <!-- Github information -->
+    <p class="sm-gap"><strong>Repo:</strong></p>
+    <ul>
+      <li>GitHub repository: <code>holberton-system_engineering-devops</code></li>
+        <li>Directory: <code>0x04-loops_conditions_and_parsing</code></li>
+        <li>File: <code>10-fizzbuzz</code></li>
+    </ul>
+
+
+
+  <div class="student_correction_requests">
+
+    <!-- Button test code -->
+      <button class="task_correction_modal btn btn-default " data-task-id="1279" data-toggle="modal" data-target="#task-test-correction-1279-correction-modal">
+        Check your code?
+      </button>
+      <div class="modal fade task_correction_modal" id="task-test-correction-1279-correction-modal">
+      <div class="modal-dialog">
+          <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Correction of "FizzBuzz"</h4>
+          </div>
+          <div class="modal-body">
+            <div class="actions">
+                <center>
+                    <input type="submit" name="commit" value="Start a new test" class="btn btn-primary correction_request_test_admin" data-task-id="1279" />
                     <div class="spinner" >
                         <div class="bounce1"></div>
                         <div class="bounce2"></div>
@@ -1648,6 +2020,9 @@ julien@ubuntu:~/0x19. Hash tables$
     </section>
 
 
+    <p class="lg-gap formatted-content">
+        <a class="btn btn-primary btn-block" data-confirm="Are you sure? You still have mandatory tasks to do on the projects &quot;0x05. Processes and signals&quot;, &quot;0x05. A tweet a day keeps the @julienbarbier42 away&quot;, &quot;0x06. Full Stack Overflow&quot;, you really should focus on those first." href="/projects/251/unlock_optionals">Done with the mandatory tasks? Unlock 4 advanced tasks now!</a>
+    </p>
 
 
     <hr class="gap">
@@ -1659,19 +2034,19 @@ julien@ubuntu:~/0x19. Hash tables$
 	<ul>
 			<li>
 				<strong>Auto QA review:</strong>
-					46.0/47 mandatory
+					82.0/83 mandatory
 					-
-					0.0/21 optional
+					0.0/30 optional
 			</li>
 		<li>
 			<strong>Altogether:</strong>
-				97.87% mandatory
+				98.8% mandatory
 				&amp;
 				0.0% optional
 				&nbsp;
-					<small><em>=&gt; 97.87% + (97.87% of 0.0%) =&gt;</em></small>
+					<small><em>=&gt; 98.8% + (98.8% of 0.0%) =&gt;</em></small>
 				&nbsp;
-				<strong>97.87%</strong>
+				<strong>98.8%</strong>
 		</li>
 	</ul>
 </div>
@@ -1687,7 +2062,7 @@ julien@ubuntu:~/0x19. Hash tables$
           </div>
           <div id="auto-qa" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
             <div class="panel-body">
-                		<h4 class="gap">&gt;&gt;&gt; ht = {}</h4>
+                		<h4 class="gap">Create a SSH RSA key pair</h4>
 			<ul class="list-group sm-gap">
 				<li class="list-group-item alert alert-success">
 					<strong>
@@ -1700,60 +2075,91 @@ julien@ubuntu:~/0x19. Hash tables$
 					<strong>
 							0.0 out of 0 points
 					</strong>
-					- <p>Files are present</p>
-
-				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							0.0 out of 0 points
-					</strong>
-					- <p>Compile program</p>
+					- <p>File is present</p>
 
 				</li>
 				<li class="list-group-item alert alert-success">
 					<strong>
 							1.0 out of 1 points
 					</strong>
-					- <p>Correct output - case: hash_table_create(2048);</p>
-
-				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Correct allocation: hash_table_create(2048); -&gt; 16400 bytes should be allocated</p>
-
-				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Handled <code>malloc</code> return</p>
+					- <p>The <code>holberton</code> file is an RSA public key</p>
 
 				</li>
 				<li class="list-group-item alert alert-danger">
 					<strong>
 							0.0 out of 1 points
 					</strong>
-					- <p>Betty coding style</p>
+					- <p>The <em>SSH public key</em> field of your profile contains a valid RSA public key</p>
 
 						<p class="sm-gap"><strong>Reason:</strong></p>
-						<div class="correction_reason"><p>hash_tables.h:18:&nbsp;WARNING:&nbsp;please,&nbsp;no&nbsp;spaces&nbsp;at&nbsp;the&nbsp;start&nbsp;of&nbsp;a&nbsp;line
-<br/>hash_tables.h:19:&nbsp;WARNING:&nbsp;please,&nbsp;no&nbsp;spaces&nbsp;at&nbsp;the&nbsp;start&nbsp;of&nbsp;a&nbsp;line
-<br/>hash_tables.h:20:&nbsp;WARNING:&nbsp;please,&nbsp;no&nbsp;spaces&nbsp;at&nbsp;the&nbsp;start&nbsp;of&nbsp;a&nbsp;line
-<br/>hash_tables.h:33:&nbsp;WARNING:&nbsp;please,&nbsp;no&nbsp;spaces&nbsp;at&nbsp;the&nbsp;start&nbsp;of&nbsp;a&nbsp;line
-<br/>hash_tables.h:34:&nbsp;WARNING:&nbsp;please,&nbsp;no&nbsp;spaces&nbsp;at&nbsp;the&nbsp;start&nbsp;of&nbsp;a&nbsp;line
-<br/>total:&nbsp;0&nbsp;errors,&nbsp;5&nbsp;warnings,&nbsp;48&nbsp;lines&nbsp;checked
-</p></div>
+						<div class="correction_reason"><p>&nbsp;-&nbsp;[Got]
+<br/>ssh-rsa&nbsp;AAAAB3NzaC1yc2EAAAADAQABAAABAQD0VixxKSUK4awLlIp27UJ8BzVZDItLaMvp38pG8rQejdlfeY6yr1mtKSUqN2hjcdFmj718FU8z+MM8BTlB7un1rOwYse+dqg8vnybRtb1wbMgq58fRXbYxU9o7JuYEELDxJvAzkidcgx3w73wYLOIiir7aGkKOT/DWmQWbNJVGJcMi5Ssbs4+HBGGoSMOfkANQCZYRATGGfbrbiNWOs3x5piauRQ+zTCUO4Ja6O4pi04jnmVvGLL9ghHfMkZuW5rcsOvgfWcv67EubN4+5G1KzDCYCPGXyAKNhQZVs6RUou7dwMBr2D3zfvTgk8jHInS5RQAapqKZl1Xui1yds0lhl&nbsp;vagrant@vagrant-ubuntu-trusty-64</p>
+
+<p>(414&nbsp;chars&nbsp;long)</p>
+
+<p>[Expected]</p>
+
+<p>(1&nbsp;chars&nbsp;long)&nbsp;-&nbsp;[Got]
+<br/>ssh-rsa&nbsp;AAAAB3NzaC1yc2EAAAADAQABAAABAQD0VixxKSUK4awLlIp27UJ8BzVZDItLaMvp38pG8rQejdlfeY6yr1mtKSUqN2hjcdFmj718FU8z+MM8BTlB7un1rOwYse+dqg8vnybRtb1wbMgq58fRXbYxU9o7JuYEELDxJvAzkidcgx3w73wYLOIiir7aGkKOT/DWmQWbNJVGJcMi5Ssbs4+HBGGoSMOfkANQCZYRATGGfbrbiNWOs3x5piauRQ+zTCUO4Ja6O4pi04jnmVvGLL9ghHfMkZuW5rcsOvgfWcv67EubN4+5G1KzDCYCPGXyAKNhQZVs6RUou7dwMBr2D3zfvTgk8jHInS5RQAapqKZl1Xui1yds0lhl&nbsp;vagrant@vagrant-ubuntu-trusty-64</p>
+
+<p>(414&nbsp;chars&nbsp;long)</p>
+
+<p>[Expected]</p>
+
+<p>(0&nbsp;chars&nbsp;long)</p></div>
+				</li>
+		<h4 class="gap">For Holberton School loop</h4>
+			<ul class="list-group sm-gap">
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>File is present</p>
+
 				</li>
 				<li class="list-group-item alert alert-success">
 					<strong>
 							1.0 out of 1 points
 					</strong>
-					- <p>Betty documentation style</p>
+					- <p>Second line must be a comment</p>
 
 				</li>
-		<h4 class="gap">djb2</h4>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							1.0 out of 1 points
+					</strong>
+					- <p>Start by #!/usr/bin/env bash</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>You must use the for loop</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>while and until are forbidden</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							5.0 out of 5 points
+					</strong>
+					- <p>Correct output</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							1.0 out of 1 points
+					</strong>
+					- <p>Shellchecker</p>
+
+				</li>
+		<h4 class="gap">While Holberton School loop</h4>
 			<ul class="list-group sm-gap">
 				<li class="list-group-item alert alert-success">
 					<strong>
@@ -1766,52 +2172,45 @@ julien@ubuntu:~/0x19. Hash tables$
 					<strong>
 							0.0 out of 0 points
 					</strong>
-					- <p>Compile program</p>
+					- <p>Second line must be a comment</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>Start by #!/usr/bin/env bash</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>You must use the while loop</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>for and until are forbidden</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							5.0 out of 5 points
+					</strong>
+					- <p>Correct output</p>
 
 				</li>
 				<li class="list-group-item alert alert-success">
 					<strong>
 							1.0 out of 1 points
 					</strong>
-					- <p>Correct output - case: hash_djb2(&quot;Holberton School !&quot;);</p>
+					- <p>Shellchecker</p>
 
 				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Correct output - case: hash_djb2(&quot;98 Battery Street&quot;);</p>
-
-				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Correct output - case: hash_djb2(&quot;&quot;);</p>
-
-				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Correct output - case: hash_djb2(&quot;\x07\x08\x09\x0A\x0BCisfun\x0C&quot;);</p>
-
-				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Betty coding style</p>
-
-				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Betty documentation style</p>
-
-				</li>
-		<h4 class="gap">key -&gt; index</h4>
+		<h4 class="gap">Until Holberton School loop</h4>
 			<ul class="list-group sm-gap">
 				<li class="list-group-item alert alert-success">
 					<strong>
@@ -1824,45 +2223,45 @@ julien@ubuntu:~/0x19. Hash tables$
 					<strong>
 							0.0 out of 0 points
 					</strong>
-					- <p>Compile program (with your 1-djb2.c file)</p>
+					- <p>Second line must be a comment</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>Start by #!/usr/bin/env bash</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>You must use the until loop</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>for and while are forbidden</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							5.0 out of 5 points
+					</strong>
+					- <p>Correct output</p>
 
 				</li>
 				<li class="list-group-item alert alert-success">
 					<strong>
 							1.0 out of 1 points
 					</strong>
-					- <p>Correct output - case: key_index(&quot;C is awesome&quot;, 512);</p>
+					- <p>Shellchecker</p>
 
 				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Correct output - case: key_index(&quot;FullstackSoftwareEngineer&quot;, 2048);</p>
-
-				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Correct output - case: key_index(&quot;&quot;, 1);</p>
-
-				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Betty coding style</p>
-
-				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Betty documentation style</p>
-
-				</li>
-		<h4 class="gap">&gt;&gt;&gt; ht[&#39;betty&#39;] = &#39;holberton&#39;</h4>
+		<h4 class="gap">If 9, say Hi!</h4>
 			<ul class="list-group sm-gap">
 				<li class="list-group-item alert alert-success">
 					<strong>
@@ -1875,80 +2274,52 @@ julien@ubuntu:~/0x19. Hash tables$
 					<strong>
 							0.0 out of 0 points
 					</strong>
-					- <p>Compile program: With your <code>0-hash_table_create.c</code>, <code>1-djb2.c</code> and <code>2-key_index.c</code></p>
+					- <p>Second line must be a comment</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>Start by <code>#!/usr/bin/env bash</code></p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>You must use the while loop</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>You must use the if statement</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>for and until are forbidden</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							5.0 out of 5 points
+					</strong>
+					- <p>Correct output</p>
 
 				</li>
 				<li class="list-group-item alert alert-success">
 					<strong>
 							1.0 out of 1 points
 					</strong>
-					- <p>Correct output - case: hash<em>table</em>set(ht, &quot;C&quot;, &quot;is fun&quot;); with ht-&gt;size = 1024</p>
+					- <p>Shellchecker</p>
 
 				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Correct output - case: Set several key/value pairs in a hash table of size 1024 (without collision)</p>
-
-				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Correct output - case: Set several key/value pairs in a hash table of size 30 (with collisions)</p>
-
-				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Correct output - case: Set several key/value pairs in a hash table of size 1 (collisions)</p>
-
-				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Correct output - case: Check that a copy of the key/value is stored</p>
-
-				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Correct output - case: hash<em>table</em>set(ht, &quot;Holberton&quot;, &quot;is cool&quot;); hash<em>table</em>set(ht, &quot;Holberton&quot;, &quot;is soooo cooool&quot;); hash<em>table</em>set(ht, &quot;Holberton&quot;, &quot;is awesome&quot;);</p>
-
-				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Handled <code>malloc</code> return</p>
-
-				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Correct output - case: hash<em>table</em>set(NULL, &quot;Holberton&quot;, &quot;is cool&quot;);</p>
-
-				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Betty coding style</p>
-
-				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Betty documentation style</p>
-
-				</li>
-		<h4 class="gap">&gt;&gt;&gt; ht[&#39;betty&#39;]</h4>
+		<h4 class="gap">4 bad luck, 8 is your chance</h4>
 			<ul class="list-group sm-gap">
 				<li class="list-group-item alert alert-success">
 					<strong>
@@ -1961,52 +2332,52 @@ julien@ubuntu:~/0x19. Hash tables$
 					<strong>
 							0.0 out of 0 points
 					</strong>
-					- <p>Compile program: With your <code>0-hash_table_create.c</code>, <code>1-djb2.c</code>, <code>2-key_index.c</code> and <code>3-hash_table_set.c</code></p>
+					- <p>Second line must be a comment</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>Start by <code>#!/usr/bin/env bash</code></p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>You must use the while loop</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>You must use the if, elif and else statements</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>for and until are forbidden</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							5.0 out of 5 points
+					</strong>
+					- <p>Correct output</p>
 
 				</li>
 				<li class="list-group-item alert alert-success">
 					<strong>
 							1.0 out of 1 points
 					</strong>
-					- <p>Correct output - case: Get an existing key from a hash table of size 1024 (no collision)</p>
+					- <p>Shellchecker</p>
 
 				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Correct output - case: Get an existing key from a hash table of size 30 (with collisions)</p>
-
-				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Correct output - case: hash_table_get(NULL, &quot;USA&quot;);</p>
-
-				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Correct output - case: Get a unknown key from a hash table of size 1024</p>
-
-				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Betty coding style</p>
-
-				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Betty documentation style</p>
-
-				</li>
-		<h4 class="gap">&gt;&gt;&gt; print(ht)</h4>
+		<h4 class="gap">Superstitious numbers</h4>
 			<ul class="list-group sm-gap">
 				<li class="list-group-item alert alert-success">
 					<strong>
@@ -2019,45 +2390,52 @@ julien@ubuntu:~/0x19. Hash tables$
 					<strong>
 							0.0 out of 0 points
 					</strong>
-					- <p>Compile program: With your <code>0-hash_table_create.c</code>, <code>1-djb2.c</code>, <code>2-key_index.c</code> and <code>3-hash_table_set.c</code></p>
+					- <p>Second line must be a comment</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>Start by <code>#!/usr/bin/env bash</code></p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>You must use the while loop</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>You must use the <code>case</code> statement</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>for and until are forbidden</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							5.0 out of 5 points
+					</strong>
+					- <p>Correct output</p>
 
 				</li>
 				<li class="list-group-item alert alert-success">
 					<strong>
 							1.0 out of 1 points
 					</strong>
-					- <p>Correct output - case: print a hash table of size 1024, containing several key/value pairs (no collision)</p>
+					- <p>Shellchecker</p>
 
 				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Correct output - case: print a hash table of size 30, containing several key/value pairs (with collisions)</p>
-
-				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Correct output - case: hash_table_print(NULL);</p>
-
-				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Betty coding style</p>
-
-				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Betty documentation style</p>
-
-				</li>
-		<h4 class="gap">&gt;&gt;&gt; del ht</h4>
+		<h4 class="gap">For ls</h4>
 			<ul class="list-group sm-gap">
 				<li class="list-group-item alert alert-success">
 					<strong>
@@ -2068,68 +2446,68 @@ julien@ubuntu:~/0x19. Hash tables$
 				</li>
 				<li class="list-group-item alert alert-success">
 					<strong>
+							14.0 out of 14 points
+					</strong>
+					- <p>Shellchecker</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
 							0.0 out of 0 points
 					</strong>
-					- <p>Compile program: With your <code>0-hash_table_create.c</code>, <code>1-djb2.c</code>, <code>2-key_index.c</code> and <code>3-hash_table_set.c</code></p>
+					- <p>Second line must be a comment</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>Start by <code>#!/usr/bin/env bash</code></p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>You must use the for loop</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>while and until are forbidden</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							3.0 out of 3 points
+					</strong>
+					- <p>Correct output: simple folder</p>
 
 				</li>
 				<li class="list-group-item alert alert-success">
 					<strong>
 							2.0 out of 2 points
 					</strong>
-					- <p>Correct output - case: hash_table_set(ht, &quot;C&quot;, &quot;is fun&quot;); with ht-&gt;size = 1024 then hash_table_delete(ht);</p>
+					- <p>Correct output: folder with <code>-</code> files</p>
 
 				</li>
 				<li class="list-group-item alert alert-success">
 					<strong>
 							2.0 out of 2 points
 					</strong>
-					- <p>Correct output - case: Set several key/value pairs in a hash table of size 1024 (without collision) and delete it</p>
+					- <p>Correct output: empty folder</p>
 
 				</li>
 				<li class="list-group-item alert alert-success">
 					<strong>
 							1.0 out of 1 points
 					</strong>
-					- <p>Correct output - case: Set several key/value pairs in a hash table of size 30 (with collisions) and delete it</p>
+					- <p>Correct output: folder with <code>-</code> files and special files</p>
 
 				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Correct output - case: Set several key/value pairs in a hash table of size 1 (collisions) and delete it</p>
-
-				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Correct output - case: Check that a copy of the key/value is stored and delete the hashtable</p>
-
-				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Correct output - case: hash_table_set(ht, &quot;Holberton&quot;, &quot;is cool&quot;); hash_table_set(ht, &quot;Holberton&quot;, &quot;is soooo cooool&quot;); hash_table_set(ht, &quot;Holberton&quot;, &quot;is awesome&quot;); hash_table_delete(ht);</p>
-
-				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Betty coding style</p>
-
-				</li>
-				<li class="list-group-item alert alert-success">
-					<strong>
-							1.0 out of 1 points
-					</strong>
-					- <p>Betty documentation style</p>
-
-				</li>
-		<h4 class="gap">$ht[&#39;Betty&#39;] = &#39;Holberton&#39;</h4>
+		<h4 class="gap">Clock</h4>
 			<ul class="list-group sm-gap">
 				<li class="list-group-item alert alert-success">
 					<strong>
@@ -2138,40 +2516,209 @@ julien@ubuntu:~/0x19. Hash tables$
 					- <p>File is present</p>
 
 				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>Second line must be a comment</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>Start by <code>#!/usr/bin/env bash</code></p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>You must use the while loop</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>for and until are forbidden</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							5.0 out of 5 points
+					</strong>
+					- <p>Correct output</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							1.0 out of 1 points
+					</strong>
+					- <p>Shellchecker</p>
+
+				</li>
+		<h4 class="gap">To file, or not to file</h4>
+			<ul class="list-group sm-gap">
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>File is present</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>Second line must be a comment</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>Start by <code>#!/usr/bin/env bash</code></p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>You must use <code>if</code> and <code>else</code></p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p><code>case</code> is forbidden</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							3.0 out of 3 points
+					</strong>
+					- <p>Correct output: File exist and is a regular file</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							2.0 out of 2 points
+					</strong>
+					- <p>Correct output: holbertonschool doesn&#39;t exist</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							2.0 out of 2 points
+					</strong>
+					- <p>Correct output: holbertonschool exists but empty</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							1.0 out of 1 points
+					</strong>
+					- <p>Correct output: holbertonschool exists but it&#39;s a directory</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							1.0 out of 1 points
+					</strong>
+					- <p>Shellchecker</p>
+
+				</li>
+		<h4 class="gap">FizzBuzz</h4>
+			<ul class="list-group sm-gap">
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>File is present</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>Second line must be a comment</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>Start by <code>#!/usr/bin/env bash</code></p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							5.0 out of 5 points
+					</strong>
+					- <p>Correct output</p>
+
+				</li>
+				<li class="list-group-item alert alert-success">
+					<strong>
+							1.0 out of 1 points
+					</strong>
+					- <p>Shellchecker</p>
+
+				</li>
+		<h4 class="gap">Read and cut</h4>
+			<ul class="list-group sm-gap">
 				<li class="list-group-item alert alert-danger">
 					<strong>
 							0.0 out of 0 points
 					</strong>
-					- <p>Compile program: With your <code>1-djb2.c</code> and <code>2-key_index.c</code></p>
+					- <p>File is present</p>
 
 						<p class="sm-gap"><strong>Reason:</strong></p>
-						<div class="correction_reason"><p>main_0.c:&nbsp;In&nbsp;function&nbsp;'main':
-<br/>main_0.c:11:2:&nbsp;error:&nbsp;unknown&nbsp;type&nbsp;name&nbsp;'shash_table_t'
-<br/>&nbsp;&nbsp;shash_table_t&nbsp;*ht;
-<br/>&nbsp;&nbsp;^
-<br/>main_0.c:14:2:&nbsp;error:&nbsp;implicit&nbsp;declaration&nbsp;of&nbsp;function&nbsp;'shash_table_create'&nbsp;[-Werror=implicit-function-declaration]
-<br/>&nbsp;&nbsp;ht&nbsp;=&nbsp;shash_table_create(2048);
-<br/>&nbsp;&nbsp;^
-<br/>main_0.c:14:5:&nbsp;error:&nbsp;assignment&nbsp;makes&nbsp;pointer&nbsp;from&nbsp;integer&nbsp;without&nbsp;a&nbsp;cast&nbsp;[-Werror]
-<br/>&nbsp;&nbsp;ht&nbsp;=&nbsp;shash_table_create(2048);
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^
-<br/>main_0.c:15:15:&nbsp;error:&nbsp;request&nbsp;for&nbsp;member&nbsp;'size'&nbsp;in&nbsp;something&nbsp;not&nbsp;a&nbsp;structure&nbsp;or&nbsp;union
-<br/>&nbsp;&nbsp;if&nbsp;(!ht&nbsp;||&nbsp;ht->size&nbsp;!=&nbsp;2048&nbsp;||&nbsp;!ht->array)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^
-<br/>main_0.c:15:36:&nbsp;error:&nbsp;request&nbsp;for&nbsp;member&nbsp;'array'&nbsp;in&nbsp;something&nbsp;not&nbsp;a&nbsp;structure&nbsp;or&nbsp;union
-<br/>&nbsp;&nbsp;if&nbsp;(!ht&nbsp;||&nbsp;ht->size&nbsp;!=&nbsp;2048&nbsp;||&nbsp;!ht->array)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^
-<br/>main_0.c:18:28:&nbsp;error:&nbsp;request&nbsp;for&nbsp;member&nbsp;'array'&nbsp;in&nbsp;something&nbsp;not&nbsp;a&nbsp;structure&nbsp;or&nbsp;union
-<br/>&nbsp;&nbsp;for&nbsp;(i&nbsp;=&nbsp;0;&nbsp;i&nbsp;<&nbsp;2048&nbsp;&&&nbsp;ht->array[i];&nbsp;++i);
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^
-<br/>cc1:&nbsp;all&nbsp;warnings&nbsp;being&nbsp;treated&nbsp;as&nbsp;errors
-</p></div>
+						<div class="correction_reason"><p>Missing:&nbsp;100-read_and_cut</p></div>
 				</li>
 				<li class="list-group-item alert alert-danger">
 					<strong>
-							0.0 out of 1 points
+							0.0 out of 0 points
 					</strong>
-					- <p>Correct output - case: Set several key/value pairs in a hash table of size 1024 (without collision)</p>
+					- <p>Second line must be a comment</p>
+
+						<p class="sm-gap"><strong>Reason:</strong></p>
+						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
+				</li>
+				<li class="list-group-item alert alert-danger">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>Start by <code>#!/usr/bin/env bash</code></p>
+
+						<p class="sm-gap"><strong>Reason:</strong></p>
+						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
+				</li>
+				<li class="list-group-item alert alert-danger">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>You must use the while loop</p>
+
+						<p class="sm-gap"><strong>Reason:</strong></p>
+						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
+				</li>
+				<li class="list-group-item alert alert-danger">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>for and until are forbidden</p>
+
+						<p class="sm-gap"><strong>Reason:</strong></p>
+						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
+				</li>
+				<li class="list-group-item alert alert-danger">
+					<strong>
+							0.0 out of 5 points
+					</strong>
+					- <p>Correct output</p>
 
 						<p class="sm-gap"><strong>Reason:</strong></p>
 						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
@@ -2180,7 +2727,63 @@ julien@ubuntu:~/0x19. Hash tables$
 					<strong>
 							0.0 out of 1 points
 					</strong>
-					- <p>Correct output - case: Set several key/value pairs in a hash table of size 30 (with collisions)</p>
+					- <p>Shellchecker</p>
+
+						<p class="sm-gap"><strong>Reason:</strong></p>
+						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
+				</li>
+		<h4 class="gap">Tell the story of passwd</h4>
+			<ul class="list-group sm-gap">
+				<li class="list-group-item alert alert-danger">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>File is present</p>
+
+						<p class="sm-gap"><strong>Reason:</strong></p>
+						<div class="correction_reason"><p>Missing:&nbsp;101-tell_the_story_of_passwd</p></div>
+				</li>
+				<li class="list-group-item alert alert-danger">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>Second line must be a comment</p>
+
+						<p class="sm-gap"><strong>Reason:</strong></p>
+						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
+				</li>
+				<li class="list-group-item alert alert-danger">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>Start by <code>#!/usr/bin/env bash</code></p>
+
+						<p class="sm-gap"><strong>Reason:</strong></p>
+						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
+				</li>
+				<li class="list-group-item alert alert-danger">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>You must use the while loop</p>
+
+						<p class="sm-gap"><strong>Reason:</strong></p>
+						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
+				</li>
+				<li class="list-group-item alert alert-danger">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>for and until are forbidden</p>
+
+						<p class="sm-gap"><strong>Reason:</strong></p>
+						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
+				</li>
+				<li class="list-group-item alert alert-danger">
+					<strong>
+							0.0 out of 5 points
+					</strong>
+					- <p>Correct output</p>
 
 						<p class="sm-gap"><strong>Reason:</strong></p>
 						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
@@ -2189,7 +2792,72 @@ julien@ubuntu:~/0x19. Hash tables$
 					<strong>
 							0.0 out of 1 points
 					</strong>
-					- <p>Handled <code>malloc</code> return</p>
+					- <p>Shellchecker</p>
+
+						<p class="sm-gap"><strong>Reason:</strong></p>
+						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
+				</li>
+		<h4 class="gap">Let&#39;s parse Apache logs</h4>
+			<ul class="list-group sm-gap">
+				<li class="list-group-item alert alert-danger">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>File is present</p>
+
+						<p class="sm-gap"><strong>Reason:</strong></p>
+						<div class="correction_reason"><p>Missing:&nbsp;102-lets_parse_apache_logs</p></div>
+				</li>
+				<li class="list-group-item alert alert-danger">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>Second line must be a comment</p>
+
+						<p class="sm-gap"><strong>Reason:</strong></p>
+						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
+				</li>
+				<li class="list-group-item alert alert-danger">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>Start by #!/usr/bin/env bash</p>
+
+						<p class="sm-gap"><strong>Reason:</strong></p>
+						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
+				</li>
+				<li class="list-group-item alert alert-danger">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>You must use <code>awk</code></p>
+
+						<p class="sm-gap"><strong>Reason:</strong></p>
+						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
+				</li>
+				<li class="list-group-item alert alert-danger">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>You are not allowed to use <code>while</code>, <code>for</code>, <code>until</code> and <code>cut</code></p>
+
+						<p class="sm-gap"><strong>Reason:</strong></p>
+						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
+				</li>
+				<li class="list-group-item alert alert-danger">
+					<strong>
+							0.0 out of 3 points
+					</strong>
+					- <p>Correct output: small log file</p>
+
+						<p class="sm-gap"><strong>Reason:</strong></p>
+						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
+				</li>
+				<li class="list-group-item alert alert-danger">
+					<strong>
+							0.0 out of 3 points
+					</strong>
+					- <p>Correct output: big log file</p>
 
 						<p class="sm-gap"><strong>Reason:</strong></p>
 						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
@@ -2198,7 +2866,7 @@ julien@ubuntu:~/0x19. Hash tables$
 					<strong>
 							0.0 out of 1 points
 					</strong>
-					- <p>Correct output - case: Set several key/value pairs in a hash table of size 1 (collisions)</p>
+					- <p>Correct output: empty log file</p>
 
 						<p class="sm-gap"><strong>Reason:</strong></p>
 						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
@@ -2207,7 +2875,7 @@ julien@ubuntu:~/0x19. Hash tables$
 					<strong>
 							0.0 out of 1 points
 					</strong>
-					- <p>Correct output - case: shash_table_set(ht, &quot;C&quot;, &quot;is fun&quot;); with ht-&gt;size = 1024</p>
+					- <p>Correct output: wrong format log file</p>
 
 						<p class="sm-gap"><strong>Reason:</strong></p>
 						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
@@ -2216,7 +2884,72 @@ julien@ubuntu:~/0x19. Hash tables$
 					<strong>
 							0.0 out of 1 points
 					</strong>
-					- <p>Correct output - case: Check that a copy of the key/value is stored</p>
+					- <p>Shellchecker</p>
+
+						<p class="sm-gap"><strong>Reason:</strong></p>
+						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
+				</li>
+		<h4 class="gap">Dig the data</h4>
+			<ul class="list-group sm-gap">
+				<li class="list-group-item alert alert-danger">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>File is present</p>
+
+						<p class="sm-gap"><strong>Reason:</strong></p>
+						<div class="correction_reason"><p>Missing:&nbsp;103-dig_the-data</p></div>
+				</li>
+				<li class="list-group-item alert alert-danger">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>Second line must be a comment</p>
+
+						<p class="sm-gap"><strong>Reason:</strong></p>
+						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
+				</li>
+				<li class="list-group-item alert alert-danger">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>Start by #!/usr/bin/env bash</p>
+
+						<p class="sm-gap"><strong>Reason:</strong></p>
+						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
+				</li>
+				<li class="list-group-item alert alert-danger">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>You must use <code>awk</code></p>
+
+						<p class="sm-gap"><strong>Reason:</strong></p>
+						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
+				</li>
+				<li class="list-group-item alert alert-danger">
+					<strong>
+							0.0 out of 0 points
+					</strong>
+					- <p>You are not allowed to use <code>while</code>, <code>for</code>, <code>until</code> and <code>cut</code></p>
+
+						<p class="sm-gap"><strong>Reason:</strong></p>
+						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
+				</li>
+				<li class="list-group-item alert alert-danger">
+					<strong>
+							0.0 out of 3 points
+					</strong>
+					- <p>Correct output: small log file</p>
+
+						<p class="sm-gap"><strong>Reason:</strong></p>
+						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
+				</li>
+				<li class="list-group-item alert alert-danger">
+					<strong>
+							0.0 out of 3 points
+					</strong>
+					- <p>Correct output: big log file</p>
 
 						<p class="sm-gap"><strong>Reason:</strong></p>
 						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
@@ -2225,7 +2958,7 @@ julien@ubuntu:~/0x19. Hash tables$
 					<strong>
 							0.0 out of 1 points
 					</strong>
-					- <p>Correct output - case: shash_table_set(ht, &quot;Holberton&quot;, &quot;is cool&quot;); shash_table_set(ht, &quot;Holberton&quot;, &quot;is soooo cooool&quot;); shash_table_set(ht, &quot;Holberton&quot;, &quot;is awesome&quot;);</p>
+					- <p>Correct output: empty log file</p>
 
 						<p class="sm-gap"><strong>Reason:</strong></p>
 						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
@@ -2234,7 +2967,7 @@ julien@ubuntu:~/0x19. Hash tables$
 					<strong>
 							0.0 out of 1 points
 					</strong>
-					- <p>Correct output - case: print a hash table of size 1024, containing several key/value pairs (no collision)</p>
+					- <p>Correct output: wrong format log file</p>
 
 						<p class="sm-gap"><strong>Reason:</strong></p>
 						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
@@ -2243,115 +2976,7 @@ julien@ubuntu:~/0x19. Hash tables$
 					<strong>
 							0.0 out of 1 points
 					</strong>
-					- <p>Correct output - case: shash_table_create(2048);</p>
-
-						<p class="sm-gap"><strong>Reason:</strong></p>
-						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
-				</li>
-				<li class="list-group-item alert alert-danger">
-					<strong>
-							0.0 out of 1 points
-					</strong>
-					- <p>Correct output - case: shash_table_set(NULL, &quot;Holberton&quot;, &quot;is cool&quot;);</p>
-
-						<p class="sm-gap"><strong>Reason:</strong></p>
-						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
-				</li>
-				<li class="list-group-item alert alert-danger">
-					<strong>
-							0.0 out of 1 points
-					</strong>
-					- <p>Correct output - case: print a hash table of size 30, containing several key/value pairs (with collisions)</p>
-
-						<p class="sm-gap"><strong>Reason:</strong></p>
-						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
-				</li>
-				<li class="list-group-item alert alert-danger">
-					<strong>
-							0.0 out of 1 points
-					</strong>
-					- <p>Correct output - case: Get an existing key from a hash table of size 1024 (no collision)</p>
-
-						<p class="sm-gap"><strong>Reason:</strong></p>
-						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
-				</li>
-				<li class="list-group-item alert alert-danger">
-					<strong>
-							0.0 out of 1 points
-					</strong>
-					- <p>Correct output - case: shash<em>table</em>print(NULL);</p>
-
-						<p class="sm-gap"><strong>Reason:</strong></p>
-						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
-				</li>
-				<li class="list-group-item alert alert-danger">
-					<strong>
-							0.0 out of 1 points
-					</strong>
-					- <p>Correct output - case: Get an existing key from a hash table of size 30 (with collisions)</p>
-
-						<p class="sm-gap"><strong>Reason:</strong></p>
-						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
-				</li>
-				<li class="list-group-item alert alert-danger">
-					<strong>
-							0.0 out of 1 points
-					</strong>
-					- <p>Correct output - case: print_rev a hash table of size 1024, containing several key/value pairs (no collision)</p>
-
-						<p class="sm-gap"><strong>Reason:</strong></p>
-						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
-				</li>
-				<li class="list-group-item alert alert-danger">
-					<strong>
-							0.0 out of 1 points
-					</strong>
-					- <p>Correct output - case: shash_table_get(NULL, &quot;USA&quot;);</p>
-
-						<p class="sm-gap"><strong>Reason:</strong></p>
-						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
-				</li>
-				<li class="list-group-item alert alert-danger">
-					<strong>
-							0.0 out of 1 points
-					</strong>
-					- <p>Correct output - case: print_rev a hash table of size 30, containing several key/value pairs (with collisions)</p>
-
-						<p class="sm-gap"><strong>Reason:</strong></p>
-						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
-				</li>
-				<li class="list-group-item alert alert-danger">
-					<strong>
-							0.0 out of 1 points
-					</strong>
-					- <p>Correct output - case: Get a unknown key from a hash table of size 1024</p>
-
-						<p class="sm-gap"><strong>Reason:</strong></p>
-						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
-				</li>
-				<li class="list-group-item alert alert-danger">
-					<strong>
-							0.0 out of 1 points
-					</strong>
-					- <p>Correct output - case: hash<em>table</em>print_rev(NULL);</p>
-
-						<p class="sm-gap"><strong>Reason:</strong></p>
-						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
-				</li>
-				<li class="list-group-item alert alert-danger">
-					<strong>
-							0.0 out of 1 points
-					</strong>
-					- <p>Betty coding style</p>
-
-						<p class="sm-gap"><strong>Reason:</strong></p>
-						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
-				</li>
-				<li class="list-group-item alert alert-danger">
-					<strong>
-							0.0 out of 1 points
-					</strong>
-					- <p>Betty documentation style</p>
+					- <p>Shellchecker</p>
 
 						<p class="sm-gap"><strong>Reason:</strong></p>
 						<div class="correction_reason"><p>Previous&nbsp;check&nbsp;failed</p></div>
@@ -2364,6 +2989,21 @@ julien@ubuntu:~/0x19. Hash tables$
 
 
 
+
+  <div class="modal fade" id="block-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">About the "Bash" block</h4>
+      </div>
+      <div class="modal-body">
+        <p>Unless stated, all your projects will be auto-corrected with Ubuntu 14.04 LTS.</p>
+
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 
       </article>
@@ -2387,3 +3027,1884 @@ julien@ubuntu:~/0x19. Hash tables$
   </body>
 </html>
 
+<h4 class="task">
+    0. Create a SSH RSA key pair
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1223">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Read for this task:</p><ul>
+<li><a href="http://askubuntu.com/questions/61557/how-do-i-set-up-ssh-authentication-keys">Linux and Mac OS users</a></li>
+<li><a href="https://support.rackspace.com/how-to/generating-rsa-keys-with-ssh-puttygen/">Windows users</a></li>
+</ul><p>man: <code>ssh-keygen</code></p><p>You will soon have to manage your own <a href="https://intranet.hbtn.io/concepts/17">servers</a> hosted on remote <a href="https://youtu.be/iuqXFC_qIvA?t=46">data centers</a>. We need to set them up with your RSA public key so that you can access them via SSH.</p><p>Create a RSA key pair.</p><p>Requirements:</p><ul>
+<li>Share your <strong>public key</strong> in your answer file <code>0-RSA_public_key.pub</code></li>
+<li>Fill the <em>SSH public key</em> field of your <a href="https://intranet.hbtn.io/users/my_profile">intranet profile</a> with your public key</li>
+<li><strong>Keep the private key to yourself in a secure location</strong>, you will use it later to connect to your servers using SSH. Some storing ideas are Dropbox, Google Drive, password manager, USB key. Failing to do so will prevent you to access your servers, which will prevent you from doing your projects</li>
+<li>If you decide to add a passphrase to your key, make sure to save this passphrase in a secure location, you will not be able to use your keys without the passphrase</li>
+</ul><p>SSH and RSA keys will be covered in depth in a later project.</p><p class="sm-gap"><strong>Repo:</strong></p><ul>
+<li>GitHub repository: <code>holberton-system_engineering-devops</code></li>
+<li>Directory: <code>0x04-loops_conditions_and_parsing</code></li>
+<li>File: <code>0-RSA_public_key.pub</code></li>
+</ul><div class="student_correction_requests">
+<!-- Button test code -->
+<button class="task_correction_modal btn btn-default " data-target="#task-test-correction-1223-correction-modal" data-task-id="1223" data-toggle="modal">
+        Check your code?
+      </button>
+<div class="modal fade task_correction_modal" id="task-test-correction-1223-correction-modal">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+<h4 class="modal-title">Correction of "Create a SSH RSA key pair"</h4>
+</div>
+<div class="modal-body">
+<div class="actions">
+<center>
+<input class="btn btn-primary correction_request_test_admin" data-task-id="1223" name="commit" type="submit" value="Start a new test"/>
+<div class="spinner">
+<div class="bounce1"></div>
+<div class="bounce2"></div>
+<div class="bounce3"></div>
+</div>
+<div class="error"></div>
+<div class="info"></div>
+</center>
+</div>
+<div class="result"></div>
+</div>
+</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div>
+<!-- Button containers -->
+</div><h4 class="task">
+    1. For Holberton School loop
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1224">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays <code>Holberton School</code> 10 times.</p><p>Requirement:</p><ul>
+<li>You must use the <code>for</code> loop (<code>while</code> and <code>until</code> are forbidden)</li>
+</ul>
+
+<h4 class="task">
+    2. While Holberton School loop
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1225">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays <code>Holberton School</code> 10 times.</p><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+</ul>
+
+<h4 class="task">
+    3. Until Holberton School loop
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1226">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays <code>Holberton School</code> 10 times.</p><p>Requirements:</p><ul>
+<li>You must use the <code>until</code> loop (<code>for</code> and <code>while</code> are forbidden)</li>
+</ul>
+
+<h4 class="task">
+    4. If 9, say Hi!
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1227">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays <code>Holberton School</code> 10 times, but for the 9th iteration, displays <code>Holberton School</code> <em>and then</em> <code>Hi</code> on a new line.</p><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>if</code> statement</li>
+</ul>
+
+<h4 class="task">
+    5. 4 bad luck, 8 is your chance
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1228">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that loops from 1 to 10 and:</p><ul>
+<li>displays <code>bad luck</code> for the 4th loop iteration</li>
+<li>displays <code>good luck</code> for the 8th loop iteration</li>
+<li>displays <code>Holberton School</code> for the other iterations</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>if</code>, <code>elif</code> and <code>else</code> statements</li>
+</ul>
+
+<h4 class="task">
+    6. Superstitious numbers
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1229">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays numbers from 1 to 20 and:</p><ul>
+<li>displays <code>bad luck from China</code> for the 4th loop iteration</li>
+<li>displays <code>bad luck from Japan</code> for the 9th loop iteration</li>
+<li>displays <code>bad luck from Italy</code> for the 17th loop iteration</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>case</code> statement</li>
+</ul>
+
+<h4 class="task">
+    7. Clock
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1230">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays the time for 12 hours and 59 minutes:</p><ul>
+<li>display hours from 0 to 12</li>
+<li>display minutes from 1 to 59</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+</ul><p>Note that in this example, we only display the first 70 lines using the <code>head</code> command.</p>
+
+<h4 class="task">
+    8. For ls
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1231">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays:</p><ul>
+<li>The content of the current directory</li>
+<li>In a list format</li>
+<li>Where only the part of the name after the first dash is displayed (refer to the example)</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>for</code> loop (<code>while</code> and <code>until</code> are forbidden)</li>
+<li>Do not display hidden files</li>
+</ul>
+
+<h4 class="task">
+    9. To file, or not to file
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1266">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that gives you information about the <code>holbertonschool</code> file.</p><p>Requirements:</p><ul>
+<li>You must use <code>if</code> and, <code>else</code> (<code>case</code> is forbidden)</li>
+<li>Your Bash script should check if the file exists and print:
+
+<ul>
+<li>if the file exists: <code>holbertonschool file exists</code></li>
+<li>if the file does not exist: <code>holbertonschool file does not exist</code></li>
+</ul></li>
+<li>If the file exists, print:
+
+<ul>
+<li>if the file is empty: <code>holbertonschool file is empty</code></li>
+<li>if the file is no empty: <code>holbertonschool file is not empty</code></li>
+<li>if the file is a regular file: <code>holbertonschool is a regular file</code></li>
+<li>if the file is not a regular file: (nothing)</li>
+</ul></li>
+</ul>
+
+<h4 class="task">
+    10. FizzBuzz
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1279">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays numbers from 1 to 100.</p><p>Requirements:</p><ul>
+<li>Displays <code>FizzBuzz</code> when the number is a multiple of 3 and 5</li>
+<li>Displays <code>Fizz</code> when the number is multiple of 3</li>
+<li>Displays <code>Buzz</code> when the number is a multiple of 5</li>
+<li>Otherwise, displays the number</li>
+<li>In a list format</li>
+</ul>
+
+<h4 class="task">
+    0. Create a SSH RSA key pair
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1223">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Read for this task:</p><ul>
+<li><a href="http://askubuntu.com/questions/61557/how-do-i-set-up-ssh-authentication-keys">Linux and Mac OS users</a></li>
+<li><a href="https://support.rackspace.com/how-to/generating-rsa-keys-with-ssh-puttygen/">Windows users</a></li>
+</ul><p>man: <code>ssh-keygen</code></p><p>You will soon have to manage your own <a href="https://intranet.hbtn.io/concepts/17">servers</a> hosted on remote <a href="https://youtu.be/iuqXFC_qIvA?t=46">data centers</a>. We need to set them up with your RSA public key so that you can access them via SSH.</p><p>Create a RSA key pair.</p><p>Requirements:</p><ul>
+<li>Share your <strong>public key</strong> in your answer file <code>0-RSA_public_key.pub</code></li>
+<li>Fill the <em>SSH public key</em> field of your <a href="https://intranet.hbtn.io/users/my_profile">intranet profile</a> with your public key</li>
+<li><strong>Keep the private key to yourself in a secure location</strong>, you will use it later to connect to your servers using SSH. Some storing ideas are Dropbox, Google Drive, password manager, USB key. Failing to do so will prevent you to access your servers, which will prevent you from doing your projects</li>
+<li>If you decide to add a passphrase to your key, make sure to save this passphrase in a secure location, you will not be able to use your keys without the passphrase</li>
+</ul><p>SSH and RSA keys will be covered in depth in a later project.</p><p class="sm-gap"><strong>Repo:</strong></p><ul>
+<li>GitHub repository: <code>holberton-system_engineering-devops</code></li>
+<li>Directory: <code>0x04-loops_conditions_and_parsing</code></li>
+<li>File: <code>0-RSA_public_key.pub</code></li>
+</ul><div class="student_correction_requests">
+<!-- Button test code -->
+<button class="task_correction_modal btn btn-default " data-target="#task-test-correction-1223-correction-modal" data-task-id="1223" data-toggle="modal">
+        Check your code?
+      </button>
+<div class="modal fade task_correction_modal" id="task-test-correction-1223-correction-modal">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+<h4 class="modal-title">Correction of "Create a SSH RSA key pair"</h4>
+</div>
+<div class="modal-body">
+<div class="actions">
+<center>
+<input class="btn btn-primary correction_request_test_admin" data-task-id="1223" name="commit" type="submit" value="Start a new test"/>
+<div class="spinner">
+<div class="bounce1"></div>
+<div class="bounce2"></div>
+<div class="bounce3"></div>
+</div>
+<div class="error"></div>
+<div class="info"></div>
+</center>
+</div>
+<div class="result"></div>
+</div>
+</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div>
+<!-- Button containers -->
+</div><h4 class="task">
+    1. For Holberton School loop
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1224">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays <code>Holberton School</code> 10 times.</p><p>Requirement:</p><ul>
+<li>You must use the <code>for</code> loop (<code>while</code> and <code>until</code> are forbidden)</li>
+</ul>
+
+<h4 class="task">
+    2. While Holberton School loop
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1225">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays <code>Holberton School</code> 10 times.</p><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+</ul>
+
+<h4 class="task">
+    3. Until Holberton School loop
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1226">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays <code>Holberton School</code> 10 times.</p><p>Requirements:</p><ul>
+<li>You must use the <code>until</code> loop (<code>for</code> and <code>while</code> are forbidden)</li>
+</ul>
+
+<h4 class="task">
+    4. If 9, say Hi!
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1227">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays <code>Holberton School</code> 10 times, but for the 9th iteration, displays <code>Holberton School</code> <em>and then</em> <code>Hi</code> on a new line.</p><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>if</code> statement</li>
+</ul>
+
+<h4 class="task">
+    5. 4 bad luck, 8 is your chance
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1228">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that loops from 1 to 10 and:</p><ul>
+<li>displays <code>bad luck</code> for the 4th loop iteration</li>
+<li>displays <code>good luck</code> for the 8th loop iteration</li>
+<li>displays <code>Holberton School</code> for the other iterations</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>if</code>, <code>elif</code> and <code>else</code> statements</li>
+</ul>
+
+<h4 class="task">
+    6. Superstitious numbers
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1229">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays numbers from 1 to 20 and:</p><ul>
+<li>displays <code>bad luck from China</code> for the 4th loop iteration</li>
+<li>displays <code>bad luck from Japan</code> for the 9th loop iteration</li>
+<li>displays <code>bad luck from Italy</code> for the 17th loop iteration</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>case</code> statement</li>
+</ul>
+
+<h4 class="task">
+    7. Clock
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1230">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays the time for 12 hours and 59 minutes:</p><ul>
+<li>display hours from 0 to 12</li>
+<li>display minutes from 1 to 59</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+</ul><p>Note that in this example, we only display the first 70 lines using the <code>head</code> command.</p>
+
+<h4 class="task">
+    8. For ls
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1231">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays:</p><ul>
+<li>The content of the current directory</li>
+<li>In a list format</li>
+<li>Where only the part of the name after the first dash is displayed (refer to the example)</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>for</code> loop (<code>while</code> and <code>until</code> are forbidden)</li>
+<li>Do not display hidden files</li>
+</ul>
+
+<h4 class="task">
+    9. To file, or not to file
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1266">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that gives you information about the <code>holbertonschool</code> file.</p><p>Requirements:</p><ul>
+<li>You must use <code>if</code> and, <code>else</code> (<code>case</code> is forbidden)</li>
+<li>Your Bash script should check if the file exists and print:
+
+<ul>
+<li>if the file exists: <code>holbertonschool file exists</code></li>
+<li>if the file does not exist: <code>holbertonschool file does not exist</code></li>
+</ul></li>
+<li>If the file exists, print:
+
+<ul>
+<li>if the file is empty: <code>holbertonschool file is empty</code></li>
+<li>if the file is no empty: <code>holbertonschool file is not empty</code></li>
+<li>if the file is a regular file: <code>holbertonschool is a regular file</code></li>
+<li>if the file is not a regular file: (nothing)</li>
+</ul></li>
+</ul>
+
+<h4 class="task">
+    10. FizzBuzz
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1279">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays numbers from 1 to 100.</p><p>Requirements:</p><ul>
+<li>Displays <code>FizzBuzz</code> when the number is a multiple of 3 and 5</li>
+<li>Displays <code>Fizz</code> when the number is multiple of 3</li>
+<li>Displays <code>Buzz</code> when the number is a multiple of 5</li>
+<li>Otherwise, displays the number</li>
+<li>In a list format</li>
+</ul>
+
+<h4 class="task">
+    0. Create a SSH RSA key pair
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1223">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Read for this task:</p><ul>
+<li><a href="http://askubuntu.com/questions/61557/how-do-i-set-up-ssh-authentication-keys">Linux and Mac OS users</a></li>
+<li><a href="https://support.rackspace.com/how-to/generating-rsa-keys-with-ssh-puttygen/">Windows users</a></li>
+</ul><p>man: <code>ssh-keygen</code></p><p>You will soon have to manage your own <a href="https://intranet.hbtn.io/concepts/17">servers</a> hosted on remote <a href="https://youtu.be/iuqXFC_qIvA?t=46">data centers</a>. We need to set them up with your RSA public key so that you can access them via SSH.</p><p>Create a RSA key pair.</p><p>Requirements:</p><ul>
+<li>Share your <strong>public key</strong> in your answer file <code>0-RSA_public_key.pub</code></li>
+<li>Fill the <em>SSH public key</em> field of your <a href="https://intranet.hbtn.io/users/my_profile">intranet profile</a> with your public key</li>
+<li><strong>Keep the private key to yourself in a secure location</strong>, you will use it later to connect to your servers using SSH. Some storing ideas are Dropbox, Google Drive, password manager, USB key. Failing to do so will prevent you to access your servers, which will prevent you from doing your projects</li>
+<li>If you decide to add a passphrase to your key, make sure to save this passphrase in a secure location, you will not be able to use your keys without the passphrase</li>
+</ul><p>SSH and RSA keys will be covered in depth in a later project.</p><p class="sm-gap"><strong>Repo:</strong></p><ul>
+<li>GitHub repository: <code>holberton-system_engineering-devops</code></li>
+<li>Directory: <code>0x04-loops_conditions_and_parsing</code></li>
+<li>File: <code>0-RSA_public_key.pub</code></li>
+</ul><div class="student_correction_requests">
+<!-- Button test code -->
+<button class="task_correction_modal btn btn-default " data-target="#task-test-correction-1223-correction-modal" data-task-id="1223" data-toggle="modal">
+        Check your code?
+      </button>
+<div class="modal fade task_correction_modal" id="task-test-correction-1223-correction-modal">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+<h4 class="modal-title">Correction of "Create a SSH RSA key pair"</h4>
+</div>
+<div class="modal-body">
+<div class="actions">
+<center>
+<input class="btn btn-primary correction_request_test_admin" data-task-id="1223" name="commit" type="submit" value="Start a new test"/>
+<div class="spinner">
+<div class="bounce1"></div>
+<div class="bounce2"></div>
+<div class="bounce3"></div>
+</div>
+<div class="error"></div>
+<div class="info"></div>
+</center>
+</div>
+<div class="result"></div>
+</div>
+</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div>
+<!-- Button containers -->
+</div><h4 class="task">
+    1. For Holberton School loop
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1224">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays <code>Holberton School</code> 10 times.</p><p>Requirement:</p><ul>
+<li>You must use the <code>for</code> loop (<code>while</code> and <code>until</code> are forbidden)</li>
+</ul><h4 class="task">
+    2. While Holberton School loop
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1225">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays <code>Holberton School</code> 10 times.</p><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+</ul><h4 class="task">
+    3. Until Holberton School loop
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1226">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays <code>Holberton School</code> 10 times.</p><p>Requirements:</p><ul>
+<li>You must use the <code>until</code> loop (<code>for</code> and <code>while</code> are forbidden)</li>
+</ul><h4 class="task">
+    4. If 9, say Hi!
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1227">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays <code>Holberton School</code> 10 times, but for the 9th iteration, displays <code>Holberton School</code> <em>and then</em> <code>Hi</code> on a new line.</p><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>if</code> statement</li>
+</ul><h4 class="task">
+    5. 4 bad luck, 8 is your chance
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1228">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that loops from 1 to 10 and:</p><ul>
+<li>displays <code>bad luck</code> for the 4th loop iteration</li>
+<li>displays <code>good luck</code> for the 8th loop iteration</li>
+<li>displays <code>Holberton School</code> for the other iterations</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>if</code>, <code>elif</code> and <code>else</code> statements</li>
+</ul><h4 class="task">
+    6. Superstitious numbers
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1229">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays numbers from 1 to 20 and:</p><ul>
+<li>displays <code>bad luck from China</code> for the 4th loop iteration</li>
+<li>displays <code>bad luck from Japan</code> for the 9th loop iteration</li>
+<li>displays <code>bad luck from Italy</code> for the 17th loop iteration</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>case</code> statement</li>
+</ul><h4 class="task">
+    7. Clock
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1230">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays the time for 12 hours and 59 minutes:</p><ul>
+<li>display hours from 0 to 12</li>
+<li>display minutes from 1 to 59</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+</ul><p>Note that in this example, we only display the first 70 lines using the <code>head</code> command.</p><h4 class="task">
+    8. For ls
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1231">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays:</p><ul>
+<li>The content of the current directory</li>
+<li>In a list format</li>
+<li>Where only the part of the name after the first dash is displayed (refer to the example)</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>for</code> loop (<code>while</code> and <code>until</code> are forbidden)</li>
+<li>Do not display hidden files</li>
+</ul><h4 class="task">
+    9. To file, or not to file
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1266">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that gives you information about the <code>holbertonschool</code> file.</p><p>Requirements:</p><ul>
+<li>You must use <code>if</code> and, <code>else</code> (<code>case</code> is forbidden)</li>
+<li>Your Bash script should check if the file exists and print:
+
+<ul>
+<li>if the file exists: <code>holbertonschool file exists</code></li>
+<li>if the file does not exist: <code>holbertonschool file does not exist</code></li>
+</ul></li>
+<li>If the file exists, print:
+
+<ul>
+<li>if the file is empty: <code>holbertonschool file is empty</code></li>
+<li>if the file is no empty: <code>holbertonschool file is not empty</code></li>
+<li>if the file is a regular file: <code>holbertonschool is a regular file</code></li>
+<li>if the file is not a regular file: (nothing)</li>
+</ul></li>
+</ul><h4 class="task">
+    10. FizzBuzz
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1279">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays numbers from 1 to 100.</p><p>Requirements:</p><ul>
+<li>Displays <code>FizzBuzz</code> when the number is a multiple of 3 and 5</li>
+<li>Displays <code>Fizz</code> when the number is multiple of 3</li>
+<li>Displays <code>Buzz</code> when the number is a multiple of 5</li>
+<li>Otherwise, displays the number</li>
+<li>In a list format</li>
+</ul><h4 class="task">
+    1. For Holberton School loop
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1224">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays <code>Holberton School</code> 10 times.</p><p>Requirement:</p><ul>
+<li>You must use the <code>for</code> loop (<code>while</code> and <code>until</code> are forbidden)</li>
+</ul><h4 class="task">
+    2. While Holberton School loop
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1225">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays <code>Holberton School</code> 10 times.</p><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+</ul><h4 class="task">
+    3. Until Holberton School loop
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1226">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays <code>Holberton School</code> 10 times.</p><p>Requirements:</p><ul>
+<li>You must use the <code>until</code> loop (<code>for</code> and <code>while</code> are forbidden)</li>
+</ul><h4 class="task">
+    4. If 9, say Hi!
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1227">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays <code>Holberton School</code> 10 times, but for the 9th iteration, displays <code>Holberton School</code> <em>and then</em> <code>Hi</code> on a new line.</p><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>if</code> statement</li>
+</ul><h4 class="task">
+    5. 4 bad luck, 8 is your chance
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1228">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that loops from 1 to 10 and:</p><ul>
+<li>displays <code>bad luck</code> for the 4th loop iteration</li>
+<li>displays <code>good luck</code> for the 8th loop iteration</li>
+<li>displays <code>Holberton School</code> for the other iterations</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>if</code>, <code>elif</code> and <code>else</code> statements</li>
+</ul><h4 class="task">
+    6. Superstitious numbers
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1229">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays numbers from 1 to 20 and:</p><ul>
+<li>displays <code>bad luck from China</code> for the 4th loop iteration</li>
+<li>displays <code>bad luck from Japan</code> for the 9th loop iteration</li>
+<li>displays <code>bad luck from Italy</code> for the 17th loop iteration</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>case</code> statement</li>
+</ul><h4 class="task">
+    7. Clock
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1230">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays the time for 12 hours and 59 minutes:</p><ul>
+<li>display hours from 0 to 12</li>
+<li>display minutes from 1 to 59</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+</ul><p>Note that in this example, we only display the first 70 lines using the <code>head</code> command.</p><h4 class="task">
+    8. For ls
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1231">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays:</p><ul>
+<li>The content of the current directory</li>
+<li>In a list format</li>
+<li>Where only the part of the name after the first dash is displayed (refer to the example)</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>for</code> loop (<code>while</code> and <code>until</code> are forbidden)</li>
+<li>Do not display hidden files</li>
+</ul><h4 class="task">
+    9. To file, or not to file
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1266">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that gives you information about the <code>holbertonschool</code> file.</p><p>Requirements:</p><ul>
+<li>You must use <code>if</code> and, <code>else</code> (<code>case</code> is forbidden)</li>
+<li>Your Bash script should check if the file exists and print:
+
+<ul>
+<li>if the file exists: <code>holbertonschool file exists</code></li>
+<li>if the file does not exist: <code>holbertonschool file does not exist</code></li>
+</ul></li>
+<li>If the file exists, print:
+
+<ul>
+<li>if the file is empty: <code>holbertonschool file is empty</code></li>
+<li>if the file is no empty: <code>holbertonschool file is not empty</code></li>
+<li>if the file is a regular file: <code>holbertonschool is a regular file</code></li>
+<li>if the file is not a regular file: (nothing)</li>
+</ul></li>
+</ul><h4 class="task">
+    10. FizzBuzz
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1279">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays numbers from 1 to 100.</p><p>Requirements:</p><ul>
+<li>Displays <code>FizzBuzz</code> when the number is a multiple of 3 and 5</li>
+<li>Displays <code>Fizz</code> when the number is multiple of 3</li>
+<li>Displays <code>Buzz</code> when the number is a multiple of 5</li>
+<li>Otherwise, displays the number</li>
+<li>In a list format</li>
+</ul><h4 class="task">
+    2. While Holberton School loop
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1225">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays <code>Holberton School</code> 10 times.</p><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+</ul><h4 class="task">
+    3. Until Holberton School loop
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1226">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays <code>Holberton School</code> 10 times.</p><p>Requirements:</p><ul>
+<li>You must use the <code>until</code> loop (<code>for</code> and <code>while</code> are forbidden)</li>
+</ul><h4 class="task">
+    4. If 9, say Hi!
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1227">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays <code>Holberton School</code> 10 times, but for the 9th iteration, displays <code>Holberton School</code> <em>and then</em> <code>Hi</code> on a new line.</p><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>if</code> statement</li>
+</ul><h4 class="task">
+    5. 4 bad luck, 8 is your chance
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1228">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that loops from 1 to 10 and:</p><ul>
+<li>displays <code>bad luck</code> for the 4th loop iteration</li>
+<li>displays <code>good luck</code> for the 8th loop iteration</li>
+<li>displays <code>Holberton School</code> for the other iterations</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>if</code>, <code>elif</code> and <code>else</code> statements</li>
+</ul><h4 class="task">
+    6. Superstitious numbers
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1229">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays numbers from 1 to 20 and:</p><ul>
+<li>displays <code>bad luck from China</code> for the 4th loop iteration</li>
+<li>displays <code>bad luck from Japan</code> for the 9th loop iteration</li>
+<li>displays <code>bad luck from Italy</code> for the 17th loop iteration</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>case</code> statement</li>
+</ul><h4 class="task">
+    7. Clock
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1230">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays the time for 12 hours and 59 minutes:</p><ul>
+<li>display hours from 0 to 12</li>
+<li>display minutes from 1 to 59</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+</ul><p>Note that in this example, we only display the first 70 lines using the <code>head</code> command.</p><h4 class="task">
+    8. For ls
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1231">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays:</p><ul>
+<li>The content of the current directory</li>
+<li>In a list format</li>
+<li>Where only the part of the name after the first dash is displayed (refer to the example)</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>for</code> loop (<code>while</code> and <code>until</code> are forbidden)</li>
+<li>Do not display hidden files</li>
+</ul><h4 class="task">
+    9. To file, or not to file
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1266">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that gives you information about the <code>holbertonschool</code> file.</p><p>Requirements:</p><ul>
+<li>You must use <code>if</code> and, <code>else</code> (<code>case</code> is forbidden)</li>
+<li>Your Bash script should check if the file exists and print:
+
+<ul>
+<li>if the file exists: <code>holbertonschool file exists</code></li>
+<li>if the file does not exist: <code>holbertonschool file does not exist</code></li>
+</ul></li>
+<li>If the file exists, print:
+
+<ul>
+<li>if the file is empty: <code>holbertonschool file is empty</code></li>
+<li>if the file is no empty: <code>holbertonschool file is not empty</code></li>
+<li>if the file is a regular file: <code>holbertonschool is a regular file</code></li>
+<li>if the file is not a regular file: (nothing)</li>
+</ul></li>
+</ul><h4 class="task">
+    10. FizzBuzz
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1279">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays numbers from 1 to 100.</p><p>Requirements:</p><ul>
+<li>Displays <code>FizzBuzz</code> when the number is a multiple of 3 and 5</li>
+<li>Displays <code>Fizz</code> when the number is multiple of 3</li>
+<li>Displays <code>Buzz</code> when the number is a multiple of 5</li>
+<li>Otherwise, displays the number</li>
+<li>In a list format</li>
+</ul><h4 class="task">
+    3. Until Holberton School loop
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1226">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays <code>Holberton School</code> 10 times.</p><p>Requirements:</p><ul>
+<li>You must use the <code>until</code> loop (<code>for</code> and <code>while</code> are forbidden)</li>
+</ul><h4 class="task">
+    4. If 9, say Hi!
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1227">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays <code>Holberton School</code> 10 times, but for the 9th iteration, displays <code>Holberton School</code> <em>and then</em> <code>Hi</code> on a new line.</p><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>if</code> statement</li>
+</ul><h4 class="task">
+    5. 4 bad luck, 8 is your chance
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1228">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that loops from 1 to 10 and:</p><ul>
+<li>displays <code>bad luck</code> for the 4th loop iteration</li>
+<li>displays <code>good luck</code> for the 8th loop iteration</li>
+<li>displays <code>Holberton School</code> for the other iterations</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>if</code>, <code>elif</code> and <code>else</code> statements</li>
+</ul><h4 class="task">
+    6. Superstitious numbers
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1229">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays numbers from 1 to 20 and:</p><ul>
+<li>displays <code>bad luck from China</code> for the 4th loop iteration</li>
+<li>displays <code>bad luck from Japan</code> for the 9th loop iteration</li>
+<li>displays <code>bad luck from Italy</code> for the 17th loop iteration</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>case</code> statement</li>
+</ul><h4 class="task">
+    7. Clock
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1230">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays the time for 12 hours and 59 minutes:</p><ul>
+<li>display hours from 0 to 12</li>
+<li>display minutes from 1 to 59</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+</ul><p>Note that in this example, we only display the first 70 lines using the <code>head</code> command.</p><h4 class="task">
+    8. For ls
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1231">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays:</p><ul>
+<li>The content of the current directory</li>
+<li>In a list format</li>
+<li>Where only the part of the name after the first dash is displayed (refer to the example)</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>for</code> loop (<code>while</code> and <code>until</code> are forbidden)</li>
+<li>Do not display hidden files</li>
+</ul><h4 class="task">
+    9. To file, or not to file
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1266">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that gives you information about the <code>holbertonschool</code> file.</p><p>Requirements:</p><ul>
+<li>You must use <code>if</code> and, <code>else</code> (<code>case</code> is forbidden)</li>
+<li>Your Bash script should check if the file exists and print:
+
+<ul>
+<li>if the file exists: <code>holbertonschool file exists</code></li>
+<li>if the file does not exist: <code>holbertonschool file does not exist</code></li>
+</ul></li>
+<li>If the file exists, print:
+
+<ul>
+<li>if the file is empty: <code>holbertonschool file is empty</code></li>
+<li>if the file is no empty: <code>holbertonschool file is not empty</code></li>
+<li>if the file is a regular file: <code>holbertonschool is a regular file</code></li>
+<li>if the file is not a regular file: (nothing)</li>
+</ul></li>
+</ul><h4 class="task">
+    10. FizzBuzz
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1279">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays numbers from 1 to 100.</p><p>Requirements:</p><ul>
+<li>Displays <code>FizzBuzz</code> when the number is a multiple of 3 and 5</li>
+<li>Displays <code>Fizz</code> when the number is multiple of 3</li>
+<li>Displays <code>Buzz</code> when the number is a multiple of 5</li>
+<li>Otherwise, displays the number</li>
+<li>In a list format</li>
+</ul><h4 class="task">
+    4. If 9, say Hi!
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1227">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays <code>Holberton School</code> 10 times, but for the 9th iteration, displays <code>Holberton School</code> <em>and then</em> <code>Hi</code> on a new line.</p><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>if</code> statement</li>
+</ul><h4 class="task">
+    5. 4 bad luck, 8 is your chance
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1228">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that loops from 1 to 10 and:</p><ul>
+<li>displays <code>bad luck</code> for the 4th loop iteration</li>
+<li>displays <code>good luck</code> for the 8th loop iteration</li>
+<li>displays <code>Holberton School</code> for the other iterations</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>if</code>, <code>elif</code> and <code>else</code> statements</li>
+</ul><h4 class="task">
+    6. Superstitious numbers
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1229">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays numbers from 1 to 20 and:</p><ul>
+<li>displays <code>bad luck from China</code> for the 4th loop iteration</li>
+<li>displays <code>bad luck from Japan</code> for the 9th loop iteration</li>
+<li>displays <code>bad luck from Italy</code> for the 17th loop iteration</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>case</code> statement</li>
+</ul><h4 class="task">
+    7. Clock
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1230">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays the time for 12 hours and 59 minutes:</p><ul>
+<li>display hours from 0 to 12</li>
+<li>display minutes from 1 to 59</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+</ul><p>Note that in this example, we only display the first 70 lines using the <code>head</code> command.</p><h4 class="task">
+    8. For ls
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1231">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays:</p><ul>
+<li>The content of the current directory</li>
+<li>In a list format</li>
+<li>Where only the part of the name after the first dash is displayed (refer to the example)</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>for</code> loop (<code>while</code> and <code>until</code> are forbidden)</li>
+<li>Do not display hidden files</li>
+</ul><h4 class="task">
+    9. To file, or not to file
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1266">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that gives you information about the <code>holbertonschool</code> file.</p><p>Requirements:</p><ul>
+<li>You must use <code>if</code> and, <code>else</code> (<code>case</code> is forbidden)</li>
+<li>Your Bash script should check if the file exists and print:
+
+<ul>
+<li>if the file exists: <code>holbertonschool file exists</code></li>
+<li>if the file does not exist: <code>holbertonschool file does not exist</code></li>
+</ul></li>
+<li>If the file exists, print:
+
+<ul>
+<li>if the file is empty: <code>holbertonschool file is empty</code></li>
+<li>if the file is no empty: <code>holbertonschool file is not empty</code></li>
+<li>if the file is a regular file: <code>holbertonschool is a regular file</code></li>
+<li>if the file is not a regular file: (nothing)</li>
+</ul></li>
+</ul><h4 class="task">
+    10. FizzBuzz
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1279">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays numbers from 1 to 100.</p><p>Requirements:</p><ul>
+<li>Displays <code>FizzBuzz</code> when the number is a multiple of 3 and 5</li>
+<li>Displays <code>Fizz</code> when the number is multiple of 3</li>
+<li>Displays <code>Buzz</code> when the number is a multiple of 5</li>
+<li>Otherwise, displays the number</li>
+<li>In a list format</li>
+</ul><h4 class="task">
+    5. 4 bad luck, 8 is your chance
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1228">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that loops from 1 to 10 and:</p><ul>
+<li>displays <code>bad luck</code> for the 4th loop iteration</li>
+<li>displays <code>good luck</code> for the 8th loop iteration</li>
+<li>displays <code>Holberton School</code> for the other iterations</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>if</code>, <code>elif</code> and <code>else</code> statements</li>
+</ul><h4 class="task">
+    6. Superstitious numbers
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1229">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays numbers from 1 to 20 and:</p><ul>
+<li>displays <code>bad luck from China</code> for the 4th loop iteration</li>
+<li>displays <code>bad luck from Japan</code> for the 9th loop iteration</li>
+<li>displays <code>bad luck from Italy</code> for the 17th loop iteration</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>case</code> statement</li>
+</ul><h4 class="task">
+    7. Clock
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1230">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays the time for 12 hours and 59 minutes:</p><ul>
+<li>display hours from 0 to 12</li>
+<li>display minutes from 1 to 59</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+</ul><p>Note that in this example, we only display the first 70 lines using the <code>head</code> command.</p><h4 class="task">
+    8. For ls
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1231">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays:</p><ul>
+<li>The content of the current directory</li>
+<li>In a list format</li>
+<li>Where only the part of the name after the first dash is displayed (refer to the example)</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>for</code> loop (<code>while</code> and <code>until</code> are forbidden)</li>
+<li>Do not display hidden files</li>
+</ul><h4 class="task">
+    9. To file, or not to file
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1266">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that gives you information about the <code>holbertonschool</code> file.</p><p>Requirements:</p><ul>
+<li>You must use <code>if</code> and, <code>else</code> (<code>case</code> is forbidden)</li>
+<li>Your Bash script should check if the file exists and print:
+
+<ul>
+<li>if the file exists: <code>holbertonschool file exists</code></li>
+<li>if the file does not exist: <code>holbertonschool file does not exist</code></li>
+</ul></li>
+<li>If the file exists, print:
+
+<ul>
+<li>if the file is empty: <code>holbertonschool file is empty</code></li>
+<li>if the file is no empty: <code>holbertonschool file is not empty</code></li>
+<li>if the file is a regular file: <code>holbertonschool is a regular file</code></li>
+<li>if the file is not a regular file: (nothing)</li>
+</ul></li>
+</ul><h4 class="task">
+    10. FizzBuzz
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1279">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays numbers from 1 to 100.</p><p>Requirements:</p><ul>
+<li>Displays <code>FizzBuzz</code> when the number is a multiple of 3 and 5</li>
+<li>Displays <code>Fizz</code> when the number is multiple of 3</li>
+<li>Displays <code>Buzz</code> when the number is a multiple of 5</li>
+<li>Otherwise, displays the number</li>
+<li>In a list format</li>
+</ul><h4 class="task">
+    6. Superstitious numbers
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1229">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays numbers from 1 to 20 and:</p><ul>
+<li>displays <code>bad luck from China</code> for the 4th loop iteration</li>
+<li>displays <code>bad luck from Japan</code> for the 9th loop iteration</li>
+<li>displays <code>bad luck from Italy</code> for the 17th loop iteration</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+<li>You must use the <code>case</code> statement</li>
+</ul><h4 class="task">
+    7. Clock
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1230">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays the time for 12 hours and 59 minutes:</p><ul>
+<li>display hours from 0 to 12</li>
+<li>display minutes from 1 to 59</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+</ul><p>Note that in this example, we only display the first 70 lines using the <code>head</code> command.</p><h4 class="task">
+    8. For ls
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1231">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays:</p><ul>
+<li>The content of the current directory</li>
+<li>In a list format</li>
+<li>Where only the part of the name after the first dash is displayed (refer to the example)</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>for</code> loop (<code>while</code> and <code>until</code> are forbidden)</li>
+<li>Do not display hidden files</li>
+</ul><h4 class="task">
+    9. To file, or not to file
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1266">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that gives you information about the <code>holbertonschool</code> file.</p><p>Requirements:</p><ul>
+<li>You must use <code>if</code> and, <code>else</code> (<code>case</code> is forbidden)</li>
+<li>Your Bash script should check if the file exists and print:
+
+<ul>
+<li>if the file exists: <code>holbertonschool file exists</code></li>
+<li>if the file does not exist: <code>holbertonschool file does not exist</code></li>
+</ul></li>
+<li>If the file exists, print:
+
+<ul>
+<li>if the file is empty: <code>holbertonschool file is empty</code></li>
+<li>if the file is no empty: <code>holbertonschool file is not empty</code></li>
+<li>if the file is a regular file: <code>holbertonschool is a regular file</code></li>
+<li>if the file is not a regular file: (nothing)</li>
+</ul></li>
+</ul><h4 class="task">
+    10. FizzBuzz
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1279">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays numbers from 1 to 100.</p><p>Requirements:</p><ul>
+<li>Displays <code>FizzBuzz</code> when the number is a multiple of 3 and 5</li>
+<li>Displays <code>Fizz</code> when the number is multiple of 3</li>
+<li>Displays <code>Buzz</code> when the number is a multiple of 5</li>
+<li>Otherwise, displays the number</li>
+<li>In a list format</li>
+</ul><h4 class="task">
+    7. Clock
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1230">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays the time for 12 hours and 59 minutes:</p><ul>
+<li>display hours from 0 to 12</li>
+<li>display minutes from 1 to 59</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>while</code> loop (<code>for</code> and <code>until</code> are forbidden)</li>
+</ul><p>Note that in this example, we only display the first 70 lines using the <code>head</code> command.</p><h4 class="task">
+    8. For ls
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1231">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays:</p><ul>
+<li>The content of the current directory</li>
+<li>In a list format</li>
+<li>Where only the part of the name after the first dash is displayed (refer to the example)</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>for</code> loop (<code>while</code> and <code>until</code> are forbidden)</li>
+<li>Do not display hidden files</li>
+</ul><h4 class="task">
+    9. To file, or not to file
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1266">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that gives you information about the <code>holbertonschool</code> file.</p><p>Requirements:</p><ul>
+<li>You must use <code>if</code> and, <code>else</code> (<code>case</code> is forbidden)</li>
+<li>Your Bash script should check if the file exists and print:
+
+<ul>
+<li>if the file exists: <code>holbertonschool file exists</code></li>
+<li>if the file does not exist: <code>holbertonschool file does not exist</code></li>
+</ul></li>
+<li>If the file exists, print:
+
+<ul>
+<li>if the file is empty: <code>holbertonschool file is empty</code></li>
+<li>if the file is no empty: <code>holbertonschool file is not empty</code></li>
+<li>if the file is a regular file: <code>holbertonschool is a regular file</code></li>
+<li>if the file is not a regular file: (nothing)</li>
+</ul></li>
+</ul><h4 class="task">
+    10. FizzBuzz
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1279">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays numbers from 1 to 100.</p><p>Requirements:</p><ul>
+<li>Displays <code>FizzBuzz</code> when the number is a multiple of 3 and 5</li>
+<li>Displays <code>Fizz</code> when the number is multiple of 3</li>
+<li>Displays <code>Buzz</code> when the number is a multiple of 5</li>
+<li>Otherwise, displays the number</li>
+<li>In a list format</li>
+</ul><h4 class="task">
+    8. For ls
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1231">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays:</p><ul>
+<li>The content of the current directory</li>
+<li>In a list format</li>
+<li>Where only the part of the name after the first dash is displayed (refer to the example)</li>
+</ul><p>Requirements:</p><ul>
+<li>You must use the <code>for</code> loop (<code>while</code> and <code>until</code> are forbidden)</li>
+<li>Do not display hidden files</li>
+</ul><h4 class="task">
+    9. To file, or not to file
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1266">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that gives you information about the <code>holbertonschool</code> file.</p><p>Requirements:</p><ul>
+<li>You must use <code>if</code> and, <code>else</code> (<code>case</code> is forbidden)</li>
+<li>Your Bash script should check if the file exists and print:
+
+<ul>
+<li>if the file exists: <code>holbertonschool file exists</code></li>
+<li>if the file does not exist: <code>holbertonschool file does not exist</code></li>
+</ul></li>
+<li>If the file exists, print:
+
+<ul>
+<li>if the file is empty: <code>holbertonschool file is empty</code></li>
+<li>if the file is no empty: <code>holbertonschool file is not empty</code></li>
+<li>if the file is a regular file: <code>holbertonschool is a regular file</code></li>
+<li>if the file is not a regular file: (nothing)</li>
+</ul></li>
+</ul><h4 class="task">
+    10. FizzBuzz
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1279">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays numbers from 1 to 100.</p><p>Requirements:</p><ul>
+<li>Displays <code>FizzBuzz</code> when the number is a multiple of 3 and 5</li>
+<li>Displays <code>Fizz</code> when the number is multiple of 3</li>
+<li>Displays <code>Buzz</code> when the number is a multiple of 5</li>
+<li>Otherwise, displays the number</li>
+<li>In a list format</li>
+</ul><h4 class="task">
+    9. To file, or not to file
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1266">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that gives you information about the <code>holbertonschool</code> file.</p><p>Requirements:</p><ul>
+<li>You must use <code>if</code> and, <code>else</code> (<code>case</code> is forbidden)</li>
+<li>Your Bash script should check if the file exists and print:
+
+<ul>
+<li>if the file exists: <code>holbertonschool file exists</code></li>
+<li>if the file does not exist: <code>holbertonschool file does not exist</code></li>
+</ul></li>
+<li>If the file exists, print:
+
+<ul>
+<li>if the file is empty: <code>holbertonschool file is empty</code></li>
+<li>if the file is no empty: <code>holbertonschool file is not empty</code></li>
+<li>if the file is a regular file: <code>holbertonschool is a regular file</code></li>
+<li>if the file is not a regular file: (nothing)</li>
+</ul></li>
+</ul><h4 class="task">
+    10. FizzBuzz
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1279">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays numbers from 1 to 100.</p><p>Requirements:</p><ul>
+<li>Displays <code>FizzBuzz</code> when the number is a multiple of 3 and 5</li>
+<li>Displays <code>Fizz</code> when the number is multiple of 3</li>
+<li>Displays <code>Buzz</code> when the number is a multiple of 5</li>
+<li>Otherwise, displays the number</li>
+<li>In a list format</li>
+</ul><h4 class="task">
+    10. FizzBuzz
+      <span class="alert alert-warning mandatory-optional">
+        mandatory
+      </span>
+</h4><div class="task_progress_score_bar" data-correction-id="13547" data-task-id="1279">
+<div class="task_progress_bar">
+<div class="task_score_bar">
+</div>
+</div>
+<div class="task_progress_score_text">
+        Score: <span class="task_score_value">0%</span> (<span class="task_progress_value">completion score: 0%</span>)
+      </div>
+</div><p>Write a Bash script that displays numbers from 1 to 100.</p><p>Requirements:</p><ul>
+<li>Displays <code>FizzBuzz</code> when the number is a multiple of 3 and 5</li>
+<li>Displays <code>Fizz</code> when the number is multiple of 3</li>
+<li>Displays <code>Buzz</code> when the number is a multiple of 5</li>
+<li>Otherwise, displays the number</li>
+<li>In a list format</li>
+</ul>

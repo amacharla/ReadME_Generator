@@ -20,7 +20,7 @@ sudo ./install.sh
 ```
 
 ## Usage
-Run the `readme4me` command with the **HTML Source file** of the assignment as the argument.
+Run the `readme4me` command with the **HTML Source code** of the assignment as the argument.
 ```Usage
 readme4me README.md
 ```

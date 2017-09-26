@@ -7,7 +7,7 @@ if len(argv) != 2:
     exit()
 
 # open html file (1st argument) and parse through source code
-fd = open(argv[1], 'r+')
+fd = open(argv[1], 'r')
 soup = BeautifulSoup(fd, 'html.parser')
 
 # Identify the end location, stop at <pre>
@@ -26,5 +26,7 @@ for starting_point in soup.find_all(class_="task"): # set starting point
 
 print(readme)
 # Writing to ReadMe File
-fd.write(readme)
+fd2 = open("README.md", 'w')
+fd2.write(readme)
+fd2.close()
 fd.close()

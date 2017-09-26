@@ -20,12 +20,13 @@ sudo ./install.sh
 ```
 
 ## Usage
-Run the `readme4me` command with the **HTML Source code** of the assignment as the argument.
+Run the `readme4me` command with the **HTML Source code** of the assignment as the first **argument**.
 ```Usage
 readme4me README.md
 ```
+* the contents of the README.md will be rewritten with all the tasks requirment
+
 ## Author
 Created by, [Anoop Macharla](https://www.linkedin.com/in/amacharla/)
 
 Email: 149@holbertonschool.com
-
